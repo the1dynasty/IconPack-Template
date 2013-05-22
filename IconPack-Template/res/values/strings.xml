@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+		<!-- Label for app name in launcher -->
+		<!-- Edit these two strings to match your theme name -->
+	<string name="app_name">YOUR ICONS NAME HERE</string>
+	<string name="theme_name">Theme Name - YOUR ICONS NAME HERE</string>
+
+		<!-- This (optional) link will appear at the end of the theme description -->
+	<string name="developer_link">https://play.google.com/store/apps/developer?id=the1dynasty</string>
+
+		<!-- Dialogs and other Misc strings -->
+		<!-- Edit these strings to match your own name and descriptions -->
+	<string name="developer_name">the1dynasty</string>
+	<string name="theme_description_app">"This is the description of your theme that shows up under the About Theme section of the app!"</string>
+		<!-- This string shows up inside the setting to Apply the theme on Apex Launcher. I don't recommend changing it -->
+	<string name="theme_description">"Open this theme from the app drawer to change wallpaper, find me on social sites, rate theme, or just to check out my other themes!"</string>
+	<string name="theme_info">Thank YOU for your support!</string>
+	<string name="dev_name">DEV NAME - the1dynasty</string>
+	<string name="dev_description">Specializes in - Icon Packs, Theme Chooser, and UCCW Skins</string>
+	<string name="dev_bio_title">MORE ABOUT the1dynasty</string>
+	<string name="dev_bio">Born Roberto Mezquia Jr. Currently resides in Miami, FL. Sort of a jack-of-all traits. Automotive collision repair, trained. 
+	    Business entrepreneur at heart. Started theming to get his phone exactly how he wanted it. Now spends more time doing it because he loves the creativity and challenges it brings.</string>
+	
+		<!-- Misc strings-->
+	<string name="content_description">Fish</string>
+	<string name="back_button">Back</string>
+	<string name="about_image_main">Main About Image</string>
+	<string name="divider">Text Divider</string>
+	
+		<!-- Labels for app icons -->
+	<string name="about_dev">About Developer</string>
+	<string name="about_theme">About Theme</string>
+	<string name="donate">Donate</string>
+	<string name="email_dev">Email Developer</string>
+	<string name="googleme">Circle On Google+</string>
+	<string name="icon_share">Share Theme</string>
+	<string name="more_dev">More From Developer</string>
+	<string name="rateme">Rate Theme</string>
+	<string name="twitterme">Follow On Twitter</string>
+	<string name="wall_picker">Wallpaper Picker</string>
+	<string name="dynasty_app">the1dynasty OSS App</string>
+
+		<!-- Wallpaper window -->
+	<string name="wall_apply">Apply Wallpaper</string>
+	
+		<!-- Apex Previews -->
+	<string name="theme_feature">theme_header</string>
+  	<string name="theme_preview1">theme_preview1</string>
+  	<string name="theme_preview2">theme_preview2</string>
+ 	<string name="theme_preview3">theme_preview3</string>
+  	<string name="theme_preview4">theme_preview4</string>
+  	<string name="theme_preview5">theme_preview5</string>
+  	
+		<!-- Apex Theme settings -->
+	<bool name="config_apexskin">true</bool>
+	<bool name="config_iconpack">true</bool>
+  	
+  		<!-- Alert Dialog strings -->
+  	<string name="launcher_apex">Apex</string>
+  	<string name="launcher_nova">Nova</string>
+  	<string name="launcher_holo">Holo</string>
+  	<string name="launcher_adw">ADW</string>
+  	<string name="launcher_title">Choose Your Launcher</string>
+  	<string name="cancel">Cancel</string>
+</resources>

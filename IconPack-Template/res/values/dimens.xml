@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_padding">3dp</dimen>
+    <dimen name="list_height">88dp</dimen>
+    <dimen name="list_icon">5dp</dimen>
+    <dimen name="flat_margin">5dp</dimen>
+    <dimen name="about_title_margin">5dp</dimen>
+    <dimen name="list_icon_right">14dp</dimen>
+    <dimen name="left_right_margin">8dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="about_top_title_margin">21dp</dimen>
+    <dimen name="about_top_desc_margin">12dp</dimen>
+    <dimen name="launcher_grid_margin">20dp</dimen>
+    <dimen name="about_dev_height">180dp</dimen>
+    <dimen name="flatview_icon">78dp</dimen>
+    <dimen name="listview_icon">68dp</dimen>
+    <dimen name="dialog_small">14sp</dimen>
+    <dimen name="dialog_spacing">10dp</dimen>
+    <dimen name="dialog_center">3dp</dimen>
+    <dimen name="list_title_text">16sp</dimen>
+    <dimen name="list_desc_text">14sp</dimen>
+    <dimen name="dialog_width">300dp</dimen>
+</resources>

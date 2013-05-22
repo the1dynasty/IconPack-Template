@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Skin colors -->
+    <color name="homescreen_icon_text_color">#FFFFFFFF</color>
+    <color name="outline_color">#FF33B5E5</color>
+    <color name="folder_title_color">#FF33B5E5</color>
+    <color name="folder_item_text_color">#FFFFFFFF</color>
+    <color name="shadow_large_color">#DD000000</color>
+    <color name="shadow_small_color">#CC000000</color>
+    <color name="drawer_background_color">#FF000000</color>
+    <color name="drawer_tab_text_color">#FFFFFFFF</color>
+    <color name="drawer_icon_text_color">#FFFFFFFF</color>
+    <color name="drawer_widget_size_color">#FF555555</color>
+    <color name="bubble_text_color">#FFFFFFFF</color>
+    <color name="bubble_ring_color">#FFFFFFFF</color>
+    <color name="bubble_shadow_color">#FF000000</color>
+    <color name="bubble_background_color">#FFAA0000</color>
+    <color name="bubble_shader_color">#FFFF6F60</color>
+    
+    <!-- App colors -->
+	<color name="about_title_color">#ff33b5e5</color>
+	<color name="divider">#FF33b5e5</color>
+	<color name="divider_page">#ff33b5e5</color>
+	<color name="launcher_divider_bottom">#cc333333</color>
+	<color name="text_description">#FFEEEEEE</color>
+	<!-- FlatView colors to change -->
+	<color name="app_font">#ffffffff</color>
+	<!-- ListView colors to change -->
+	<color name="list_title_color">#FFFFFFFF</color>
+	<color name="list_desc_color">#FFFFFFFF</color>
+    <!-- NOTE: Stock app_bg color for the 'light' look is #FFE5E5E5 -->
+    <!-- These colors are changed no matter which view you choose -->
+	<color name="app_bg">#ff000000</color>
+	<color name="wall_bg">#ff000000</color>
+	
+	<!-- Misc colors -->
+	<color name="black">#ff000000</color>
+	<color name="white">#ffffffff</color>
+	<color name="gray">#ffefefef</color>
+	<color name="gray_dark">#ff333333</color>
+	<color name="gray_medium">#ff999999</color>
+	<color name="gray_light">#ffcccccc</color>
+	<color name="gray_light2">#ffaaaaaa</color>
+	<color name="holo_blue">#ff33b5e5</color>
+	<color name="holo_green">#ff99cc00</color>
+	<color name="holo_purple">#ffaa66cc</color>
+	<color name="holo_orange">#ffffbb33</color>
+	<color name="holo_red">#ffff4444</color>
+	<color name="holo_red_80">#aaff4444</color>
+	<color name="holo_blue_dark">#ff0099cc</color>
+	<color name="holo_green_dark">#ff669900</color>
+	<color name="holo_purple_dark">#ff9933cc</color>
+	<color name="holo_orange_dark">#ffff8800</color>
+	<color name="holo_red_dark">#ffcc0000</color>
+	<color name="blue_dark">#ff000033</color>
+	<color name="transparent">#00000000</color>
+	<color name="transparent_black">#55000000</color>
+</resources>
