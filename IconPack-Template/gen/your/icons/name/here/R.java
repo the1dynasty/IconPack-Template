@@ -689,7 +689,7 @@ containing a value of this type.
          */
         public static final int abs__config_showMenuShortcutsWhenKeyboardPresent=0x7f080003;
         public static final int abs__split_action_bar_is_narrow=0x7f080001;
-        /**  Theme settings 
+        /**  Apex Theme settings 
          */
         public static final int config_apexskin=0x7f080006;
         public static final int config_desktop_indicator=0x7f08000d;
@@ -703,7 +703,9 @@ containing a value of this type.
         public static final int use_drawer_icons_bg=0x7f080008;
     }
     public static final class color {
-        public static final int about_title_color=0x7f09001b;
+        /**  App colors 
+         */
+        public static final int about_title_color=0x7f090018;
         public static final int abs__background_holo_dark=0x7f090000;
         public static final int abs__background_holo_light=0x7f090001;
         public static final int abs__bright_foreground_disabled_holo_dark=0x7f090004;
@@ -713,70 +715,78 @@ containing a value of this type.
         public static final int abs__bright_foreground_inverse_holo_dark=0x7f090006;
         public static final int abs__bright_foreground_inverse_holo_light=0x7f090007;
         public static final int abs__holo_blue_light=0x7f090008;
-        public static final int abs__primary_text_disable_only_holo_dark=0x7f090038;
-        public static final int abs__primary_text_disable_only_holo_light=0x7f090039;
-        public static final int abs__primary_text_holo_dark=0x7f09003a;
-        public static final int abs__primary_text_holo_light=0x7f09003b;
-        public static final int app_bg=0x7f090019;
-        /**  App colors 
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f09003b;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f09003c;
+        public static final int abs__primary_text_holo_dark=0x7f09003d;
+        public static final int abs__primary_text_holo_light=0x7f09003e;
+        /**  NOTE: Stock app_bg color for the 'light' look is #FFE5E5E5 
+ These colors are changed no matter which view you choose 
          */
-        public static final int app_font=0x7f090018;
+        public static final int app_bg=0x7f090021;
+        /**  FlatView colors to change 
+         */
+        public static final int app_font=0x7f09001e;
         /**  Misc colors 
          */
-        public static final int black=0x7f090020;
-        public static final int blue_dark=0x7f090032;
+        public static final int black=0x7f090023;
+        public static final int blue_dark=0x7f090035;
         public static final int bubble_background_color=0x7f090016;
         /**  Theme specific appearance settings 
          */
-        public static final int bubble_color=0x7f090035;
+        public static final int bubble_color=0x7f090038;
         public static final int bubble_ring_color=0x7f090014;
         public static final int bubble_shader_color=0x7f090017;
         public static final int bubble_shadow_color=0x7f090015;
         public static final int bubble_text_color=0x7f090013;
-        public static final int desktop_indicator_color=0x7f090037;
-        public static final int divider=0x7f09001c;
-        public static final int divider_page=0x7f09001d;
+        public static final int desktop_indicator_color=0x7f09003a;
+        public static final int divider=0x7f090019;
+        public static final int divider_page=0x7f09001a;
         public static final int drawer_background_color=0x7f09000f;
         public static final int drawer_icon_text_color=0x7f090011;
         public static final int drawer_tab_text_color=0x7f090010;
-        public static final int drawer_text_color=0x7f090036;
+        public static final int drawer_text_color=0x7f090039;
         public static final int drawer_widget_size_color=0x7f090012;
         public static final int folder_item_text_color=0x7f09000c;
         public static final int folder_title_color=0x7f09000b;
-        public static final int gray=0x7f090022;
-        public static final int gray_dark=0x7f090023;
-        public static final int gray_light=0x7f090025;
-        public static final int gray_light2=0x7f090026;
-        public static final int gray_medium=0x7f090024;
-        public static final int holo_blue=0x7f090027;
-        public static final int holo_blue_dark=0x7f09002d;
-        public static final int holo_green=0x7f090028;
-        public static final int holo_green_dark=0x7f09002e;
-        public static final int holo_orange=0x7f09002a;
-        public static final int holo_orange_dark=0x7f090030;
-        public static final int holo_purple=0x7f090029;
-        public static final int holo_purple_dark=0x7f09002f;
-        public static final int holo_red=0x7f09002b;
-        public static final int holo_red_80=0x7f09002c;
-        public static final int holo_red_dark=0x7f090031;
+        public static final int gray=0x7f090025;
+        public static final int gray_dark=0x7f090026;
+        public static final int gray_light=0x7f090028;
+        public static final int gray_light2=0x7f090029;
+        public static final int gray_medium=0x7f090027;
+        public static final int holo_blue=0x7f09002a;
+        public static final int holo_blue_dark=0x7f090030;
+        public static final int holo_green=0x7f09002b;
+        public static final int holo_green_dark=0x7f090031;
+        public static final int holo_orange=0x7f09002d;
+        public static final int holo_orange_dark=0x7f090033;
+        public static final int holo_purple=0x7f09002c;
+        public static final int holo_purple_dark=0x7f090032;
+        public static final int holo_red=0x7f09002e;
+        public static final int holo_red_80=0x7f09002f;
+        public static final int holo_red_dark=0x7f090034;
         /**  Skin colors 
          */
         public static final int homescreen_icon_text_color=0x7f090009;
-        public static final int launcher_divider_bottom=0x7f09001e;
+        public static final int launcher_divider_bottom=0x7f09001b;
+        public static final int list_desc_color=0x7f090020;
+        /**  ListView colors to change 
+         */
+        public static final int list_title_color=0x7f09001f;
         public static final int outline_color=0x7f09000a;
         public static final int shadow_large_color=0x7f09000d;
         public static final int shadow_small_color=0x7f09000e;
-        public static final int text_description=0x7f09001f;
-        public static final int transparent=0x7f090033;
-        public static final int transparent_black=0x7f090034;
-        public static final int wall_bg=0x7f09001a;
-        public static final int white=0x7f090021;
+        public static final int text_description=0x7f09001c;
+        public static final int text_title=0x7f09001d;
+        public static final int transparent=0x7f090036;
+        public static final int transparent_black=0x7f090037;
+        public static final int wall_bg=0x7f090022;
+        public static final int white=0x7f090024;
     }
     public static final class dimen {
-        public static final int about_dev_height=0x7f0a001c;
-        public static final int about_title_margin=0x7f0a0015;
-        public static final int about_top_desc_margin=0x7f0a001a;
-        public static final int about_top_title_margin=0x7f0a0019;
+        public static final int about_dev_height=0x7f0a001e;
+        public static final int about_title_margin=0x7f0a0017;
+        public static final int about_top_desc_margin=0x7f0a001c;
+        public static final int about_top_title_margin=0x7f0a001b;
         /**  Default height of an action bar. 
  Default height of an action bar. 
  Default height of an action bar. 
@@ -892,19 +902,23 @@ containing a value of this type.
         public static final int action_button_min_width=0x7f0a0010;
         public static final int activity_horizontal_margin=0x7f0a0011;
         public static final int activity_vertical_margin=0x7f0a0012;
-        public static final int dialog_center=0x7f0a0020;
-        public static final int dialog_small=0x7f0a001e;
-        public static final int dialog_spacing=0x7f0a001f;
-        public static final int dialog_width=0x7f0a0023;
-        public static final int flatview_icon=0x7f0a001d;
-        public static final int launcher_grid_margin=0x7f0a001b;
-        public static final int left_right_margin=0x7f0a0017;
-        public static final int list_desc_text=0x7f0a0022;
-        public static final int list_icon=0x7f0a0014;
-        public static final int list_icon_right=0x7f0a0016;
+        public static final int dialog_center=0x7f0a0023;
+        public static final int dialog_small=0x7f0a0021;
+        public static final int dialog_spacing=0x7f0a0022;
+        public static final int dialog_width=0x7f0a0026;
+        public static final int flat_margin=0x7f0a0016;
+        public static final int flatview_icon=0x7f0a001f;
+        public static final int header_height=0x7f0a0027;
+        public static final int launcher_grid_margin=0x7f0a001d;
+        public static final int left_right_margin=0x7f0a0019;
+        public static final int list_desc_text=0x7f0a0025;
+        public static final int list_height=0x7f0a0014;
+        public static final int list_icon=0x7f0a0015;
+        public static final int list_icon_right=0x7f0a0018;
         public static final int list_padding=0x7f0a0013;
-        public static final int list_title_text=0x7f0a0021;
-        public static final int zero_dp=0x7f0a0018;
+        public static final int list_title_text=0x7f0a0024;
+        public static final int listview_icon=0x7f0a0020;
+        public static final int zero_dp=0x7f0a001a;
     }
     public static final class drawable {
         public static final int abs__ab_bottom_solid_dark_holo=0x7f020000;
@@ -1042,120 +1056,121 @@ containing a value of this type.
         public static final int cancel_pressed=0x7f020084;
         public static final int card_bg=0x7f020085;
         public static final int card_bg_inverted=0x7f020086;
-        public static final int card_bg_pressed_blue=0x7f020087;
-        public static final int card_bg_pressed_blue_grid=0x7f020088;
-        public static final int card_bg_pressed_inverted=0x7f020089;
-        public static final int card_bg_pressed_inverted_top=0x7f02008a;
-        public static final int card_bg_pressed_top_blue=0x7f02008b;
-        public static final int card_bg_shadow=0x7f02008c;
-        public static final int default_widget_preview_holo=0x7f02008d;
-        public static final int dock_background_land=0x7f02008e;
-        public static final int dock_background_port=0x7f02008f;
-        public static final int dock_divider_land=0x7f020090;
-        public static final int dock_divider_port=0x7f020091;
-        public static final int dockbar_selector=0x7f020092;
-        public static final int dot_big=0x7f020093;
-        public static final int dot_small=0x7f020094;
-        public static final int focused_application_background=0x7f020095;
-        public static final int folder_background_holo=0x7f020096;
-        public static final int folder_icon_inner_holo=0x7f020097;
-        public static final int folder_icon_outer_holo=0x7f020098;
-        public static final int folder_icon_rest=0x7f020099;
-        public static final int gallery_item_background=0x7f02009a;
-        public static final int grid_focused=0x7f02009b;
-        public static final int grid_pressed=0x7f02009c;
-        public static final int grid_selected=0x7f02009d;
-        public static final int grid_selector=0x7f02009e;
-        public static final int homescreen_normal_holo=0x7f02009f;
-        public static final int homescreen_strong_holo=0x7f0200a0;
-        public static final int ic_allapps=0x7f0200a1;
-        public static final int ic_allapps_pressed=0x7f0200a2;
-        public static final int ic_delete=0x7f0200a3;
-        public static final int ic_launcher=0x7f0200a4;
-        public static final int ic_lock=0x7f0200a5;
-        public static final int ic_menu=0x7f0200a6;
-        public static final int ic_moveto1=0x7f0200a7;
-        public static final int ic_moveto2=0x7f0200a8;
-        public static final int ic_moveto3=0x7f0200a9;
-        public static final int ic_moveto4=0x7f0200aa;
-        public static final int ic_moveto5=0x7f0200ab;
-        public static final int ic_moveto6=0x7f0200ac;
-        public static final int ic_moveto7=0x7f0200ad;
-        public static final int ic_moveto8=0x7f0200ae;
-        public static final int ic_moveto9=0x7f0200af;
-        public static final int ic_movetodefault=0x7f0200b0;
-        public static final int ic_notifications=0x7f0200b1;
-        public static final int ic_quicksettings=0x7f0200b2;
-        public static final int ic_recentapps=0x7f0200b3;
-        public static final int ic_search=0x7f0200b4;
-        public static final int ic_settings=0x7f0200b5;
-        public static final int ic_show_preview=0x7f0200b6;
-        public static final int ic_statusbar=0x7f0200b7;
-        public static final int ic_toggledock=0x7f0200b8;
-        public static final int ic_voicesearch=0x7f0200b9;
-        public static final int icon=0x7f0200ba;
-        public static final int icon_community=0x7f0200bb;
-        public static final int icon_dev_logo=0x7f0200bc;
-        public static final int icon_email=0x7f0200bd;
-        public static final int icon_gplus=0x7f0200be;
-        public static final int icon_info=0x7f0200bf;
-        public static final int icon_launcher=0x7f0200c0;
-        public static final int icon_oss=0x7f0200c1;
-        public static final int icon_paypal=0x7f0200c2;
-        public static final int icon_play=0x7f0200c3;
-        public static final int icon_rate=0x7f0200c4;
-        public static final int icon_share=0x7f0200c5;
-        public static final int icon_twitter=0x7f0200c6;
-        public static final int icon_wall=0x7f0200c7;
-        public static final int icon_wallet=0x7f0200c8;
-        public static final int iconback=0x7f0200c9;
-        public static final int iconmask=0x7f0200ca;
-        public static final int iconupon=0x7f0200cb;
-        public static final int menu_more_overflow=0x7f0200cc;
-        public static final int next=0x7f0200cd;
-        public static final int next_pressed=0x7f0200ce;
-        public static final int overlay_focused=0x7f0200cf;
-        public static final int overlay_pressed=0x7f0200d0;
-        public static final int overscroll_glow_left=0x7f0200d1;
-        public static final int overscroll_glow_right=0x7f0200d2;
-        public static final int page_hover_left_holo=0x7f0200d3;
-        public static final int page_hover_right_holo=0x7f0200d4;
-        public static final int pressed_application_background=0x7f0200d5;
-        public static final int previous=0x7f0200d6;
-        public static final int previous_pressed=0x7f0200d7;
-        public static final int search_floater=0x7f0200d8;
-        public static final int shortcut_selector=0x7f0200d9;
-        public static final int square_normal=0x7f0200da;
-        public static final int square_over=0x7f0200db;
-        public static final int tab_menu_indicator=0x7f0200dc;
-        public static final int tab_menu_selected_holo=0x7f0200dd;
-        public static final int tab_selected_focused_holo=0x7f0200de;
-        public static final int tab_selected_holo=0x7f0200df;
-        public static final int tab_selected_pressed_focused_holo=0x7f0200e0;
-        public static final int tab_selected_pressed_holo=0x7f0200e1;
-        public static final int tab_spinner_selected_focused_holo=0x7f0200e2;
-        public static final int tab_spinner_selected_holo=0x7f0200e3;
-        public static final int tab_spinner_selected_pressed_holo=0x7f0200e4;
-        public static final int tab_spinner_widget_indicator=0x7f0200e5;
-        public static final int tab_unselected_focused_holo=0x7f0200e6;
-        public static final int tab_unselected_holo=0x7f0200e7;
-        public static final int tab_unselected_pressed_focused_holo=0x7f0200e8;
-        public static final int tab_unselected_pressed_holo=0x7f0200e9;
-        public static final int tab_widget_indicator=0x7f0200ea;
-        public static final int theme_header=0x7f0200eb;
-        public static final int theme_preview=0x7f0200ec;
-        public static final int theme_preview1=0x7f0200ed;
-        public static final int theme_preview2=0x7f0200ee;
-        public static final int theme_preview3=0x7f0200ef;
-        public static final int theme_preview4=0x7f0200f0;
-        public static final int theme_preview5=0x7f0200f1;
-        public static final int transparent=0x7f0200f2;
-        public static final int wall_1=0x7f0200f3;
-        public static final int wall_1_small=0x7f0200f4;
-        public static final int wall_header=0x7f0200f5;
-        public static final int wallpaper_gallery_background=0x7f0200f6;
-        public static final int wallpaper_gallery_item=0x7f0200f7;
-        public static final int wallpaper_picker_preview=0x7f0200f8;
+        public static final int card_bg_pressed=0x7f020087;
+        public static final int card_bg_pressed_blue=0x7f020088;
+        public static final int card_bg_pressed_blue_grid=0x7f020089;
+        public static final int card_bg_pressed_inverted=0x7f02008a;
+        public static final int card_bg_pressed_top=0x7f02008b;
+        public static final int card_bg_pressed_top_blue=0x7f02008c;
+        public static final int card_bg_shadow=0x7f02008d;
+        public static final int default_widget_preview_holo=0x7f02008e;
+        public static final int dock_background_land=0x7f02008f;
+        public static final int dock_background_port=0x7f020090;
+        public static final int dock_divider_land=0x7f020091;
+        public static final int dock_divider_port=0x7f020092;
+        public static final int dockbar_selector=0x7f020093;
+        public static final int dot_big=0x7f020094;
+        public static final int dot_small=0x7f020095;
+        public static final int focused_application_background=0x7f020096;
+        public static final int folder_background_holo=0x7f020097;
+        public static final int folder_icon_inner_holo=0x7f020098;
+        public static final int folder_icon_outer_holo=0x7f020099;
+        public static final int folder_icon_rest=0x7f02009a;
+        public static final int gallery_item_background=0x7f02009b;
+        public static final int grid_focused=0x7f02009c;
+        public static final int grid_pressed=0x7f02009d;
+        public static final int grid_selected=0x7f02009e;
+        public static final int grid_selector=0x7f02009f;
+        public static final int homescreen_normal_holo=0x7f0200a0;
+        public static final int homescreen_strong_holo=0x7f0200a1;
+        public static final int ic_allapps=0x7f0200a2;
+        public static final int ic_allapps_pressed=0x7f0200a3;
+        public static final int ic_delete=0x7f0200a4;
+        public static final int ic_launcher=0x7f0200a5;
+        public static final int ic_lock=0x7f0200a6;
+        public static final int ic_menu=0x7f0200a7;
+        public static final int ic_moveto1=0x7f0200a8;
+        public static final int ic_moveto2=0x7f0200a9;
+        public static final int ic_moveto3=0x7f0200aa;
+        public static final int ic_moveto4=0x7f0200ab;
+        public static final int ic_moveto5=0x7f0200ac;
+        public static final int ic_moveto6=0x7f0200ad;
+        public static final int ic_moveto7=0x7f0200ae;
+        public static final int ic_moveto8=0x7f0200af;
+        public static final int ic_moveto9=0x7f0200b0;
+        public static final int ic_movetodefault=0x7f0200b1;
+        public static final int ic_notifications=0x7f0200b2;
+        public static final int ic_quicksettings=0x7f0200b3;
+        public static final int ic_recentapps=0x7f0200b4;
+        public static final int ic_search=0x7f0200b5;
+        public static final int ic_settings=0x7f0200b6;
+        public static final int ic_show_preview=0x7f0200b7;
+        public static final int ic_statusbar=0x7f0200b8;
+        public static final int ic_toggledock=0x7f0200b9;
+        public static final int ic_voicesearch=0x7f0200ba;
+        public static final int icon=0x7f0200bb;
+        public static final int icon_community=0x7f0200bc;
+        public static final int icon_dev_logo=0x7f0200bd;
+        public static final int icon_email=0x7f0200be;
+        public static final int icon_gplus=0x7f0200bf;
+        public static final int icon_info=0x7f0200c0;
+        public static final int icon_launcher=0x7f0200c1;
+        public static final int icon_oss=0x7f0200c2;
+        public static final int icon_paypal=0x7f0200c3;
+        public static final int icon_play=0x7f0200c4;
+        public static final int icon_rate=0x7f0200c5;
+        public static final int icon_share=0x7f0200c6;
+        public static final int icon_twitter=0x7f0200c7;
+        public static final int icon_wall=0x7f0200c8;
+        public static final int icon_wallet=0x7f0200c9;
+        public static final int iconback=0x7f0200ca;
+        public static final int iconmask=0x7f0200cb;
+        public static final int iconupon=0x7f0200cc;
+        public static final int menu_more_overflow=0x7f0200cd;
+        public static final int next=0x7f0200ce;
+        public static final int next_pressed=0x7f0200cf;
+        public static final int overlay_focused=0x7f0200d0;
+        public static final int overlay_pressed=0x7f0200d1;
+        public static final int overscroll_glow_left=0x7f0200d2;
+        public static final int overscroll_glow_right=0x7f0200d3;
+        public static final int page_hover_left_holo=0x7f0200d4;
+        public static final int page_hover_right_holo=0x7f0200d5;
+        public static final int pressed_application_background=0x7f0200d6;
+        public static final int previous=0x7f0200d7;
+        public static final int previous_pressed=0x7f0200d8;
+        public static final int search_floater=0x7f0200d9;
+        public static final int shortcut_selector=0x7f0200da;
+        public static final int square_normal=0x7f0200db;
+        public static final int square_over=0x7f0200dc;
+        public static final int tab_menu_indicator=0x7f0200dd;
+        public static final int tab_menu_selected_holo=0x7f0200de;
+        public static final int tab_selected_focused_holo=0x7f0200df;
+        public static final int tab_selected_holo=0x7f0200e0;
+        public static final int tab_selected_pressed_focused_holo=0x7f0200e1;
+        public static final int tab_selected_pressed_holo=0x7f0200e2;
+        public static final int tab_spinner_selected_focused_holo=0x7f0200e3;
+        public static final int tab_spinner_selected_holo=0x7f0200e4;
+        public static final int tab_spinner_selected_pressed_holo=0x7f0200e5;
+        public static final int tab_spinner_widget_indicator=0x7f0200e6;
+        public static final int tab_unselected_focused_holo=0x7f0200e7;
+        public static final int tab_unselected_holo=0x7f0200e8;
+        public static final int tab_unselected_pressed_focused_holo=0x7f0200e9;
+        public static final int tab_unselected_pressed_holo=0x7f0200ea;
+        public static final int tab_widget_indicator=0x7f0200eb;
+        public static final int theme_header=0x7f0200ec;
+        public static final int theme_preview=0x7f0200ed;
+        public static final int theme_preview1=0x7f0200ee;
+        public static final int theme_preview2=0x7f0200ef;
+        public static final int theme_preview3=0x7f0200f0;
+        public static final int theme_preview4=0x7f0200f1;
+        public static final int theme_preview5=0x7f0200f2;
+        public static final int transparent=0x7f0200f3;
+        public static final int wall_1=0x7f0200f4;
+        public static final int wall_1_small=0x7f0200f5;
+        public static final int wall_header=0x7f0200f6;
+        public static final int wallpaper_gallery_background=0x7f0200f7;
+        public static final int wallpaper_gallery_item=0x7f0200f8;
+        public static final int wallpaper_picker_preview=0x7f0200f9;
     }
     public static final class id {
         public static final int LinearLayout02=0x7f07005c;
@@ -1208,9 +1223,9 @@ containing a value of this type.
         public static final int btn_apex=0x7f070042;
         public static final int btn_holo=0x7f070047;
         public static final int btn_nova=0x7f070045;
-        public static final int cancelbtn1=0x7f070063;
-        public static final int container=0x7f070067;
-        public static final int description=0x7f070065;
+        public static final int cancelbtn1=0x7f070064;
+        public static final int container=0x7f070068;
+        public static final int description=0x7f070066;
         public static final int description1=0x7f070017;
         public static final int description2=0x7f07001a;
         public static final int disableHome=0x7f070009;
@@ -1220,9 +1235,9 @@ containing a value of this type.
         public static final int edit_query=0x7f070035;
         public static final int email=0x7f070059;
         public static final int email2=0x7f07005a;
-        public static final int gallery=0x7f070069;
+        public static final int gallery=0x7f07006a;
         public static final int gplus=0x7f070053;
-        public static final int header=0x7f070068;
+        public static final int header=0x7f070069;
         public static final int homeAsUp=0x7f070006;
         public static final int icon_grid=0x7f070062;
         public static final int imageView1=0x7f070011;
@@ -1236,7 +1251,7 @@ containing a value of this type.
         public static final int linearLayout11=0x7f070058;
         public static final int linearLayout14=0x7f070044;
         public static final int listMode=0x7f070002;
-        public static final int list_image=0x7f070064;
+        public static final int list_image=0x7f070065;
         public static final int marketinfo=0x7f070052;
         public static final int next=0x7f07001d;
         public static final int normal=0x7f070001;
@@ -1247,7 +1262,7 @@ containing a value of this type.
         public static final int row3=0x7f070054;
         public static final int row4=0x7f07005b;
         public static final int scrollView1=0x7f070014;
-        public static final int set=0x7f07006a;
+        public static final int set=0x7f07006b;
         public static final int sharetheme=0x7f070056;
         public static final int showCustom=0x7f070008;
         public static final int showHome=0x7f070005;
@@ -1257,14 +1272,15 @@ containing a value of this type.
         public static final int textView04=0x7f070061;
         public static final int textView05=0x7f07004d;
         public static final int textView07=0x7f070043;
+        public static final int textView1=0x7f070063;
         public static final int textView10=0x7f070046;
         public static final int themeinfo=0x7f07004f;
-        public static final int title=0x7f070066;
+        public static final int title=0x7f070067;
         public static final int title1=0x7f070015;
         public static final int title2=0x7f070018;
         public static final int useLogo=0x7f070004;
         public static final int wallpaper=0x7f07004c;
-        public static final int wallpaper_image=0x7f07006b;
+        public static final int wallpaper_image=0x7f07006c;
         public static final int wrap_content=0x7f070000;
     }
     public static final class integer {
@@ -1326,11 +1342,11 @@ containing a value of this type.
         public static final int icon_nova=0x7f030004;
     }
     public static final class string {
-        /**  Labels for helper icons 
+        /**  Labels for app icons 
          */
-        public static final int about_dev=0x7f0c0012;
-        public static final int about_image_main=0x7f0c0028;
-        public static final int about_theme=0x7f0c0013;
+        public static final int about_dev=0x7f0c001e;
+        public static final int about_image_main=0x7f0c001c;
+        public static final int about_theme=0x7f0c001f;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f0c0000;
@@ -1377,35 +1393,37 @@ containing a value of this type.
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f0c0009;
         /**  Label for app name in launcher 
+ Edit these two strings to match your theme name 
          */
         public static final int app_name=0x7f0c000f;
-        public static final int back_button=0x7f0c0027;
+        public static final int back_button=0x7f0c001b;
         public static final int cancel=0x7f0c0035;
         /**  1=top dots, 2=top slider, 3=bottom slider, 4=ics slider 
          */
         public static final int config_desktop_indicator_type=0x7f0c0036;
         /**  Misc strings
          */
-        public static final int content_description=0x7f0c0026;
+        public static final int content_description=0x7f0c001a;
         /**  This wallpaper will be used when a user applies the theme 
          */
         public static final int default_wallpaper=0x7f0c0038;
-        public static final int dev_bio=0x7f0c0025;
-        public static final int dev_bio_title=0x7f0c0024;
-        public static final int dev_description=0x7f0c0023;
-        public static final int dev_name=0x7f0c0022;
+        public static final int dev_bio=0x7f0c0019;
+        public static final int dev_bio_title=0x7f0c0018;
+        public static final int dev_description=0x7f0c0017;
+        public static final int dev_name=0x7f0c0016;
         /**  This (optional) link will appear at the end of the theme description 
          */
         public static final int developer_link=0x7f0c0011;
         /**  Dialogs and other Misc strings 
+ Edit these strings to match your own name and descriptions 
          */
-        public static final int developer_name=0x7f0c001e;
-        public static final int divider=0x7f0c0029;
-        public static final int donate=0x7f0c0014;
-        public static final int dynasty_app=0x7f0c001c;
-        public static final int email_dev=0x7f0c0015;
-        public static final int googleme=0x7f0c0016;
-        public static final int icon_share=0x7f0c0017;
+        public static final int developer_name=0x7f0c0012;
+        public static final int divider=0x7f0c001d;
+        public static final int donate=0x7f0c0020;
+        public static final int dynasty_app=0x7f0c0028;
+        public static final int email_dev=0x7f0c0021;
+        public static final int googleme=0x7f0c0022;
+        public static final int icon_share=0x7f0c0023;
         public static final int launcher_adw=0x7f0c0033;
         /**  Alert Dialog strings 
          */
@@ -1417,25 +1435,27 @@ containing a value of this type.
   0=None, 1=3buttons, 2=5buttons, 3=1button 
          */
         public static final int main_dock_style=0x7f0c0037;
-        public static final int more_dev=0x7f0c0018;
-        public static final int rateme=0x7f0c0019;
-        public static final int theme_description=0x7f0c0020;
-        public static final int theme_description_app=0x7f0c001f;
+        public static final int more_dev=0x7f0c0024;
+        public static final int rateme=0x7f0c0025;
+        /**  This string shows up inside the setting to Apply the theme on Apex Launcher. I don't recommend changing it 
+         */
+        public static final int theme_description=0x7f0c0014;
+        public static final int theme_description_app=0x7f0c0013;
         /**  Apex Previews 
          */
         public static final int theme_feature=0x7f0c002a;
-        public static final int theme_info=0x7f0c0021;
+        public static final int theme_info=0x7f0c0015;
         public static final int theme_name=0x7f0c0010;
         public static final int theme_preview1=0x7f0c002b;
         public static final int theme_preview2=0x7f0c002c;
         public static final int theme_preview3=0x7f0c002d;
         public static final int theme_preview4=0x7f0c002e;
         public static final int theme_preview5=0x7f0c002f;
-        public static final int twitterme=0x7f0c001a;
+        public static final int twitterme=0x7f0c0026;
         /**  Wallpaper window 
          */
-        public static final int wall_apply=0x7f0c001d;
-        public static final int wall_picker=0x7f0c001b;
+        public static final int wall_apply=0x7f0c0029;
+        public static final int wall_picker=0x7f0c0027;
     }
     public static final class style {
         /** 

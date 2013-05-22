@@ -22,7 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:gravity="center"   >
+    android:gravity="center" tools:context="listview.Main">
     
     <!-- Change line 31 to read "@drawable/card_bg_pressed" -->
 	<RelativeLayout
@@ -33,8 +33,8 @@
 	    android:padding="@dimen/list_icon"
 	    tools:ignore="UselessParent" >
     
-    <!-- Icon image layout -- DO NOT EDIT --
-    	 Change images in the MainAdapter.java file if you want to edit this -->
+    <!-- Icon image layout - DO NOT EDIT -
+    	 Change images in the MainAdapter.java file if you want to edit these lines -->
     <ImageView
         android:id="@+id/list_image"
         android:contentDescription="@string/content_description"
@@ -46,7 +46,7 @@
         android:layout_centerVertical="true"
         android:src="@drawable/icon_email" />
  
-    <!-- Description for each view -- DO NOT EDIT --
+    <!-- Description for each view - DO NOT EDIT -
      	 Change the lines in the Fragment.java file if you want to edit these lines -->
 	<TextView
 	    android:id="@+id/description"
@@ -62,7 +62,7 @@
 	    tools:ignore="HardcodedText"/>
 
 	
-    <!-- Title for each view -- DO NOT EDIT --
+    <!-- Title for each view - DO NOT EDIT -
      	 Change the lines in the MainAdapter.java file if you want to edit these lines -->
 	<TextView
 	    android:id="@+id/title"

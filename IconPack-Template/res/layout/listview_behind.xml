@@ -17,11 +17,11 @@
 -->
 
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@android:id/list"
+          xmlns:tools="http://schemas.android.com/tools" android:id="@android:id/list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:divider="@color/transparent"
     android:dividerHeight="0dp"
     android:background="@color/app_bg"
     android:listSelector="@color/transparent"
-    android:cacheColorHint="@color/transparent" />
+    android:cacheColorHint="@color/transparent" tools:context="listview.Main"/>

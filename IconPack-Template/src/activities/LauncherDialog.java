@@ -1,23 +1,31 @@
 package activities;
 
 import your.icons.name.here.R;
+import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Window;
 
-public class LauncherDialog extends SherlockActivity {
+public class LauncherDialog extends Activity {
+	
+	static final String ACTION_APPLY_ICON_THEME = "com.teslacoilsw.launcher.APPLY_ICON_THEME";
+    static final String NOVA_PACKAGE = "com.teslacoilsw.launcher";
+    static final String EXTRA_ICON_THEME_PACKAGE = "com.teslacoilsw.launcher.extra.ICON_THEME_PACKAGE";
+    static final String EXTRA_ICON_THEME_TYPE = "com.teslacoilsw.launcher.extra.ICON_THEME_TYPE";
 	
 	// Launches popup Dialog. Refer to Manifest to make this a fullscreen Activity instead of a popup
 	@Override
 	  public void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
+	  noTitle();
 	  setContentView(R.layout.launcher_dialog);
 
 	  /* Button press for applying Apex theme
@@ -52,42 +60,27 @@ public class LauncherDialog extends SherlockActivity {
 	    }
 	  });
 
-	  // This is the Nova Intent to Apply within the pack that I'm working on fixing
-	  /* Anyone is willing to help submit a fix for this part, 
-	   * please email me the1dynasty.android@gmail.com
-	   */
 	  ImageButton nova = (ImageButton)this.findViewById(R.id.btn_nova);
 	  nova.setOnClickListener(new OnClickListener() {
 		    @Override
 		    public void onClick(View v) {
+              Intent intent = new Intent(ACTION_APPLY_ICON_THEME);
+              intent.setPackage(NOVA_PACKAGE);
+              intent.putExtra(EXTRA_ICON_THEME_TYPE, "GO");
+              intent.putExtra(EXTRA_ICON_THEME_PACKAGE, "your.icons.name.here");
+              try {
+              startActivity(intent);
+              }
+              catch (ActivityNotFoundException e) {
 		    	// Temporary toast message until its fixed
-	    	    Toast failed = Toast.makeText(getBaseContext(), "Currently Not Supported... " +
-	    	    		" Please Apply through Nova Settings.", 
+	    	    Toast failed = Toast.makeText(getBaseContext(), "Nova Launcher is not installed on your " +
+	    	    		"device please download from the Play Store", 
 	    	    		Toast.LENGTH_LONG);
 	    	    failed.show();
+              }
 	    	    finish();
 		    }
-		    /*
-	    	final String ACTION_APPLY_ICON_THEME = "com.teslacoilsw.launcher.APPLY_ICON_THEME";
-	        final String NOVA_PACKAGE = "com.teslacoilsw.launcher";
-	        final String EXTRA_ICON_THEME_PACKAGE = "com.teslacoilsw.launcher.extra.ICON_THEME_PACKAGE";
-	        final String EXTRA_ICON_THEME_TYPE = "com.teslacoilsw.launcher.extra.ICON_THEME_TYPE";
-	    @Override
-	    public void onClick(View v) {
-	            Intent intent = new Intent(ACTION_APPLY_ICON_THEME);
-	            intent.setPackage(NOVA_PACKAGE);
-	            intent.putExtra(EXTRA_ICON_THEME_TYPE, "Icon Pack");
-	            intent.putExtra(EXTRA_ICON_THEME_PACKAGE, "activities");	           
-	    	
-	    	    startActivity(intent);
 
-	    	    Toast failed = Toast.makeText(getBaseContext(), "Currently Not Supported... " +
-	    	    		" Please Apply through Nova Settings.", 
-	    	    		Toast.LENGTH_LONG);
-	    	    failed.show();
-	    	    finish();
-	    	} 
-	    	*/
 	    });
 	  
 	  // Holo Apply button, not currently working
@@ -115,10 +108,11 @@ public class LauncherDialog extends SherlockActivity {
 	  adw.setOnClickListener(new OnClickListener() {
 	    @Override
 	    public void onClick(View v) {
-	    	Intent adw=new Intent("org.adw.launcher.SET_THEME");
-	    	adw.putExtra("org.adw.launcher.theme.NAME","activities");
+	    	Intent adw = new Intent("org.adw.launcher.SET_THEME");
+	        adw.putExtra("org.adw.launcher.theme.NAME","your.icons.name.here");
 	    	try {
-	    		startActivity(Intent.createChooser(adw,"Uh Oh...")); {
+	    		 startActivity(Intent.createChooser(adw,"activating theme..."));
+	    		 Toast.makeText(getApplicationContext(),"Press apply theme to finalize!",Toast.LENGTH_LONG).show();{
 	    		}
 	    	} 
 	    	catch (ActivityNotFoundException e) {
@@ -140,6 +134,13 @@ public class LauncherDialog extends SherlockActivity {
 	    }
 	  });
 }
+
+	// Hides the title bar
+	public void noTitle() {
+		requestWindowFeature((int) Window.FEATURE_NO_TITLE);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+	}
 	// This will return the Activity to the Main Screen when the app is in a Paused (not used) state
 	@Override
 	  public void onPause(){

@@ -44,7 +44,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/launcher_apex"
-                        android:textColor="@color/app_font"
+                        android:textColor="@color/text_description"
                         android:textSize="@dimen/dialog_small" />
                 </LinearLayout>
 
@@ -70,7 +70,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/launcher_nova"
-                        android:textColor="@color/app_font"
+                        android:textColor="@color/text_description"
                         android:textSize="@dimen/dialog_small" />
                 </LinearLayout>
 

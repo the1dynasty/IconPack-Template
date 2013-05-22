@@ -23,8 +23,9 @@
 	<color name="divider_page">#ff33b5e5</color>
 	<color name="launcher_divider_bottom">#cc333333</color>
 	<color name="text_description">#FFEEEEEE</color>
+	<color name="text_title">#FF33B5E5</color>
 	<!-- FlatView colors to change -->
-	<color name="app_font">#ffffffff</color>
+	<color name="app_font">#FFFFFFFF</color>
 	<!-- ListView colors to change -->
 	<color name="list_title_color">#FFFFFFFF</color>
 	<color name="list_desc_color">#FFFFFFFF</color>

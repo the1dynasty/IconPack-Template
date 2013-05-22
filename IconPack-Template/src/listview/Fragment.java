@@ -258,47 +258,47 @@ public class Fragment extends SherlockListFragment{
 			switch(position){
 			case 0:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 1:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 2:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 3:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 4:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 5:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 6:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 7:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 8:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 9:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			case 10:
 				text.setTextColor(text.getContext().getResources()
-						.getColor(R.color.text_description));
+						.getColor(R.color.list_desc_color));
 				break;
 			}
 			text.setText(description.get(position));

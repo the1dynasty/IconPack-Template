@@ -17,11 +17,38 @@
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center" >
+    android:gravity="center"
+    android:background="@color/app_bg" >
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_description"
+                android:src="@color/divider" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="@string/launcher_title"
+                android:textColor="@color/text_title"
+                android:textSize="22sp" />
+
+	</RelativeLayout>
             <include
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,7 +69,7 @@
                 android:layout_height="48dp"
 	        	android:layout_centerHorizontal="true"
                 android:text="@string/cancel"
-                android:textColor="@color/white"
+                android:textColor="@color/text_description"
                 android:background="@drawable/cancel_pressed" />
 
             <ImageView

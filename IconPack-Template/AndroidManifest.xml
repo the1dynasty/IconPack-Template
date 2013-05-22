@@ -151,7 +151,7 @@
             </intent-filter>
 		
     <!-- android:authorities NEEDS to be changed manually for each new pack
-    	Failure to change name, and you will encounter installation errors -->    
+    	Failure to change name, will result in installation errors -->    
         <provider 
             android:name="activities.DocksProvider"
             android:authorities="your.icons.name.here.DocksProvider" />

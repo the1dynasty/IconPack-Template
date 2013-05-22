@@ -86,7 +86,7 @@
 	            		android:layout_marginBottom="@dimen/left_right_margin"
 	            		android:text="@string/dev_name"
 	            		android:textSize="@dimen/list_title_text"
-	            		android:textColor="@color/holo_blue" />
+	            		android:textColor="@color/text_title" />
 	        		
 				    <ImageView
 				        android:id="@+id/divider1"
@@ -105,7 +105,7 @@
 	            		android:layout_marginBottom="@dimen/list_padding"
 			            android:text="@string/dev_description"
 			            android:textSize="@dimen/list_desc_text"
-			            android:textColor="@color/white" />
+			            android:textColor="@color/text_description" />
 	        		
 			        <TextView
 	            		android:id="@+id/title2"
@@ -117,7 +117,7 @@
 	            		android:layout_marginBottom="@dimen/left_right_margin"
 	            		android:text="@string/dev_bio_title"
 	            		android:textSize="@dimen/list_title_text"
-	            		android:textColor="@color/holo_blue" />
+	            		android:textColor="@color/text_title" />
 			        
 				    <ImageView
 				        android:id="@+id/divider2"
@@ -136,7 +136,7 @@
 	            		android:layout_marginBottom="@dimen/list_padding"
 			            android:text="@string/dev_bio"
 			            android:textSize="@dimen/list_desc_text"
-			            android:textColor="@color/white" />
+			            android:textColor="@color/text_description" />
 				</LinearLayout>
     
 		</ScrollView>

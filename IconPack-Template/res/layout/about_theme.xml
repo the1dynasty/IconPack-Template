@@ -41,7 +41,7 @@
             android:layout_marginRight="@dimen/left_right_margin"
             android:layout_marginTop="@dimen/list_padding"
             android:text="@string/about_theme"
-            android:textColor="@color/holo_blue"
+            android:textColor="@color/text_title"
             android:textSize="@dimen/list_title_text" />
 
         <ImageView
@@ -60,7 +60,7 @@
             android:layout_marginRight="@dimen/left_right_margin"
             android:layout_marginTop="@dimen/left_right_margin"
             android:text="@string/theme_description_app"
-            android:textColor="@color/white"
+            android:textColor="@color/text_description"
             android:textSize="@dimen/list_desc_text" />
     </LinearLayout>
 
