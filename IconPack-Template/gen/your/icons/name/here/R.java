@@ -714,6 +714,8 @@ containing a value of this type.
         public static final int abs__bright_foreground_holo_light=0x7f090003;
         public static final int abs__bright_foreground_inverse_holo_dark=0x7f090006;
         public static final int abs__bright_foreground_inverse_holo_light=0x7f090007;
+        /**  ABS Imports 
+         */
         public static final int abs__holo_blue_light=0x7f090008;
         public static final int abs__primary_text_disable_only_holo_dark=0x7f09003b;
         public static final int abs__primary_text_disable_only_holo_light=0x7f09003c;
@@ -852,6 +854,7 @@ containing a value of this type.
          */
         public static final int abs__action_button_min_width=0x7f0a0007;
         /**  Dialog title height 
+ Dialog title height 
          */
         public static final int abs__alert_dialog_title_height=0x7f0a0008;
         /**  The maximum width we would prefer dialogs to be.  0 if there is no
@@ -1473,6 +1476,8 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0d005a;
+        /**  Jake Wharton's ABS dialog styles 
+         */
         public static final int DialogWindowTitle_Sherlock=0x7f0d0036;
         public static final int DialogWindowTitle_Sherlock_Light=0x7f0d0037;
         public static final int Sherlock___TextAppearance_Small=0x7f0d004a;

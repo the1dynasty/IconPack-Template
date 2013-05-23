@@ -28,15 +28,6 @@
         android:layout_height="@dimen/header_height"
         android:orientation="vertical" >
 
-            <ImageView
-                android:id="@+id/divider1"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:contentDescription="@string/content_description"
-                android:src="@color/divider" />
-
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
@@ -49,6 +40,16 @@
                 android:textSize="22sp" />
 
 	</RelativeLayout>
+
+            <ImageView
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/content_description"
+                android:src="@color/divider" />
+            
             <include
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -21,5 +21,8 @@
     <dimen name="list_title_text">16sp</dimen>
     <dimen name="list_desc_text">14sp</dimen>
     <dimen name="dialog_width">300dp</dimen>
-    <dimen name="header_height">48dp</dimen>
+    <dimen name="header_height">68dp</dimen>
+    
+    <!-- Dialog title height -->
+    <dimen name="abs__alert_dialog_title_height">64dip</dimen>
 </resources>
