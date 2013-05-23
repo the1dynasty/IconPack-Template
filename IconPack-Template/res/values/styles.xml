@@ -21,5 +21,33 @@
         <item name="android:divider">@drawable/abs__list_divider_holo_dark</item>
         <item name="android:listSelector">@drawable/abs__list_selector_holo_dark</item>
     </style>
+    
+    
+    <!-- Jake Wharton's ABS dialog styles -->
+    <style name="DialogWindowTitle.Sherlock" parent="Widget">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.DialogWindowTitle</item>
+        <item name="android:minHeight">@dimen/abs__alert_dialog_title_height</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+    <style name="DialogWindowTitle.Sherlock.Light" parent="Widget">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Light.DialogWindowTitle</item>
+        <item name="android:minHeight">@dimen/abs__alert_dialog_title_height</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+    
+    <style name="TextAppearance.Sherlock.DialogWindowTitle" parent="Widget">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/abs__holo_blue_light</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Light.DialogWindowTitle" parent="Widget">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/abs__holo_blue_light</item>
+    </style>
 
 </resources>
