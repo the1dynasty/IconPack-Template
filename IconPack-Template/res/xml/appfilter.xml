@@ -1201,20 +1201,20 @@
 	<item component="ComponentInfo{org.cohortor.gstrings/org.cohortor.gstrings.GStrings}" drawable="gstrings"/>
 	<item component="ComponentInfo{org.cohortor.gstrings.tyd/org.cohortor.gstrings.GStrings}" drawable="gstrings"/>
 	<!-- GTalk -->
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SubscriptionScreen}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.AccountSelectionInActivity}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.AddBuddyScreen}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.AddAccountActivity}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.GTalkPreferencesActivity}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.GroupChatInviteeList}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.PublicIntentDispatcher}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.PublicCallIntentDispatcher}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.MessageCallIntentDispatcher}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SignoutActivity}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SigningInActivity}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.GroupChatApproval}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SearchActivity}" drawable="talk"/>
-	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.VideoChat.VideoChatActivity}" drawable="talk"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SubscriptionScreen}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.AccountSelectionInActivity}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.AddBuddyScreen}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.AddAccountActivity}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.GTalkPreferencesActivity}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.GroupChatInviteeList}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.PublicIntentDispatcher}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.PublicCallIntentDispatcher}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.MessageCallIntentDispatcher}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SignoutActivity}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SigningInActivity}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.GroupChatApproval}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SearchActivity}" drawable="googlehangouts"/>
+	<item component="ComponentInfo{com.google.android.talk/com.google.android.talk.VideoChat.VideoChatActivity}" drawable="googlehangouts"/>
 	<!-- GTalk Share -->
 	<item component="ComponentInfo{com.threesixtydev.gtalkshare/com.threesixtydev.gtalkshare.SettingsActivity}" drawable="gtalkshare"/>
 	<!-- GTasks -->
