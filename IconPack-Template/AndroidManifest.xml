@@ -49,13 +49,13 @@
         android:allowBackup="true"
         android:label="@string/app_name" 
         android:icon="@drawable/icon"
-        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        android:theme="@style/Theme.Sherlock.Light" >
         
     <!-- Main Activity that launches when you open the app from the drawer 
     	If you want the Flat Layout, replace android:name line with this
     	android:name="your.icons.name.here.AppActivity" -->
         <activity
-            android:name="listview.Main"
+            android:name="gridview.Main"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -65,11 +65,12 @@
         
     <!-- Various Activities inside the app -->
 		<activity 
-            android:name="activities.AboutTheme"
-            android:label="@string/about_theme">
+            android:name="your.icons.name.here.AboutThemeActivity"
+            android:label="@string/about_theme"
+            android:screenOrientation="portrait" >
         </activity>
         <activity 
-            android:name="activities.AboutDev"
+            android:name="your.icons.name.here.AboutDev"
             android:theme="@style/Theme.Sherlock.Dialog" >
         </activity>   
 		<activity
@@ -80,13 +81,13 @@
     <!-- This is the Activity Dialog that pops up when selecting to apply your Icon Pack
     	Remove android:theme line if you want it to open as its own Activity and NOT a popup -->
 		<activity 
-            android:name="activities.LauncherDialog"
+            android:name="your.icons.name.here.LauncherDialog"
             android:label="@string/launcher_title"
             android:theme="@style/Theme.Sherlock.Dialog" >
         </activity>
         
         <activity  
-            android:name="activities.Wallpaper" 
+            android:name="your.icons.name.here.Wallpaper" 
             android:label="@string/app_name" 
             android:icon="@drawable/icon_wall"
             android:screenOrientation="nosensor" 
@@ -104,7 +105,7 @@
         </activity>
         
         <activity
-            android:name="activities.Docks"
+            android:name="your.icons.name.here.Docks"
             android:label="@string/app_name"
             android:icon="@drawable/icon">
             <intent-filter>
@@ -115,8 +116,9 @@
         </activity> 
         
     <!-- This is the Activity for Applying ADW Themes as well as its Icon Picker --> 
-        <activity android:name="activities.Icons"
-                  android:label="@string/app_name">
+        <activity
+				android:name="your.icons.name.here.Icons"
+                android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="org.adw.launcher.THEMES" />
@@ -153,8 +155,8 @@
     <!-- android:authorities NEEDS to be changed manually for each new pack
     	Failure to change name, will result in installation errors -->    
         <provider 
-            android:name="activities.DocksProvider"
+            android:name="your.icons.name.here.DocksProvider"
             android:authorities="your.icons.name.here.DocksProvider" />
 		
     </application>
-</manifest> 
+</manifest>

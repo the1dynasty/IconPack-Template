@@ -1,4 +1,4 @@
-package listview;
+package gridview;
 
 /** 
  ** Some lines may be off a few numbers
@@ -16,16 +16,18 @@ import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 
+import fragments.MainFragment;
+
 public class Main extends SherlockFragmentActivity {
 
 	// Starts the Activity for the list view
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.listview_main);
+		setContentView(R.layout.gridview_main);
 		
 		getSupportFragmentManager().beginTransaction()
-		.replace(R.id.container, new Fragment())
+		.replace(R.id.container, new MainFragment())
 		.commit();
 	}
 	

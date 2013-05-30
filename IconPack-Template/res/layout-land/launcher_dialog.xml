@@ -17,8 +17,8 @@
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/dialog_width"
-    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/app_bg" >
@@ -30,11 +30,12 @@
 
             <TextView
                 android:id="@+id/textView1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:text="@string/launcher_title"
                 android:textColor="@color/text_title"
                 android:textSize="22sp" />
@@ -50,15 +51,15 @@
                 android:src="@color/divider" />
 
     <ScrollView 
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="horizontal" >
 
 	<LinearLayout 
-	    android:layout_width="@dimen/dialog_width"
+	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
         android:gravity="center"
-	    android:orientation="vertical" >
+	    android:orientation="horizontal" >
             
             <include
                 android:layout_width="wrap_content"
@@ -73,8 +74,7 @@
             <include
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_marginLeft="33dp"
+                android:layout_gravity="top"
                 layout="@layout/dialog_grid3" />
 	</LinearLayout>
 	</ScrollView>

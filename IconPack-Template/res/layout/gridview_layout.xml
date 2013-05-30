@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+** Copyright 2013, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+-->
+<!-- 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" 
+    tools:context="listview.Main">
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/list_height"
+	    android:background="@drawable/card_bg_pressed"
+	    android:orientation="horizontal"
+	    android:padding="@dimen/list_icon"
+	    tools:ignore="UselessParent" >
+    
+    <ImageView
+        android:id="@+id/list_image"
+        android:contentDescription="@string/content_description"
+        android:layout_width="@dimen/listview_icon"
+        android:layout_height="@dimen/listview_icon"
+        android:layout_marginLeft="@dimen/list_icon"
+        android:layout_marginRight="@dimen/list_icon_right"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_email" />
+ 
+	<TextView
+	    android:id="@+id/description"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/title"
+	    android:layout_marginTop="-1dp"
+	    android:layout_marginRight="@dimen/list_padding"
+	    android:layout_toRightOf="@+id/list_image"
+	    android:text="Join our Google+ Community and share your themes or find themes to download!"
+		android:textSize="@dimen/list_desc_text"
+	    android:textColor="@color/list_desc_color" 
+	    tools:ignore="HardcodedText"/>
+
+	<TextView
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/description"
+	    android:layout_alignParentTop="true"
+	    android:text="Community"
+	    android:textColor="@color/list_title_color"
+	    android:textSize="@dimen/list_title_text"
+	    tools:ignore="HardcodedText" />
+
+	<ImageView
+	    android:id="@+id/imageView1"
+        android:contentDescription="@string/content_description"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/card_bg_pressed_top" />
+
+	</RelativeLayout>
+	
+</RelativeLayout>
+-->
+
+
+<!-- ************************************************************************************************************ -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" 
+    tools:context="gridview.Main">
+    
+    <!-- Change line 31 "@drawable/card_bg_pressed_inverted" -->
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/row_height"
+	    android:background="@drawable/card_bg_pressed"
+	    android:orientation="vertical"
+	    android:padding="@dimen/list_icon"
+	    tools:ignore="UselessParent" >
+    
+    <!-- Icon image layout - DO NOT EDIT -
+    	 Change images in the MainAdapter.java file if you want to edit these lines -->
+ 
+    <!-- Description for each view - DO NOT EDIT -
+     	 Change the lines in the Fragment.java file if you want to edit these lines -->
+
+	
+    <!-- Title for each view - DO NOT EDIT -
+     	 Change the lines in the MainAdapter.java file if you want to edit these lines -->
+
+
+	<ImageView
+	    android:id="@+id/list_image"
+	    android:layout_width="@dimen/gridview_icon"
+	    android:layout_height="@dimen/gridview_icon"
+	    android:scaleType="fitCenter"
+	    android:padding="@dimen/list_icon"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:contentDescription="@string/content_description"
+	    android:src="@drawable/icon_email" />
+
+	<TextView
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="@dimen/list_padding"
+	    android:layout_marginLeft="@dimen/list_padding"
+	    android:layout_below="@+id/list_image"
+	    android:text="Community"
+	    android:textColor="@color/list_title_color"
+	    android:textSize="@dimen/grid_title_text"
+	    tools:ignore="HardcodedText" />
+
+	<!-- This is the pressed animation/highlight you see when you press a list item -->
+	<ImageView
+	    android:id="@+id/imageView1"
+        android:contentDescription="@string/content_description"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/row_height"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/card_bg_pressed_top" />
+
+	<TextView
+	    android:id="@+id/description"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/title"
+	    android:layout_below="@+id/title"
+	    android:text="Join our Google+ Community and share your themes or find themes to download!"
+	    android:textColor="@color/list_desc_color"
+	    android:textSize="@dimen/grid_desc_text"
+	    tools:ignore="HardcodedText" />
+
+	</RelativeLayout>
+	
+</RelativeLayout>

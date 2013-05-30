@@ -1,4 +1,4 @@
-package activities;
+package your.icons.name.here;
 
 import your.icons.name.here.R;
 import android.os.Bundle;

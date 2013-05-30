@@ -60,6 +60,8 @@
   	<string name="launcher_nova">Nova</string>
   	<string name="launcher_holo">Holo</string>
   	<string name="launcher_adw">ADW</string>
+  	<string name="launcher_empty"></string>
+  	<string name="launcher_al">Action</string>
   	<string name="launcher_title">Choose Your Launcher</string>
   	<string name="cancel">Cancel</string>
 </resources>

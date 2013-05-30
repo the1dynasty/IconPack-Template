@@ -2,8 +2,8 @@
 <resources>
     <!-- Skin colors -->
     <color name="homescreen_icon_text_color">#FFFFFFFF</color>
-    <color name="outline_color">#FF33B5E5</color>
-    <color name="folder_title_color">#FF33B5E5</color>
+    <color name="outline_color">#FFFFFFFF</color>
+    <color name="folder_title_color">#FFFFFFFF</color>
     <color name="folder_item_text_color">#FFFFFFFF</color>
     <color name="shadow_large_color">#DD000000</color>
     <color name="shadow_small_color">#CC000000</color>
@@ -14,25 +14,28 @@
     <color name="bubble_text_color">#FFFFFFFF</color>
     <color name="bubble_ring_color">#FFFFFFFF</color>
     <color name="bubble_shadow_color">#FF000000</color>
-    <color name="bubble_background_color">#FFAA0000</color>
-    <color name="bubble_shader_color">#FFFF6F60</color>
+    <color name="bubble_background_color">#FF000000</color>
+    <color name="bubble_shader_color">#FF000000</color>
     
     <!-- App colors -->
 	<color name="about_title_color">#ff33b5e5</color>
 	<color name="divider">#FF33b5e5</color>
 	<color name="divider_page">#ff33b5e5</color>
 	<color name="launcher_divider_bottom">#cc333333</color>
-	<color name="text_description">#FFEEEEEE</color>
+	<color name="text_description">#FF333333</color>
 	<color name="text_title">#FF33B5E5</color>
 	<!-- FlatView colors to change -->
-	<color name="app_font">#FFFFFFFF</color>
+	<color name="app_font">#FF000000</color>
 	<!-- ListView colors to change -->
-	<color name="list_title_color">#FFFFFFFF</color>
-	<color name="list_desc_color">#FFFFFFFF</color>
+	<color name="list_title_color">#FF000000</color>
+	<color name="list_desc_color">#FF333333</color>
     <!-- NOTE: Stock app_bg color for the 'light' look is #FFE5E5E5 -->
     <!-- These colors are changed no matter which view you choose -->
-	<color name="app_bg">#ff000000</color>
-	<color name="wall_bg">#ff000000</color>
+	<color name="app_bg">#FFE5E5E5</color>
+	<color name="wall_bg">#FFE5E5E5</color>
+	<!-- Tablet Layout -->
+	<color name="tab_title">#FFFFFFFF</color>
+	<color name="tab_desc">#FFFFFFFF</color>
 	
 	<!-- Misc colors -->
 	<color name="black">#ff000000</color>

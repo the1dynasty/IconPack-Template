@@ -1,4 +1,4 @@
-package activities;
+package your.icons.name.here;
 
 
 import java.util.ArrayList;

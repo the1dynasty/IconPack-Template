@@ -14,10 +14,12 @@ are great bases to start from.
 
 Step 1:
 Download ActionBarSherlock (will be referred to as ABS from now on) if you haven't already done so yet 
-https://github.com/JakeWharton/ActionBarSherlock
+https://github.com/JakeWharton/ActionBarSherlock 
+Also download NineOldAndroids https://github.com/JakeWharton/NineOldAndroids
 
 Step 2:
-Import this project and ABS. Then add ABS Library to Icon Pack Template as its dependent library.
+Import this project, ABS, and NineOldAndroids. Then add ABS and NineOldAndroids to Icon Pack Template as its 
+dependent library.
 
 Step 3:
 Open AndroidManifest.xml and change line 22. Then read the comment starting on line 54. You can experiment with those 

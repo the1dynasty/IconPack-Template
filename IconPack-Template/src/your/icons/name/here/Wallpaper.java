@@ -1,4 +1,4 @@
-package activities;
+package your.icons.name.here;
 
 /**
  ** This is essentially a gallery view with custom animations

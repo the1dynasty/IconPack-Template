@@ -1,9 +1,10 @@
-package activities;
+package your.icons.name.here;
 
 import your.icons.name.here.R;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -123,6 +124,24 @@ public class LauncherDialog extends Activity {
 	    	finish();
 	      
 	    }
+	  });
+	  
+	  ImageButton actionL = (ImageButton) this.findViewById(R.id.btn_al);
+	  actionL.setOnClickListener(new View.OnClickListener() {
+	     @Override
+	      public void onClick(View v) {
+	          // Check Action Launcher Pro is installed
+	          Intent al = getPackageManager().getLaunchIntentForPackage("com.chrislacy.actionlauncher.pro");
+	          if (al != null) {
+	              Intent yourPackageName = al;
+	              al.putExtra("apply_icon_pack", yourPackageName);
+	              startActivity(al);
+	          } else {
+	              // Directs users to get Action Launcher Pro if not installed
+	              String playStoreUrl = "https://play.google.com/store/apps/details?id=com.chrislacy.actionlauncher.pro";
+	              startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(playStoreUrl)));
+	          }
+	      }
 	  });
 	  
 	  // Bottom cancel button of the dialog

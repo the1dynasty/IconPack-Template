@@ -1,6 +1,5 @@
 package your.icons.name.here;
 
-import your.icons.name.here.R;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;

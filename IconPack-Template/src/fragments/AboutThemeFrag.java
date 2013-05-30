@@ -1,20 +1,21 @@
-package activities;
+package fragments;
 
+import your.icons.name.here.AboutThemeMain;
 import your.icons.name.here.R;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ViewFlipper;
 
-import com.actionbarsherlock.app.SherlockActivity;
-
-public class AboutTheme extends SherlockActivity {
+public class AboutThemeFrag extends AboutThemeMain {
 	
 	
 	private ImageButton previous, next;
@@ -26,32 +27,36 @@ public class AboutTheme extends SherlockActivity {
 	   Animation animDownLeft;
 	   Animation animDownRight;
 	
+	   @Override
+	   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+		   return inflater.inflate(R.layout.theme_fragment, container, false);
+	   }
+	   
 	@Override
-	  public void onCreate(Bundle savedInstanceState) {
-	  super.onCreate(savedInstanceState);
-	  setContentView(R.layout.about_theme);
+	  public void onStart() {
+	  super.onStart();
+	
 	  
-	  
-      previous = (ImageButton) findViewById(R.id.previous);
+      previous = (ImageButton) getView().findViewById(R.id.previous);
       previous.setOnClickListener(new OnClickListener() {
               public void onClick(View v) {
             	  SwipeLeft();
               }	
       });
       
-      next = (ImageButton) findViewById(R.id.next);
+      next = (ImageButton) getView().findViewById(R.id.next);
       next.setOnClickListener(new OnClickListener() {
               public void onClick(View v) {
             	  SwipeRight();
               }	
       });
       
-      page = (ViewFlipper)findViewById(R.id.nowanim);
+      page = (ViewFlipper)getView().findViewById(R.id.nowanim);
 
-      animUpLeft = AnimationUtils.loadAnimation(this, R.anim.up_left);
-      animUpRight = AnimationUtils.loadAnimation(this, R.anim.up_right);
-      animDownLeft = AnimationUtils.loadAnimation(this, R.anim.out_left);
-      animDownRight = AnimationUtils.loadAnimation(this, R.anim.out_right);
+      animUpLeft = AnimationUtils.loadAnimation(getActivity(), R.anim.up_left);
+      animUpRight = AnimationUtils.loadAnimation(getActivity(), R.anim.up_right);
+      animDownLeft = AnimationUtils.loadAnimation(getActivity(), R.anim.out_left);
+      animDownRight = AnimationUtils.loadAnimation(getActivity(), R.anim.out_right);
      
   }
 		
@@ -67,7 +72,6 @@ public class AboutTheme extends SherlockActivity {
 			page.showNext();
   }
  
-		@Override
 		public boolean onTouchEvent(MotionEvent event) {
 			return gestureDetector.onTouchEvent(event);
 }
@@ -97,6 +101,6 @@ public class AboutTheme extends SherlockActivity {
 		@Override
 		  public void onPause(){
 			  super.onPause();
-			  finish();
+			  //finish();
 		  }
 }
