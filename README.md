@@ -20,6 +20,8 @@ Also download NineOldAndroids https://github.com/JakeWharton/NineOldAndroids
 Step 2:
 Import this project, ABS, and NineOldAndroids. Then add ABS and NineOldAndroids to Icon Pack Template as its 
 dependent library.
+(Importing on Eclipse - Right click on the template folder and select Properties>Android>Select 4.2.2>Under that,
+remove any bad imports and add ABS and NOA>Apply>OK)
 
 Step 3:
 Open AndroidManifest.xml and change line 22. Then read the comment starting on line 54. You can experiment with those 
