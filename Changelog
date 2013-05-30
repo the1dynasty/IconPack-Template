@@ -1,4 +1,5 @@
 v1.1.0
+File restructuring
 Added Tablet Support
 Changed code from ListView to GridView
 Holo Light/Light ActionBar is the default instead of Holo Light/Dark ActionBar
