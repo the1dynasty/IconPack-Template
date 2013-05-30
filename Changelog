@@ -1,0 +1,13 @@
+v1.1.0
+Added Tablet Support
+Changed code from ListView to GridView
+Holo Light/Light ActionBar is the default instead of Holo Light/Dark ActionBar
+Misc new images
+
+v1.0.1
+Fixed ADW and Nova intents
+Fixed a lot of references for various layouts and colors
+Other Misc things
+
+v1.0.0
+Initial release
