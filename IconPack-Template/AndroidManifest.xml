@@ -117,7 +117,7 @@
         
     <!-- This is the Activity for Applying ADW Themes as well as its Icon Picker --> 
         <activity
-				android:name="your.icons.name.here.Icons"
+		android:name="your.icons.name.here.Icons"
                 android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -127,8 +127,7 @@
             <intent-filter>
                 <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>              
-        </activity>
+            </intent-filter>  
     
     <!-- These Activities are for the various launchers to use the Icons -->
    	<!-- ADW / Nova / Holo -->
@@ -152,6 +151,7 @@
                 <category android:name="com.teslacoilsw.launcher.THEME" />
             </intent-filter>
 		
+	</activity>
     <!-- android:authorities NEEDS to be changed manually for each new pack
     	Failure to change name, will result in installation errors -->    
         <provider 
