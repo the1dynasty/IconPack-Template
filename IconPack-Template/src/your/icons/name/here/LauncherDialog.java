@@ -1,6 +1,5 @@
 package your.icons.name.here;
 
-import your.icons.name.here.R;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -31,7 +30,7 @@ public class LauncherDialog extends Activity {
 
 	  /* Button press for applying Apex theme
 	   * This checks if Apex is installed, if it is, it opens for you to apply theme
-	   * if NOT installed, it shows a not installed warning message 
+	   * if NOT installed, it directs the user to the Play Store to download it 
 	   */
 	  ImageButton apex = (ImageButton)this.findViewById(R.id.btn_apex);
 	  apex.setOnClickListener(new OnClickListener() {
@@ -50,17 +49,24 @@ public class LauncherDialog extends Activity {
 	    	    		"Apply to finalize!", 
 	    	    		Toast.LENGTH_LONG);
 	    	    applied.show();
-	    	} 
-	    	catch (ActivityNotFoundException e) {
-	    	    Toast toast = Toast.makeText(getBaseContext(), "Apex Launcher is not installed! " +
-	    	    		" Please install to use this theme with this launcher.", 
-	    	    		Toast.LENGTH_SHORT);
-	    	    toast.show();
 	    	}
+  	    	catch (ActivityNotFoundException e) {	              
+	              Intent apexMarket = new Intent(Intent.ACTION_VIEW);
+	              apexMarket.setData(Uri.parse("market://details?id=com.anddoes.launcher"));
+	              startActivity(apexMarket);
+		    	    Toast failed = Toast.makeText(getBaseContext(), "Apex Launcher is not installed on your " +
+		    	    		"device. Please download from the Play Store!", 
+		    	    		Toast.LENGTH_SHORT);
+		    	    failed.show();
+	    		}
 	    	finish();
 	    }
 	  });
 
+	  /* Button press for applying Nova theme
+	   * This checks if Nova is installed, if it is, it opens for you to apply theme
+	   * if NOT installed, it directs the user to the Play Store to download it 
+	   */
 	  ImageButton nova = (ImageButton)this.findViewById(R.id.btn_nova);
 	  nova.setOnClickListener(new OnClickListener() {
 		    @Override
@@ -71,17 +77,18 @@ public class LauncherDialog extends Activity {
               intent.putExtra(EXTRA_ICON_THEME_PACKAGE, "your.icons.name.here");
               try {
               startActivity(intent);
-              }
-              catch (ActivityNotFoundException e) {
-		    	// Temporary toast message until its fixed
-	    	    Toast failed = Toast.makeText(getBaseContext(), "Nova Launcher is not installed on your " +
-	    	    		"device please download from the Play Store", 
-	    	    		Toast.LENGTH_LONG);
-	    	    failed.show();
-              }
+              } 
+  	    	catch (ActivityNotFoundException e) {	              
+	              Intent novaMarket = new Intent(Intent.ACTION_VIEW);
+	              novaMarket.setData(Uri.parse("market://details?id=com.teslacoilsw.launcher"));
+	              startActivity(novaMarket);
+		    	    Toast failed = Toast.makeText(getBaseContext(), "Nova Launcher is not installed on your " +
+		    	    		"device. Please download from the Play Store!", 
+		    	    		Toast.LENGTH_SHORT);
+		    	    failed.show();
+  	    		}
 	    	    finish();
 		    }
-
 	    });
 	  
 	  // Holo Apply button, not currently working
@@ -92,7 +99,7 @@ public class LauncherDialog extends Activity {
 	  holo.setOnClickListener(new OnClickListener() {
 	    @Override
 	    public void onClick(View v) {
-
+	    	// Temporary Toast message because I don't have the intent to apply the launcher
     	    Toast failed = Toast.makeText(getBaseContext(), "Currently Not Supported... " +
     	    		" Please Apply through Holo Settings.", 
     	    		Toast.LENGTH_LONG);
@@ -103,7 +110,7 @@ public class LauncherDialog extends Activity {
 
 	  /* Button press for applying ADW theme
 	   * This checks if ADW is installed, if it is, it opens for you to apply theme
-	   * if NOT installed, it shows a not installed warning message 
+	   * if NOT installed, it directs the user to the Play Store to download it 
 	   */
 	  ImageButton adw = (ImageButton)this.findViewById(R.id.btn_adw);
 	  adw.setOnClickListener(new OnClickListener() {
@@ -113,19 +120,26 @@ public class LauncherDialog extends Activity {
 	        adw.putExtra("org.adw.launcher.theme.NAME","your.icons.name.here");
 	    	try {
 	    		 startActivity(Intent.createChooser(adw,"activating theme..."));
-	    		 Toast.makeText(getApplicationContext(),"Press apply theme to finalize!",Toast.LENGTH_LONG).show();{
+	    		 {
 	    		}
 	    	} 
-	    	catch (ActivityNotFoundException e) {
-	    	    Toast toast = Toast.makeText(getBaseContext(), "ADW Launcher is not installed!", 
-	    	    		Toast.LENGTH_SHORT);
-	    	    toast.show();
+	    	finally {	              
+	              Intent adwMarket = new Intent(Intent.ACTION_VIEW);
+	              adwMarket.setData(Uri.parse("market://details?id=org.adw.launcher"));
+	              startActivity(adwMarket);
+		    	    Toast failed = Toast.makeText(getBaseContext(), "ADW Launcher is not installed on your " +
+		    	    		"device. Please download from the Play Store!", 
+		    	    		Toast.LENGTH_SHORT);
+		    	    failed.show();
 	    	}
 	    	finish();
-	      
 	    }
 	  });
-	  
+
+	  /* Button press for applying Action Launcher theme
+	   * This checks if Action Launcher is installed, if it is, it opens for you to apply theme
+	   * if NOT installed, it directs the user to the Play Store to download it 
+	   */
 	  ImageButton actionL = (ImageButton) this.findViewById(R.id.btn_al);
 	  actionL.setOnClickListener(new View.OnClickListener() {
 	     @Override
