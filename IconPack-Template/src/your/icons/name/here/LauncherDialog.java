@@ -133,14 +133,14 @@ public class LauncherDialog extends Activity {
 	          // Check Action Launcher Pro is installed
 	          Intent al = getPackageManager().getLaunchIntentForPackage("com.chrislacy.actionlauncher.pro");
 	          if (al != null) {
-	              Intent yourPackageName = al;
-	              al.putExtra("apply_icon_pack", yourPackageName);
-	              startActivity(al);
-	          } else {
-	              // Directs users to get Action Launcher Pro if not installed
-	              String playStoreUrl = "https://play.google.com/store/apps/details?id=com.chrislacy.actionlauncher.pro";
-	              startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(playStoreUrl)));
-	          }
+	              
+	              String packageName = "your.icons.name.here";
+	              al.putExtra("apply_icon_pack",packageName);
+	              startActivity(al); } 
+	          else {	              
+	              Intent alMarket = new Intent(Intent.ACTION_VIEW);
+	              alMarket.setData(Uri.parse("market://details?id=com.chrislacy.actionlauncher.pro"));
+	              startActivity(alMarket); }
 	      }
 	  });
 	  
