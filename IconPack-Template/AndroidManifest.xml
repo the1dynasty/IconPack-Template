@@ -21,9 +21,9 @@
       	package="your.icons.name.here"
       	android:versionCode="101"
       	android:versionName="1.0.1"
-      	android:installLocation="internalOnly">
-    <!-- android:installLocation is set to "internalOnly" 
-    change to "auto" if you want the phone to decide where it gets installed to -->
+      	android:installLocation="auto">
+    <!-- android:installLocation is set to "auto" 
+    change to "internalOnly" if you want it installed to the internal memory -->
     
     <!-- Permission required for setting the wallpaper -->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
