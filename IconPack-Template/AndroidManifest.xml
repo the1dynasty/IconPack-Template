@@ -72,11 +72,7 @@
         <activity 
             android:name="your.icons.name.here.AboutDev"
             android:theme="@style/Theme.Sherlock.Dialog" >
-        </activity>   
-		<activity
-            android:name="activities.MainActivity"
-            android:label="@string/app_name" >
-        </activity>
+        </activity>  
          
     <!-- This is the Activity Dialog that pops up when selecting to apply your Icon Pack
     	Remove android:theme line if you want it to open as its own Activity and NOT a popup -->
