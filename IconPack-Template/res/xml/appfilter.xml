@@ -1,3 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <iconback img="iconback"/>
+    <iconupon img="iconupon"/>
+    <iconmask img="iconmask"/>
+ 
+    <scale factor=".75" />
+
 <!-- 0123456789 -->
 
 
@@ -3174,4 +3183,5 @@
 	<!-- Zooper -->
 	<item component="ComponentInfo{org.zooper.zwfree/org.zooper.zwlib.Launcher}" drawable="zooper" />
 	<item component="ComponentInfo{org.zooper.zwpro/org.zooper.zwlib.Launcher}" drawable="zooper"/>
+
 </resources>
