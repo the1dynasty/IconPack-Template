@@ -3,6 +3,7 @@
 	<version>
 		1
 	</version>
+	  <category title="Category1" />
 		<item drawable="acar"/>
 		<item drawable="accuweather"/>
 		<item drawable="activate"/>
@@ -384,6 +385,7 @@
 		<item drawable="glympse"/>
 		<item drawable="gmail"/>
 		<item drawable="gmail2"/>
+	<category title="Category1" />
 		<item drawable="gnomevillage"/>
 		<item drawable="goaldotcom"/>
 		<item drawable="gobackup"/>

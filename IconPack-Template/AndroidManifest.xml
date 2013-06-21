@@ -21,9 +21,9 @@
       	package="your.icons.name.here"
       	android:versionCode="101"
       	android:versionName="1.0.1"
-      	android:installLocation="internalOnly">
-    <!-- android:installLocation is set to "internalOnly" 
-    change to "auto" if you want the phone to decide where it gets installed to -->
+      	android:installLocation="auto">
+    <!-- android:installLocation is set to "auto" 
+    change to "internalOnly" if you want it installed to the internal memory -->
     
     <!-- Permission required for setting the wallpaper -->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
@@ -72,11 +72,7 @@
         <activity 
             android:name="your.icons.name.here.AboutDev"
             android:theme="@style/Theme.Sherlock.Dialog" >
-        </activity>   
-		<activity
-            android:name="activities.MainActivity"
-            android:label="@string/app_name" >
-        </activity>
+        </activity>  
          
     <!-- This is the Activity Dialog that pops up when selecting to apply your Icon Pack
     	Remove android:theme line if you want it to open as its own Activity and NOT a popup -->
