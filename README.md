@@ -37,7 +37,7 @@ Now the fun begins :D
 
 Step 5:
 Depending on how you set up your base determined in Step 3 referencing line 54 of your AndroidManifest.xml, will 
-determine what you edit next. If you left it alone, then navigate to the src>listview package and open up both 
+determine what you edit next. If you left it alone, then navigate to the src>gridview package and open up both 
 Fragment.java and Main.java. If you changed that line in the AndroidManifest.xml to 
 android:name="your.icons.name.here.AppActivity" then navigate to the your.icons.name.here package and open 
 AppActivity.java. In either case, all of the files have been commented thoroughly enough for you to understand 
