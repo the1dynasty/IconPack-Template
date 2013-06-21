@@ -1,7 +1,7 @@
 <!-- 0123456789 -->
 
 
-    <!-- 14px -->
+	<!-- 14px -->
 	<item component="ComponentInfo{com.drummerGames.px14/com.ansca.corona.CoronaActivity}" drawable="fourteen" />
 	<item component="ComponentInfo{com.drummerGames.px14/com.zong.android.engine.web.ZongWebView}" drawable="fourteen" />
 
@@ -73,7 +73,7 @@
 
 	<!-- Advanced Task Killer -->
 	<item component="ComponentInfo{com.rechild.advancedtaskkiller/com.rechild.advancedtaskkiller.AdvancedTaskKiller}" drawable="atk" />
-    <item component="ComponentInfo{com.rechild.advancedtaskkillerpro/com.rechild.advancedtaskkillerpro.AdvancedTaskKiller}" drawable="atk" />
+	<item component="ComponentInfo{com.rechild.advancedtaskkillerpro/com.rechild.advancedtaskkillerpro.AdvancedTaskKiller}" drawable="atk" />
 
 	<!-- ADW Launcher -->
 	<item component="ComponentInfo{org.adw.launcher/org.adw.launcherlib.Launcher}" drawable="adw"/>
@@ -1604,7 +1604,7 @@
 
 	<!-- Lustre Apex Theme -->
 	<item component="ComponentInfo{kov.theme.lustre/kov.theme.lustre.splashactivity}" drawable="lustre" />
-    <item component="ComponentInfo{kov.theme.lustre/kov.theme.lustre.IconActivity}" drawable="lustre" />
+	<item component="ComponentInfo{kov.theme.lustre/kov.theme.lustre.IconActivity}" drawable="lustre" />
 
 <!-- M -->
 
@@ -1822,7 +1822,7 @@
 
 	<!-- Myspace -->
 	<item component="ComponentInfo{com.myspace.android/com.myspace.android.activity.StreamsActivity}" drawable="myspace" />
-    <item component="ComponentInfo{com.myspace.android/com.myspace.android.MySpace}" drawable="myspace" />
+	<item component="ComponentInfo{com.myspace.android/com.myspace.android.MySpace}" drawable="myspace" />
 
 	<!-- My Tracks -->
 	<item component="ComponentInfo{com.google.android.maps.mytracks/com.google.android.apps.mytracks.TrackListActivity}" drawable="mytracks"/>
@@ -1845,7 +1845,7 @@
 
 	<!-- Netflix -->
 	<item component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.UIWebViewActivity}" drawable="netflix" />
-    <item component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.UIWebViewTabletActivity}" drawable="netflix" />
+	<item component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.UIWebViewTabletActivity}" drawable="netflix" />
 
 	<!-- News and Weather -->
 	<item component="ComponentInfo{com.google.android.apps.genie.geniewidget/com.google.android.apps.genie.geniewidget.activities.NewsActivity}" drawable="newsandweather"/>
@@ -1919,7 +1919,7 @@
 	<!-- Nova Notifier -->
 
 	<!-- NS Tools -->
-    <item component="ComponentInfo{mobi.cyann.nstools/mobi.cyann.nstools.MainActivity}" drawable="nstools"/> 
+	<item component="ComponentInfo{mobi.cyann.nstools/mobi.cyann.nstools.MainActivity}" drawable="nstools"/> 
 
 	<!-- NY Jets -->
 	<item component="ComponentInfo{com.yinzcam.nfl.jets/com.yinzcam.nfl.mobile.home.HomeActivity}" drawable="nyjets"/>
@@ -1971,8 +1971,8 @@
 
 	<!-- Paypal -->
 	<item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.GridLauncherActivity}" drawable="paypal" />
-    <item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.HubActivity}" drawable="paypal" />
-    <item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.IntroActivity}" drawable="paypal" />
+	<item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.HubActivity}" drawable="paypal" />
+	<item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.IntroActivity}" drawable="paypal" />
 	<item component="ComponentInfo{com.wPaypalMobile/com.wPaypalMobile.MainNavigationActivity}" drawable="paypal" />
 
 	<!-- Pedometer-->
@@ -2196,7 +2196,7 @@
 
 	<!-- Radarnow -->
 	<item component="ComponentInfo{com.usnaviguide.radar_now/com.usnaviguide.radar_now.StartActivity}" drawable="radarnow" />
-    <item component="ComponentInfo{com.usnaviguide.radar_now/com.usnaviguide.radarnow.activities.StartupActivity}" drawable="radarnow" />
+	<item component="ComponentInfo{com.usnaviguide.radar_now/com.usnaviguide.radarnow.activities.StartupActivity}" drawable="radarnow" />
 
 	<!-- Radiant Defense -->
 	<item component="ComponentInfo{net.hexage.defense/net.hexage.defense.MainActivity}" drawable="radiantdefense"/>
@@ -2217,7 +2217,7 @@
 
 	<!-- Real Racing 2 -->
 	<item component="ComponentInfo{com.gamevil.zenonia4.global/com.gamevil.zenonia4.global.DRMLicensing}" drawable="realracing2" />
-    <item component="ComponentInfo{com.ea.game.realracing2_row/com.ea.game.realracing2_row.RealRacing2Activity}" drawable="realracing2" />
+	<item component="ComponentInfo{com.ea.game.realracing2_row/com.ea.game.realracing2_row.RealRacing2Activity}" drawable="realracing2" />
 
 	<!-- Recent Apps -->
 	<item component="ComponentInfo{factory.widgets.recentapps/factory.widgets.recentapps.RecentApps}" drawable="recent"/>
@@ -2273,7 +2273,7 @@
 
 	<!-- Rom Toolbox -->
 	<item component="ComponentInfo{com.jrummy.liberty.toolbox/com.jrummy.apps.rom.toolbox.RomToolboxActivity}" drawable="romtoolbox" />
-    <item component="ComponentInfo{com.jrummy.liberty.toolboxpro/com.jrummy.apps.rom.toolbox.RomToolboxActivity}" drawable="romtoolbox" />
+	<item component="ComponentInfo{com.jrummy.liberty.toolboxpro/com.jrummy.apps.rom.toolbox.RomToolboxActivity}" drawable="romtoolbox" />
 	<item component="ComponentInfo{com.jrummy.liberty.toolboxpro/com.jrummy.liberty.toolboxpro.launcher.activities.StartRootBrowser}" drawable="romtoolboxbrowser"/>
 
 	<!-- Root Browser -->
@@ -2625,7 +2625,7 @@
 
 	<!-- Tango -->
 	<item component="ComponentInfo{com.sgiggle.production/com.sgiggle.production.AppInitActivity}" drawable="tango" />
-    <item component="ComponentInfo{com.sgiggle.production/com.sgiggle.production.Startup}" drawable="tango" />
+	<item component="ComponentInfo{com.sgiggle.production/com.sgiggle.production.Startup}" drawable="tango" />
 
 	<!-- Tapatalk -->
 	<item component="ComponentInfo{com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.EntryActivity}" drawable="tapatalk"/>
@@ -2956,7 +2956,7 @@
 
 	<!-- Wallpaper Wizardrii -->
 	<item component="ComponentInfo{com.twistedapps.wallpaperwizardrii/com.twistedapps.wallpaperwizardrii.ImageViewerActivity}" drawable="wizardrii" />
-    <item component="ComponentInfo{com.twistedapps.wallpaperwizardriipro/com.twistedapps.wallpaperwizardriipro.ImageViewerActivity}" drawable="wizardrii" />
+	<item component="ComponentInfo{com.twistedapps.wallpaperwizardriipro/com.twistedapps.wallpaperwizardriipro.ImageViewerActivity}" drawable="wizardrii" />
 
 	<!-- WCYB -->
 	<item component="ComponentInfo{com.mylocaltv.wcyb/com.mylocaltv.android.activities.NowApp}" drawable="wcyb" />
@@ -3039,7 +3039,7 @@
 
 	<!-- Wordpress -->
 	<item component="ComponentInfo{org.wordpress.android/org.wordpress.android.Dashboard}" drawable="wordpress" />
-    <item component="ComponentInfo{org.wordpress.android/org.wordpress.android.splashScreen}" drawable="wordpress" />
+	<item component="ComponentInfo{org.wordpress.android/org.wordpress.android.splashScreen}" drawable="wordpress" />
 
 	<!-- Words With Friends -->
 	<item component="ComponentInfo{com.zynga.words/com.zynga.words.ui.launch.WordsMainActivity}" drawable="wordswithfriends" />
@@ -3149,11 +3149,11 @@
 
 	<!-- Zenonia -->
 	<item component="ComponentInfo{com.gamevil.zenoniafree/com.gamevil.zenoniafree.ZenoniaLouncher}" drawable="zenonia" />
-    <item component="ComponentInfo{com.gamevil.zenonia/com.gamevil.zenonia.ZenoniaLouncher}" drawable="zenonia" />
-    <item component="ComponentInfo{com.gamevil.zenonia2/com.gamevil.zenonia2.Zenonia2Launcher}" drawable="zenonia2" />
-    <item component="ComponentInfo{com.gamevil.zenonia2free/com.gamevil.zenonia2free.Zenonia2Launcher}" drawable="zenonia2" />
-    <item component="ComponentInfo{com.gamevil.zenonia3.global/com.gamevil.zenonia3.global.Zenonia3Launcher}" drawable="zenonia3" />
-    <item component="ComponentInfo{com.gamevil.zenonia4.global/com.gamevil.zenonia4.global.DRMLicensing}" drawable="zenonia4" />
+	<item component="ComponentInfo{com.gamevil.zenonia/com.gamevil.zenonia.ZenoniaLouncher}" drawable="zenonia" />
+	<item component="ComponentInfo{com.gamevil.zenonia2/com.gamevil.zenonia2.Zenonia2Launcher}" drawable="zenonia2" />
+	<item component="ComponentInfo{com.gamevil.zenonia2free/com.gamevil.zenonia2free.Zenonia2Launcher}" drawable="zenonia2" />
+	<item component="ComponentInfo{com.gamevil.zenonia3.global/com.gamevil.zenonia3.global.Zenonia3Launcher}" drawable="zenonia3" />
+	<item component="ComponentInfo{com.gamevil.zenonia4.global/com.gamevil.zenonia4.global.DRMLicensing}" drawable="zenonia4" />
 	<item component="ComponentInfo{com.gamevil.zenonia5.global/com.gamevil.zenonia5.global.DRMLicensing}" drawable="zenonia5"/>
 
 	<!-- Zinio -->
