@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
 <!-- 0123456789 -->
   <!-- 14px -->
 	<item component="ComponentInfo{com.drummerGames.px14/com.ansca.corona.CoronaActivity}" drawable="fourteen" />
