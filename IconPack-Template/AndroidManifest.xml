@@ -19,8 +19,8 @@
 <manifest 
 		xmlns:android="http://schemas.android.com/apk/res/android"
       	package="your.icons.name.here"
-      	android:versionCode="101"
-      	android:versionName="1.0.1"
+      	android:versionCode="200"
+      	android:versionName="2.0.0"
       	android:installLocation="auto">
     <!-- android:installLocation is set to "auto" 
     change to "internalOnly" if you want it installed to the internal memory -->
@@ -71,22 +71,25 @@
         </activity>
         <activity 
             android:name="your.icons.name.here.AboutDev"
-            android:theme="@style/Theme.Sherlock.Dialog" >
-        </activity>  
+            android:theme="@style/Theme.Sherlock.Light.Dialog" >
+        </activity>   
+		<activity
+            android:name="activities.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
          
     <!-- This is the Activity Dialog that pops up when selecting to apply your Icon Pack
     	Remove android:theme line if you want it to open as its own Activity and NOT a popup -->
 		<activity 
-            android:name="your.icons.name.here.LauncherDialog"
+            android:name="gridview.LauncherMain"
             android:label="@string/launcher_title"
-            android:theme="@style/Theme.Sherlock.Dialog" >
+            android:theme="@style/Theme.Sherlock.Light.Dialog" >
         </activity>
         
         <activity  
             android:name="your.icons.name.here.Wallpaper" 
             android:label="@string/app_name" 
-            android:icon="@drawable/icon_wall"
-            android:screenOrientation="nosensor" 
+            android:icon="@drawable/icon_wall" 
             android:finishOnCloseSystemDialogs="true">
             <intent-filter>
                 <!-- 
@@ -113,7 +116,7 @@
         
     <!-- This is the Activity for Applying ADW Themes as well as its Icon Picker --> 
         <activity
-		android:name="your.icons.name.here.Icons"
+				android:name="your.icons.name.here.Icons"
                 android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -123,9 +126,10 @@
             <intent-filter>
                 <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>  
+            </intent-filter>              
+        </activity>
     
-    <!-- These Activities are for the various launchers to use the Icons -->
+    <!-- These Intents are for the various launchers to use the Icons -->
    	<!-- ADW / Nova / Holo -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -146,13 +150,20 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.teslacoilsw.launcher.THEME" />
             </intent-filter>
-		
-	</activity>
+	<!-- GoLauncher -->
+            <intent-filter>
+                <action android:name="com.gau.go.launcherex.theme" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+          	<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+     			<category android:name="android.intent.category.INFO" />	
+			</intent-filter>
+		  
     <!-- android:authorities NEEDS to be changed manually for each new pack
     	Failure to change name, will result in installation errors -->    
         <provider 
             android:name="your.icons.name.here.DocksProvider"
             android:authorities="your.icons.name.here.DocksProvider" />
-		
     </application>
 </manifest>

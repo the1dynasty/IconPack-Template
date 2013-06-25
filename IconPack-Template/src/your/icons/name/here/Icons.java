@@ -1,9 +1,6 @@
 package your.icons.name.here;
 
 
-import java.util.ArrayList;
-
-import your.icons.name.here.R;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -20,6 +17,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.actionbarsherlock.app.SherlockActivity;
+
+import java.util.ArrayList;
 
 public class Icons extends SherlockActivity implements OnItemClickListener {
 	private static final String ACTION_ADW_PICK_ICON="org.adw.launcher.icons.ACTION_PICK_ICON";

@@ -5,7 +5,6 @@ package gridview;
  ** Just be sure you're in the general area
  **/
 
-import your.icons.name.here.R;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -17,6 +16,7 @@ import android.os.Bundle;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 
 import fragments.MainFragment;
+import your.icons.name.here.R;
 
 public class Main extends SherlockFragmentActivity {
 
@@ -35,7 +35,6 @@ public class Main extends SherlockFragmentActivity {
 	 ** This code checks if MY OSS is installed on first run. If it is installed
 	 ** you get a dialog that says you're awesome and the user hits OK to remove 
 	 ** that dialog. If it is NOT installed, the user is prompted to install it.
-	 **
 	 ** You can remove this section if you're not checking for anything on first run
 	 **/
 	public void onStart() {
@@ -48,16 +47,15 @@ public class Main extends SherlockFragmentActivity {
 	    			.getBoolean("firstrunOSS", true);
 		    if (firstrunOSS){
 		    	
-	    /* Installed dialog
-	     * Change lines 54, 55-56 to match your own needs
-	     * 55-56 is really one line just split up for organization of code in here
+	    /* 
+	     * Installed dialog
+	     * Check res/values/strings.xml to change text to whatever you want the Alert to say
 	     */
 	        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-	        alert.setTitle("You Are AWESOME!!!");
-	        alert.setMessage("You also have my One-Stop-Shop App installed. " +
-	        		" Be sure to visit that app for more themes and other downloads!");
+	        alert.setTitle(getResources().getString (R.string.alert_start_title));
+	        alert.setMessage(getResources().getString (R.string.alert_start_desc));
 	        alert.setIcon(R.drawable.alert_pass);
-	        alert.setPositiveButton("OK", null).show ();
+	        alert.setPositiveButton(getResources().getString (R.string.ok), null).show ();
 	        
 		    // Save the state so this dialog doesn't run again
 		    getSharedPreferences("PREFERENCE", MODE_PRIVATE)
@@ -67,29 +65,27 @@ public class Main extends SherlockFragmentActivity {
 	              }
 	    }
 		
-	    /* Not Installed dialog
-	     * Change lines 74, 75-77 to match your own needs
-	     * 75-77 is really one line just split up for organization of code in here
+	    /* 
+	     * Not Installed dialog
+	     * Check res/values/strings.xml to change text to whatever you want the Alert to say
 	     */
 		else {
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setTitle("Ohnoes...");
-			builder.setMessage("We have detected that you do not have my " +
-					"One-Stop-Shop App installed... " +
-					" Would you like to download it for FREE now?");
+			builder.setTitle(getResources().getString (R.string.error_start_title));
+			builder.setMessage(getResources().getString (R.string.error_start_desc));
 	        builder.setIcon(R.drawable.alert_fail);
-			builder.setNeutralButton("Later", new OnClickListener(){
+			builder.setNeutralButton(getResources().getString (R.string.later), new OnClickListener(){
 				@Override
 				public void onClick(DialogInterface arg0, int arg1) {
 				}
 			});
 			
-		 // Also change line 90 with the URL to YOUR app
-			builder.setPositiveButton("Get App", new OnClickListener(){
+		 // Change line 88 with the URL to YOUR app
+			builder.setPositiveButton(getResources().getString (R.string.get), new OnClickListener(){
 				@Override
 				public void onClick(DialogInterface arg0, int arg1) {
 					Intent uccw = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-							("http://bit.ly/ZI34gC"));
+							("market://details?id=app.the1dynasty.oss"));
 		    		startActivity(uccw);
 			}
 			});

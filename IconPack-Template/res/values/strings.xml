@@ -27,6 +27,59 @@
 	<string name="about_image_main">Main About Image</string>
 	<string name="divider">Text Divider</string>
 	
+	<string name="finish_apply">Select your options and press Apply to finalize!</string>
+	<string name="apex_market">Apex Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="nova_market">Nova Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="holo_market">Holo Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="adw_market">ADW Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="al_market">Action Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="go_market">Go Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="next_market">Next Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="not_supported">Currently Not Supported. Please Apply through your launcher settings.</string>
+	
+	<string name="title_oss">One-Stop-Shop</string>
+	<string name="title_info">Theme Info</string>
+	<string name="title_apply">Apply Theme</string>
+	<string name="title_walls">Wallpapers</string>
+	<string name="title_rate">Rate Theme</string>
+	<string name="title_community">G+ Community</string>
+	<string name="title_gplus">My Google+</string>
+	<string name="title_share">Share Theme</string>
+	<string name="title_email">Email Developer</string>
+	<string name="title_about">About Developer</string>
+	<string name="title_donate">Donate</string>
+	
+	<!-- Note: Try not to pass the length of the description or you will have text layout issues on the Cards -->
+	<string name="desc_oss">All of my stuff in one place!</string>
+	<string name="desc_info">Details and a preview of this theme</string>
+	<string name="desc_apply">Choose from the launchers to apply the theme!</string>
+	<string name="desc_walls">Choose from the included wallpapers</string>
+	<string name="desc_rate">Rate this theme on the Play Store</string>
+	<string name="desc_community">Join our Google+ Community to find and share your themes!</string>
+	<string name="desc_gplus">Circle me on Google+</string>
+	<string name="desc_share">Share this theme with others</string>
+	<string name="desc_email">Send your requests or just give feedback</string>
+	<string name="desc_about">Learn more about the developer</string>
+	<string name="desc_donate">Consider donating to help contribute to future releases!</string>
+	
+	<string name="share_text">"ENTER YOUR TEXT HERE. https://play.google.com/store/apps/details?id=your.icons.name.here 
+	    \n\n I PROMOTE MY APP HERE http://bit.ly/ZI34gC"</string>
+	    
+	<string name="email_subject">YOUR EMAIL SUBJECT</string>
+	
+	<string name="alert_start_title">You Are AWESOME!!!</string>
+	<string name="alert_start_desc">You also have my One-Stop-Shop App installed. 
+	    n\n\ Be sure to visit that app for more themes and other downloads!</string>
+	<string name="error_start_title">Ohnoes!!!</string>
+	<string name="error_start_desc">We have detected that you do not have my One-Stop-Shop App installed.
+	    n\n\ Would you like to download it for FREE now?</string>
+	    
+	<string name="later">Later</string>
+	<string name="get">Get App</string>
+	    
+	<string name="ok">OK</string>
+	
+	
 		<!-- Labels for app icons -->
 	<string name="about_dev">About Developer</string>
 	<string name="about_theme">About Theme</string>
@@ -64,4 +117,11 @@
   	<string name="launcher_al">Action</string>
   	<string name="launcher_title">Choose Your Launcher</string>
   	<string name="cancel">Cancel</string>
+  	
+  		<!-- Go Launcher stuff -->
+  	<bool name="config_iconpack">true</bool>
+	<bool name="enableIconPack">true</bool>
+	<bool name="enableDockPack">false</bool>
+	<string name="theme_title">THEME_NAME_HERE</string>
+	
 </resources>

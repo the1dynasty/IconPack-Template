@@ -14,11 +14,13 @@
     <dimen name="launcher_grid_margin">20dp</dimen>
     <dimen name="about_dev_height">180dp</dimen>
     <dimen name="flatview_icon">78dp</dimen>
-    <dimen name="listview_icon">134dp</dimen>
+    <dimen name="listview_icon">150dp</dimen>
+    <dimen name="icon_padding">8dp</dimen>
+    <dimen name="icon_padding_bottom">16dp</dimen>
     <dimen name="dialog_small">14sp</dimen>
     <dimen name="dialog_spacing">10dp</dimen>
     <dimen name="dialog_center">3dp</dimen>
-    <dimen name="list_title_text">15sp</dimen>
+    <dimen name="list_title_text">16sp</dimen>
     <dimen name="list_desc_text">13sp</dimen>
     <dimen name="dialog_width">300dp</dimen>
     <dimen name="header_height">68dp</dimen>
@@ -32,7 +34,7 @@
     <dimen name="banner_title">24sp</dimen>
     <dimen name="banner_desc">18sp</dimen>
     <dimen name="column_width">160dp</dimen>
-    <dimen name="row_height">252dp</dimen>
+    <dimen name="row_height">255dp</dimen>
     
     
 </resources>

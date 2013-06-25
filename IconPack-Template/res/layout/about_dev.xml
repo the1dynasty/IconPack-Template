@@ -49,7 +49,7 @@
         android:background="@color/transparent_black" >
 
     <TextView
-        android:id="@+id/imageView2"
+        android:id="@+id/devFont"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginLeft="@dimen/left_right_margin"

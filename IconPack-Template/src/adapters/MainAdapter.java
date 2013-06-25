@@ -1,15 +1,17 @@
 package adapters;
 
-import java.util.List;
-
-import your.icons.name.here.R;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.List;
+
+import your.icons.name.here.R;
 
 
 public class MainAdapter extends BaseAdapter{
@@ -42,98 +44,86 @@ public class MainAdapter extends BaseAdapter{
 			holder = (ViewHolder) v.getTag();
 		}
 			holder.title.setText(entry.getTitle());
+
+			/* 
+			 * Sets the font type for the title and description of each item
+			 * This is if you want to have a bolder font for title or something
+			 * Make sure the font file is in the projects Asset folder
+			 * Default for this template is Roboto-Thin
+			 * themefont.ttf is the font the theme grabs also
+			 */
+			Typeface tfTitle = Typeface.createFromAsset(context.getAssets(),"themefont.ttf");
+			Typeface tfDescription = Typeface.createFromAsset(context.getAssets(),"themefont.ttf");
+			holder.title.setTypeface(tfTitle);
+			holder.text.setTypeface(tfDescription);
 			
-			/* Sets the descriptions text color
+			/* 
+			 * Sets the description and title text color as well as icon shown
 			 * You can reference any color in the colors.xml and even add some
-			 * You can also individually set the color for each ListView by 
-			 * referencing another color
+			 * You can also individually set the color for each GridView by 
+			 * referencing a different color on each case statement (kinda like the different icon references)
+			 * You can reference any drawable
 			 */
 			switch(entry.getID()){
 			case 0:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 1:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 2:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 3:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 4:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 5:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 6:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 7:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 8:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 9:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			case 10:
-				holder.text.setTextColor(context.getResources()
-						.getColor(R.color.list_desc_color));
-				break;
-			}
-			holder.text.setText(entry.getDescription());
-			
-			
-			// Sets the icon image for each gridview
-			switch(entry.getID()){
-			case 0:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_oss);
 				break;
 			case 1:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_info);
 				break;
 			case 2:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_launcher);
 				break;
 			case 3:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_wall);
 				break;
 			case 4:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_rate);
 				break;
 			case 5:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_community);
 				break;
 			case 6:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_gplus);
 				break;
 			case 7:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_share);
 				break;
 			case 8:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_email);
 				break;
 			case 9:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_dev_logo);
 				break;
 			case 10:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_wallet);
 				break;
 			}
-
+			holder.text.setText(entry.getDescription());
+			holder.title.setText(entry.getTitle());
+			
 		return v;
 	}
 

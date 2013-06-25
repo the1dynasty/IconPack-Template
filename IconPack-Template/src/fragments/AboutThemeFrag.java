@@ -1,7 +1,6 @@
 package fragments;
 
-import your.icons.name.here.AboutThemeMain;
-import your.icons.name.here.R;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
@@ -13,7 +12,11 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
+
+import your.icons.name.here.AboutThemeMain;
+import your.icons.name.here.R;
 
 public class AboutThemeFrag extends AboutThemeMain {
 	
@@ -30,11 +33,16 @@ public class AboutThemeFrag extends AboutThemeMain {
 	   @Override
 	   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		   return inflater.inflate(R.layout.theme_fragment, container, false);
+		  	   
 	   }
 	   
 	@Override
 	  public void onStart() {
 	  super.onStart();
+
+      Typeface font1 = Typeface.createFromAsset(getSherlockActivity().getAssets(), "RobotoSlab-Regular.ttf");
+      TextView desc1 = (TextView) getSherlockActivity().findViewById(R.id.description1);
+      desc1.setTypeface(font1);
 	
 	  
       previous = (ImageButton) getView().findViewById(R.id.previous);
