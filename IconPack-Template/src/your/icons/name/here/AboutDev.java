@@ -1,8 +1,9 @@
 package your.icons.name.here;
 
-import your.icons.name.here.R;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Window;
@@ -14,7 +15,19 @@ public class AboutDev extends SherlockActivity {
 	  public void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
 	  noTitle();
-	  setContentView(R.layout.about_dev);
+	  setContentView(R.layout.about_dev);  
+      
+      Typeface font1 = Typeface.createFromAsset(getAssets(), "RobotoSlab-Regular.ttf");
+      TextView txt1 = (TextView) findViewById(R.id.devFont);
+      txt1.setTypeface(font1); 
+      TextView title1 = (TextView) findViewById(R.id.title1);
+      title1.setTypeface(font1); 
+      TextView desc1 = (TextView) findViewById(R.id.description1);
+      desc1.setTypeface(font1); 
+      TextView title2 = (TextView) findViewById(R.id.title2);
+      title2.setTypeface(font1); 
+      TextView desc2 = (TextView) findViewById(R.id.description2);
+      desc2.setTypeface(font1); 
 }
 
 	// Hides the title bar

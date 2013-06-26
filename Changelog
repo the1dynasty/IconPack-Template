@@ -1,3 +1,13 @@
+v2.0.0
+Removed hardcoded strings. Now better for translations.
+Custom fonts can now be used throughout the app
+Cleaned up folders/files/code
+Changed "Apply" dialog to GridView
+Added more "Apply" buttons (for future implementation)
+Fixed Wallpaper section of app
+Roboto-Thin is now the default font
+Fixed scaling on top banner across all screen sizes
+
 v1.1.0
 File restructuring
 Added Tablet Support

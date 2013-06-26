@@ -33,25 +33,6 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/title1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/list_padding"
-            android:layout_marginLeft="@dimen/left_right_margin"
-            android:layout_marginRight="@dimen/left_right_margin"
-            android:layout_marginTop="@dimen/list_padding"
-            android:text="@string/about_theme"
-            android:textColor="@color/text_title"
-            android:textSize="@dimen/list_title_text" />
-
-        <ImageView
-            android:id="@+id/divider1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/divider"
-            android:src="@color/divider" />
-
-        <TextView
             android:id="@+id/description1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

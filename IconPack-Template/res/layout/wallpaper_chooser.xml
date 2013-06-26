@@ -16,49 +16,32 @@
 ** limitations under the License.
 -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" 
     android:background="@color/wall_bg">
 
     <ImageView
-        android:id="@+id/header"
-        android:contentDescription="@string/content_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/wall_header" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:contentDescription="@string/content_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@color/divider" />
-
-    <ImageView
         android:id="@+id/wallpaper"
         android:contentDescription="@string/content_description"
-        android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1.0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop" />
 
     <Gallery
         android:id="@+id/gallery"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/set"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/set"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/wall_apply"
-        android:textSize="19sp"
-        android:background="@drawable/button_bg_pressed_inverted_red"
-        android:textColor="@color/white" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/wall_apply" />
 
-</LinearLayout>
-
-
+</RelativeLayout>

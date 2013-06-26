@@ -1,9 +1,6 @@
 package your.icons.name.here;
 
 
-import java.util.ArrayList;
-
-import your.icons.name.here.R;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -17,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockActivity;
+
+import java.util.ArrayList;
 
 public class Docks extends SherlockActivity implements AdapterView.OnItemClickListener{
     public Uri CONTENT_URI;

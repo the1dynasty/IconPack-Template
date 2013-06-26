@@ -25,6 +25,7 @@
     <dimen name="grid_desc_text">12sp</dimen>
     <dimen name="dialog_width">300dp</dimen>
     <dimen name="header_height">68dp</dimen>
+    <dimen name="launcher_title">48sp</dimen>
     
     <!-- Dialog title height -->
     <dimen name="abs__alert_dialog_title_height">64dp</dimen>

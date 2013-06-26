@@ -1,12 +1,12 @@
 package your.icons.name.here;
 
-import java.io.FileNotFoundException;
-
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.res.AssetFileDescriptor;
 import android.database.Cursor;
 import android.net.Uri;
+
+import java.io.FileNotFoundException;
 
 public class DocksProvider extends ContentProvider{
     @Override

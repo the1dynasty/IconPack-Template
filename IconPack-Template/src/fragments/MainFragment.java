@@ -1,15 +1,5 @@
 package fragments;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import your.icons.name.here.AboutDev;
-import your.icons.name.here.AboutThemeActivity;
-import your.icons.name.here.LauncherDialog;
-import your.icons.name.here.R;
-import your.icons.name.here.Wallpaper;
-import adapters.MainAdapter;
-import adapters.MainAdapter.AdapterItem;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -24,6 +14,17 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 import com.actionbarsherlock.app.SherlockFragment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import adapters.MainAdapter;
+import adapters.MainAdapter.AdapterItem;
+import gridview.LauncherMain;
+import your.icons.name.here.AboutDev;
+import your.icons.name.here.AboutThemeActivity;
+import your.icons.name.here.R;
+import your.icons.name.here.Wallpaper;
 
 
 /** 
@@ -46,73 +47,185 @@ public class MainFragment extends SherlockFragment{
 	public void onActivityCreated(Bundle savedInstanceState){
 		super.onActivityCreated(savedInstanceState);
 		
-	/* This part does two things
+	/* 
+	 * This part does two things
 	 * First - It counts the number of items and displays them
 	 * Second - It displays the text in the "" which is a brief description of that item
-	 * Removing any of these, will remove that list item but be sure to edit ALL the cases below or you list
+	 * Removing any of these will remove that item but be sure to edit ALL the cases below or your list
 	 * won't line up properly
 	 */
 		
+		/**
+		 ** NOTE: in order to have different views on tablet vs phones, I added an if/else statement to this
+		 ** section. Be sure to remove BOTH parts to remove it from phones and tablets. Failure to remove both
+		 ** parts will result in the app functioning differently on phones and tablets.
+		 **/
+
+		/* 
+		 * Sets the Title and description text for each GridView item
+		 * Check res/values/strings.xml to change text to whatever you want each GridView to say
+		 */
 		boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
 		if (tabletSize) {
 			gridView = (GridView)getView().findViewById(R.id.grid);
-			listOfStuff.add(new AdapterItem("One-Stop-Shop", 
-					"All of my stuff in one place!", 0));
-			listOfStuff.remove(new AdapterItem("Theme Info", 
-					"Details and a preview of this theme", 1));
-			listOfStuff.add(new AdapterItem("Apply Theme", 
-					"Choose from the launchers to apply the theme!", 2));
-			listOfStuff.add(new AdapterItem("Wallpaper Chooser", 
-					"Choose from the included wallpapers", 3));
-			listOfStuff.add(new AdapterItem("Rate Theme", 
-					"Rate this theme on the Play Store", 4));
-			listOfStuff.add(new AdapterItem("Community", 
-					"Join our Google+ Community to find and share your themes!", 5));
-			listOfStuff.add(new AdapterItem("My Google+", 
-					"Circle me on Google+", 6));
-			listOfStuff.add(new AdapterItem("Share Theme", 
-					"Share this theme with others", 7));
-			listOfStuff.add(new AdapterItem("Email Developer", 
-					"Send your requests or just give feedback", 8));
-			listOfStuff.add(new AdapterItem("About Developer", 
-					"Find out more about the developer", 9));
-			listOfStuff.add(new AdapterItem("Donate", 
-					"Consider donating to help contribute to future releases!", 10));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_oss), 
+					getResources().getString (R.string.desc_oss), 0));
+			listOfStuff.remove(new AdapterItem(getResources().getString (R.string.title_info), 
+					getResources().getString (R.string.desc_info), 1));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_apply), 
+					getResources().getString (R.string.desc_apply), 2));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_walls), 
+					getResources().getString (R.string.desc_walls), 3));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_rate), 
+					getResources().getString (R.string.desc_rate), 4));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_community), 
+					getResources().getString (R.string.desc_community), 5));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_gplus), 
+					getResources().getString (R.string.desc_gplus), 6));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_share), 
+					getResources().getString (R.string.desc_share), 7));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_email), 
+					getResources().getString (R.string.desc_email), 8));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_about), 
+					getResources().getString (R.string.desc_about), 9));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
+					getResources().getString (R.string.desc_donate), 10));
 			
 		} else {
 			gridView = (GridView)getView().findViewById(R.id.grid);
-			listOfStuff.add(new AdapterItem("One-Stop-Shop", 
-					"All of my stuff in one place!", 0));
-			listOfStuff.add(new AdapterItem("Theme Info", 
-					"Details and a preview of this theme", 1));
-			listOfStuff.add(new AdapterItem("Apply Theme", 
-					"Choose from the launchers to apply the theme!", 2));
-			listOfStuff.add(new AdapterItem("Wallpaper Chooser", 
-					"Choose from the included wallpapers", 3));
-			listOfStuff.add(new AdapterItem("Rate Theme", 
-					"Rate this theme on the Play Store", 4));
-			listOfStuff.add(new AdapterItem("Community", 
-					"Join our Google+ Community to find and share your themes!", 5));
-			listOfStuff.add(new AdapterItem("My Google+", 
-					"Circle me on Google+", 6));
-			listOfStuff.add(new AdapterItem("Share Theme", 
-					"Share this theme with others", 7));
-			listOfStuff.add(new AdapterItem("Email Developer", 
-					"Send your requests or just give feedback", 8));
-			listOfStuff.add(new AdapterItem("About Developer", 
-					"Find out more about the developer", 9));
-			listOfStuff.add(new AdapterItem("Donate", 
-					"Consider donating to help contribute to future releases!", 10));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_oss), 
+					getResources().getString (R.string.desc_oss), 0));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_info), 
+					getResources().getString (R.string.desc_info), 1));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_apply), 
+					getResources().getString (R.string.desc_apply), 2));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_walls), 
+					getResources().getString (R.string.desc_walls), 3));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_rate), 
+					getResources().getString (R.string.desc_rate), 4));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_community), 
+					getResources().getString (R.string.desc_community), 5));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_gplus), 
+					getResources().getString (R.string.desc_gplus), 6));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_share), 
+					getResources().getString (R.string.desc_share), 7));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_email), 
+					getResources().getString (R.string.desc_email), 8));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_about), 
+					getResources().getString (R.string.desc_about), 9));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
+					getResources().getString (R.string.desc_donate), 10));
 		}
-		 
 
+		/**
+		 ** NOTE: in order to have different views on tablet vs phones, I added an if/else statement to this
+		 ** section. Be sure to remove both parts to remove it from phones and tablets. Failure to remove both
+		 ** parts will result in the app functioning differently on phones and tablets.
+		 **/
 			MainAdapter adapter = new MainAdapter(getActivity(), listOfStuff);
 	
 			gridView.setAdapter(adapter);
 			gridView.setOnItemClickListener(new OnItemClickListener() {
 				public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+					
 					@SuppressWarnings("unused")
 					MainFragment gridContentT = null;
+					
+					boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
+					if (tabletSize) { // for tablets
+						
+						switch (position) {
+						case 0:
+							/** 
+							 ** This checks if MY OSS app is installed. You can remove this case
+							 ** statement completely or add your own app to check against or leave
+							 ** it and let it check for MY app :D
+							 ** If it is installed, the app will open when you press the list item
+							 ** If it is NOT installed, it will open up the play store to download it
+							 ** Change line 157 with the play store link for your own app if you're 
+							 ** using this feature!
+							 **/
+							if(isPackageExists("app.the1dynasty.oss")){
+								Intent oss = new Intent("android.intent.action.MAIN");
+								oss.setComponent(ComponentName.unflattenFromString
+										("app.the1dynasty.oss/app.activities.MainActivity"));
+								oss.addCategory("android.intent.category.LAUNCHER");
+								startActivity(oss);
+							}
+							else{
+								Intent oss = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+										("market://details?id=app.the1dynasty.oss"));
+								startActivity(oss);
+						}
+			    			break;
+						case 1:
+							Intent launcher = new Intent(getSherlockActivity(), LauncherMain.class);
+							startActivity(launcher);
+			        		break;
+						case 2:
+							Intent wall = new Intent(getSherlockActivity(), Wallpaper.class);
+							startActivity(wall);
+			        		break;
+						case 3:
+			            	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+			            			("market://details?id=your.icons.name.here"));
+			            	startActivity(rate);
+			        		break;
+						case 4:
+							/** 
+							 ** This launches my community on G+
+							 ** Please leave this link in here for others to join. Thank You!
+							 **/
+							Intent gpCommunity = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+									("http://bit.ly/14F6Eez"));
+			          		startActivity(gpCommunity);
+			        		break;
+						case 5:
+							// Change line 184 with the link for YOUR own G+ Account
+							Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+									("https://plus.google.com/110748421773388678236/posts"));
+			        		startActivity(gplus);
+			        		break;
+						case 6:
+							Intent shareIntent = new Intent();
+			            	shareIntent.setAction(Intent.ACTION_SEND);
+			            	shareIntent.putExtra(Intent.EXTRA_TEXT, 
+			            			getResources().getString (R.string.share_text));
+			            	shareIntent.setType("text/plain");
+			            	startActivity(Intent.createChooser(shareIntent, 
+			            			getResources().getText(R.string.app_name)));
+			        		break;
+						case 7:
+						     /* 
+						      * Add your email on lines 206 & 207
+						      * Do not forget to check the res/values/strings.xml to add the subject you
+						      * want people to email you from this app with
+						      * This is the name shown as the subject of the email they send you
+						      */
+							Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);  
+			        		String aEmailList[] = { "the1dynasty.android@gmail.com",
+			        				"the1dynasty.android@gmail.com" };    
+			        		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);  
+			        		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, 
+			        				getResources().getText(R.string.email_subject));  
+			        		emailIntent.setType("plain/text");  
+			        		startActivity(emailIntent);
+			        		break;
+						case 8:
+							Intent about = new Intent(getSherlockActivity(), AboutDev.class);
+							startActivity(about);
+			        		break;
+						case 9:
+						    /* 
+						     * Change line 224 to match your own Donate URL. 
+						     * Unless you want me to get your donations :)
+						     */
+							Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+									("http://bit.ly/YWwhWu"));
+			        		startActivity(donate);
+			        		break;
+		}	
+				} else {	// for phones
 					switch (position) {
 					case 0:
 						/** 
@@ -121,7 +234,7 @@ public class MainFragment extends SherlockFragment{
 						 ** it and let it check for MY app :D
 						 ** If it is installed, the app will open when you press the list item
 						 ** If it is NOT installed, it will open up the play store to download it
-						 ** Change line 92 with the play store link for your own app if you're 
+						 ** Change line 249 with the play store link for your own app if you're 
 						 ** using this feature!
 						 **/
 						if(isPackageExists("app.the1dynasty.oss")){
@@ -133,7 +246,7 @@ public class MainFragment extends SherlockFragment{
 						}
 						else{
 							Intent oss = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-									("http://bit.ly/ZI34gC"));
+									("market://details?id=app.the1dynasty.oss"));
 							startActivity(oss);
 					}
 		    			break;
@@ -142,7 +255,7 @@ public class MainFragment extends SherlockFragment{
 						startActivity(aboutTheme);
 		        		break;
 					case 2:
-						Intent launcher = new Intent(getSherlockActivity(), LauncherDialog.class);
+						Intent launcher = new Intent(getSherlockActivity(), LauncherMain.class);
 						startActivity(launcher);
 		        		break;
 					case 3:
@@ -164,28 +277,25 @@ public class MainFragment extends SherlockFragment{
 		          		startActivity(gpCommunity);
 		        		break;
 					case 6:
-						// Change line 125 with the link for YOUR own G+ Account
+						// Change line 282 with the link for YOUR own G+ Account
 						Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 								("https://plus.google.com/110748421773388678236/posts"));
 		        		startActivity(gplus);
 		        		break;
 					case 7:
-						/* Change line 136 to say whatever text you want people to share with
-						 * Line 137 is the URL shown with the shared text
-						 * Line 138 is where I promote and link my app. You can remove this if
-						 * you're not using it
-						 */
 						Intent shareIntent = new Intent();
 		            	shareIntent.setAction(Intent.ACTION_SEND);
-		            	shareIntent.putExtra(Intent.EXTRA_TEXT, "ENTER YOUR TEXT HERE. " +
-		            			"https://play.google.com/store/apps/details?id=your.icons.name.here " +
-		            			"I PROMOTE MY APP HERE http://bit.ly/ZI34gC");
+		            	shareIntent.putExtra(Intent.EXTRA_TEXT, 
+		            			getResources().getString (R.string.share_text));
 		            	shareIntent.setType("text/plain");
-		            	startActivity(Intent.createChooser(shareIntent, getResources().getText(R.string.app_name)));
+		            	startActivity(Intent.createChooser(shareIntent, 
+		            			getResources().getText(R.string.app_name)));
 		        		break;
 					case 8:
-					     /* Add your email on lines 148 & 149
-					      * Do not forget to change line 152 with your own pack name
+					     /* 
+					      * Add your email on lines 302 & 303
+					      * Do not forget to check the res/values/strings.xml to add the subject you
+					      * want people to email you from this app with
 					      * This is the name shown as the subject of the email they send you
 					      */
 						Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);  
@@ -193,7 +303,7 @@ public class MainFragment extends SherlockFragment{
 		        				"the1dynasty.android@gmail.com" };    
 		        		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);  
 		        		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, 
-		        				"YOUR PACK NAME HERE");  
+		        				getResources().getText(R.string.email_subject));  
 		        		emailIntent.setType("plain/text");  
 		        		startActivity(emailIntent);
 		        		break;
@@ -202,42 +312,18 @@ public class MainFragment extends SherlockFragment{
 						startActivity(about);
 		        		break;
 					case 10:
-					    /* Change line 165 to match your own Donate URL. 
+					    /* 
+					     * Change line 320 to match your own Donate URL. 
 					     * Unless you want me to get your donations :)
 					     */
 						Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 								("http://bit.ly/YWwhWu"));
 		        		startActivity(donate);
 		        		break;
-	}
-	
-	// Sets what happens when you click on a list item
-				/** 
-				 ** This checks if MY OSS app is installed. You can remove this
-				 ** section completely or Add your own app to check against or leave
-				 ** it and let it check for MY app :D
-				 ** If it is installed, the app will open when you press the list item
-				 ** If it is NOT installed, it will open up the play store to download it
-				 ** Change line 92 with the play store link for your own app if you're 
-				 ** using this feature!
-				 **/
-				/** 
-				 ** This launches my community on G+
-				 ** Please leave this link in here for others to join. Thank You!
-				 **/
-				/* Change line 136 to say whatever text you want people to share with
-				 * Line 137 is the URL shown with the shared text
-				 * Line 138 is where I promote and link my app. You can remove this if
-				 * you're not using it
-				 */
-			     /* Add your email on lines 148 & 149
-			      * Do not forget to change line 152 with your own pack name
-			      * This is the name shown as the subject of the email they send you
-			      */
-			    /* Change line 165 to match your own Donate URL. 
-			     * Unless you want me to get your donations :)
-			     */
-	}				
+		        		
+					}
+				}
+				}				
 	
 	/** 
 	 ** This is the code needed to check the package in case 0
@@ -254,16 +340,7 @@ public class MainFragment extends SherlockFragment{
 		  }  
 		  return false;
 		  }
-
-			/* Sets the Title text for each list view
-			 * Change to whatever you want each list view to say
-			 */
-			
-			/* Sets the descriptions text color
-			 * You can reference any color in the colors.xml and even add some
-			 * You can also individually set the color for each ListView by 
-			 * referencing another color
-			 */
 			});
-}
+			
+	}
 }

@@ -5,11 +5,6 @@ package your.icons.name.here;
  ** MODIFY AT YOUR OWN RISK!!!
  **/
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-
-import your.icons.name.here.R;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -28,6 +23,10 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 
 import com.actionbarsherlock.app.SherlockActivity;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 
 
 
