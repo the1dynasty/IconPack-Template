@@ -40,6 +40,7 @@
 	<!-- Misc colors -->
 	<color name="black">#ff000000</color>
 	<color name="white">#ffffffff</color>
+	<color name="white_50">#aaffffff</color>
 	<color name="gray">#ffefefef</color>
 	<color name="gray_dark">#ff333333</color>
 	<color name="gray_medium">#ff999999</color>
