@@ -1,6 +1,11 @@
 This template works with most launchers... But it is a template and you should test individually before making claims 
 to support any specific launcher!
 
+**For android dependency problem jar mismatch:
+-Delete remove the android-support-v4.jar file from the libs folder .
+-add it to your project as an external jar using build path menu > add external jar
+
+
 Thanks for using my source for your Icon Pack base... I hope this helps you build a complete Icon Pack for various 
 launchers... I've left commented lines throughout the files... Feel free to read them to get a better understanding 
 of the code and what does what!! Some things NEED to be changed... So please read on and at the very least, do these 

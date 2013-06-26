@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	
+
     <iconback img="iconback"/>
     <iconupon img="iconupon"/>
     <iconmask img="iconmask"/>
  
     <scale factor=".75" />
-	
+
 	<item component="ComponentInfo{air.ca.esdot.PicShop.Lite/air.ca.esdot.PicShop.Lite.AppEntry}" drawable="picshop"/>
 	<item component="ComponentInfo{air.ca.esdot.PicShop/air.ca.esdot.PicShop.AppEntry}" drawable="picshop"/>
 	<item component="ComponentInfo{air.clearvision12plus/air.clearvision12plus.AppEntry}" drawable="clearvision"/>
