@@ -105,7 +105,7 @@
             android:contentDescription="@string/content_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#aaFFFFFF" >
+            android:background="@color/white_50" >
         <TextView
             android:id="@+id/description1"
             android:layout_width="match_parent"
