@@ -101,7 +101,7 @@
         </ViewFlipper>
 
         <LinearLayout
-            android:id="@+id/divider"
+            android:id="@+id/ab_null"
             android:contentDescription="@string/content_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

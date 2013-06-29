@@ -101,6 +101,18 @@
         </ViewFlipper>
 
         <LinearLayout
+            android:id="@+id/ab_null"
+            android:contentDescription="@string/content_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			
+				<View
+				    android:layout_width="match_parent"
+				    android:layout_height="@dimen/ab_height"
+				    android:background="@color/transparent"/>
+
+        <LinearLayout
             android:id="@+id/divider"
             android:contentDescription="@string/content_description"
             android:layout_width="match_parent"
@@ -118,6 +130,7 @@
             android:text="@string/theme_description_app"
             android:textColor="@color/text_description"
             android:textSize="@dimen/list_desc_text" />
+        </LinearLayout>
         </LinearLayout>
         <ImageButton
             android:id="@+id/next"
