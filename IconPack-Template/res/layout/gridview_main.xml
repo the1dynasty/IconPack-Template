@@ -17,7 +17,7 @@
 -->
 
 <!-- Remove LinearLayout and include layout to revert back to the main page w/o the banner -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.cyrilmottier.android.translucentactionbar.NotifyingScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical" >
@@ -34,9 +34,9 @@
 	
 	<FrameLayout 
 	    android:layout_width="match_parent"
-	    android:layout_height="770dp"
+	    android:layout_height="wrap_content"
 	    android:layout_gravity="center"
 	    android:id="@+id/container" />
 
 </LinearLayout>
-</ScrollView>
+</com.cyrilmottier.android.translucentactionbar.NotifyingScrollView>

@@ -5,6 +5,7 @@ package gridview;
  ** Just be sure you're in the general area
  **/
 
+import your.icons.name.here.R;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -14,17 +15,19 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.manuelpeinado.glassactionbar.GlassActionBarHelper;
 
 import fragments.MainFragment;
-import your.icons.name.here.R;
 
 public class Main extends SherlockFragmentActivity {
-
+	private GlassActionBarHelper helper;
 	// Starts the Activity for the list view
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.gridview_main);
+		
+		helper = new GlassActionBarHelper().contentLayout(R.layout.gridview_main);
+		setContentView(helper.createView(this));
 		
 		getSupportFragmentManager().beginTransaction()
 		.replace(R.id.container, new MainFragment())

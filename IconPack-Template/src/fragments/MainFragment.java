@@ -21,6 +21,7 @@ import java.util.List;
 import adapters.MainAdapter;
 import adapters.MainAdapter.AdapterItem;
 import gridview.LauncherMain;
+import gridview.ScrollGridView;
 import your.icons.name.here.AboutDev;
 import your.icons.name.here.AboutThemeActivity;
 import your.icons.name.here.R;
@@ -34,7 +35,7 @@ import your.icons.name.here.Wallpaper;
 
 public class MainFragment extends SherlockFragment{
 	
-	GridView gridView;
+	ScrollGridView gridView;
 	final List<AdapterItem> listOfStuff = new ArrayList<AdapterItem>();
 
 	// This is the background layout that gets inflated behind the list view
@@ -67,7 +68,7 @@ public class MainFragment extends SherlockFragment{
 		 */
 		boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
 		if (tabletSize) {
-			gridView = (GridView)getView().findViewById(R.id.grid);
+			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_oss), 
 					getResources().getString (R.string.desc_oss), 0));
 			listOfStuff.remove(new AdapterItem(getResources().getString (R.string.title_info), 
@@ -92,7 +93,7 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_donate), 10));
 			
 		} else {
-			gridView = (GridView)getView().findViewById(R.id.grid);
+			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_oss), 
 					getResources().getString (R.string.desc_oss), 0));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_info), 
@@ -125,6 +126,7 @@ public class MainFragment extends SherlockFragment{
 			MainAdapter adapter = new MainAdapter(getActivity(), listOfStuff);
 	
 			gridView.setAdapter(adapter);
+			gridView.setExpanded(true);
 			gridView.setOnItemClickListener(new OnItemClickListener() {
 				public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 					
