@@ -34,5 +34,6 @@
     <dimen name="column_width">152dp</dimen>
     <dimen name="row_height">236dp</dimen>
     
+    <dimen name="ab_height">54dp</dimen>
     
 </resources>
