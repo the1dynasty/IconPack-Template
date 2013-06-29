@@ -15,9 +15,9 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.manuelpeinado.glassactionbar.GlassActionBarHelper;
 
 import fragments.MainFragment;
+import gab.GlassActionBarHelper;
 
 public class Main extends SherlockFragmentActivity {
 	private GlassActionBarHelper helper;
