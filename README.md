@@ -1,4 +1,4 @@
-Current Version 2.1.0
+Current Version 2.1.1
 
 This template works with most launchers... But it is a template and you should test individually before making claims 
 to support any specific launcher!
@@ -17,14 +17,11 @@ are great bases to start from.
 Step 1:
 Download ActionBarSherlock (will be referred to as ABS from now on) if you haven't already done so yet 
 https://github.com/JakeWharton/ActionBarSherlock 
-Also download NineOldAndroids (will be referred to as NOA from now on) https://github.com/JakeWharton/NineOldAndroids
-And GlassActionBar (will be referred to as GAB from now on) https://github.com/ManuelPeinado/GlassActionBar
 
 Step 2:
-Import this project, ABS, and NOA and GAB. Then add ABS, NOA and GAB to Icon Pack Template as its 
-dependent library.
+Import this project, ABS. Then add ABS to Icon Pack Template as its dependent library.
 (Importing on Eclipse - Right click on the template folder and select Properties>Android>Select 4.2.2>Under that,
-remove any bad imports and add ABS, NOA, GAB >Apply>OK)
+remove any bad imports and add ABS>Apply>OK)
 
 Step 3:
 Open AndroidManifest.xml and change line 22. Then read the comment starting on line 54. You can experiment with those 
