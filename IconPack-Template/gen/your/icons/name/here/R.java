@@ -797,6 +797,7 @@ containing a value of this type.
         public static final int white_50=0x7f090024;
     }
     public static final class dimen {
+        public static final int ab_height=0x7f0a0031;
         public static final int about_dev_height=0x7f0a001c;
         public static final int about_title_margin=0x7f0a0015;
         public static final int about_top_desc_margin=0x7f0a001a;
@@ -928,8 +929,8 @@ containing a value of this type.
         public static final int grid_title_text=0x7f0a0025;
         public static final int gridview_icon=0x7f0a001f;
         public static final int header_height=0x7f0a0028;
-        public static final int icon_padding=0x7f0a0031;
-        public static final int icon_padding_bottom=0x7f0a0032;
+        public static final int icon_padding=0x7f0a0032;
+        public static final int icon_padding_bottom=0x7f0a0033;
         public static final int launcher_grid_margin=0x7f0a001b;
         public static final int launcher_title=0x7f0a0029;
         public static final int left_right_margin=0x7f0a0017;
@@ -1187,27 +1188,29 @@ containing a value of this type.
         public static final int tab_widget_indicator=0x7f0200f0;
         public static final int tablet_banner=0x7f0200f1;
         public static final int theme_header=0x7f0200f2;
-        public static final int theme_preview=0x7f0200f3;
-        public static final int theme_preview1=0x7f0200f4;
-        public static final int theme_preview2=0x7f0200f5;
-        public static final int theme_preview3=0x7f0200f6;
-        public static final int theme_preview4=0x7f0200f7;
-        public static final int theme_preview5=0x7f0200f8;
-        public static final int transparent=0x7f0200f9;
-        public static final int wall_1=0x7f0200fa;
-        public static final int wall_1_small=0x7f0200fb;
-        public static final int wall_2=0x7f0200fc;
-        public static final int wall_2_small=0x7f0200fd;
-        public static final int wall_header=0x7f0200fe;
-        public static final int wallpaper_gallery_background=0x7f0200ff;
-        public static final int wallpaper_gallery_item=0x7f020100;
-        public static final int wallpaper_picker_preview=0x7f020101;
+        public static final int theme_info_bg=0x7f0200f3;
+        public static final int theme_preview=0x7f0200f4;
+        public static final int theme_preview1=0x7f0200f5;
+        public static final int theme_preview2=0x7f0200f6;
+        public static final int theme_preview3=0x7f0200f7;
+        public static final int theme_preview4=0x7f0200f8;
+        public static final int theme_preview5=0x7f0200f9;
+        public static final int transparent=0x7f0200fa;
+        public static final int wall_1=0x7f0200fb;
+        public static final int wall_1_small=0x7f0200fc;
+        public static final int wall_2=0x7f0200fd;
+        public static final int wall_2_small=0x7f0200fe;
+        public static final int wall_header=0x7f0200ff;
+        public static final int wallpaper_gallery_background=0x7f020100;
+        public static final int wallpaper_gallery_item=0x7f020101;
+        public static final int wallpaper_picker_preview=0x7f020102;
     }
     public static final class id {
         public static final int LinearLayout02=0x7f070057;
         public static final int LinearLayout03=0x7f070045;
         public static final int TextView01=0x7f070059;
         public static final int TextView02=0x7f070047;
+        public static final int ab_null=0x7f070061;
         public static final int aboutBar=0x7f070012;
         public static final int aboutdev=0x7f07005b;
         public static final int abs__action_bar=0x7f07002b;
@@ -1250,8 +1253,8 @@ containing a value of this type.
         public static final int abs__title=0x7f070026;
         public static final int abs__up=0x7f07000b;
         public static final int blurredOverlay=0x7f07005d;
-        public static final int container=0x7f070061;
-        public static final int container_launcher=0x7f070064;
+        public static final int container=0x7f070062;
+        public static final int container_launcher=0x7f070065;
         public static final int content_frame=0x7f07003d;
         public static final int desc=0x7f07003e;
         public static final int description=0x7f070060;
@@ -1259,19 +1262,19 @@ containing a value of this type.
         public static final int description2=0x7f07001a;
         public static final int devFont=0x7f070013;
         public static final int disableHome=0x7f070009;
-        public static final int divider=0x7f070066;
+        public static final int divider=0x7f070067;
         public static final int divider1=0x7f070016;
         public static final int divider2=0x7f070019;
         public static final int donate=0x7f070058;
         public static final int edit_query=0x7f070031;
         public static final int email=0x7f070054;
         public static final int email2=0x7f070055;
-        public static final int fragment1=0x7f070062;
-        public static final int gallery=0x7f070069;
+        public static final int fragment1=0x7f070063;
+        public static final int gallery=0x7f07006a;
         public static final int gplus=0x7f07004d;
         public static final int grid=0x7f07005e;
         public static final int homeAsUp=0x7f070006;
-        public static final int icon_grid=0x7f070063;
+        public static final int icon_grid=0x7f070064;
         public static final int imageView1=0x7f070011;
         public static final int layout1=0x7f070010;
         public static final int linearLayout03=0x7f070050;
@@ -1284,16 +1287,16 @@ containing a value of this type.
         public static final int listMode=0x7f070002;
         public static final int list_image=0x7f07005f;
         public static final int marketinfo=0x7f07004a;
-        public static final int next=0x7f070067;
+        public static final int next=0x7f070068;
         public static final int normal=0x7f070001;
-        public static final int nowanim=0x7f070065;
-        public static final int previous=0x7f070068;
+        public static final int nowanim=0x7f070066;
+        public static final int previous=0x7f070069;
         public static final int row1=0x7f070041;
         public static final int row2=0x7f070048;
         public static final int row3=0x7f07004f;
         public static final int row4=0x7f070056;
         public static final int scrollView1=0x7f070014;
-        public static final int set=0x7f07006a;
+        public static final int set=0x7f07006b;
         public static final int sharetheme=0x7f070051;
         public static final int showCustom=0x7f070008;
         public static final int showHome=0x7f070005;
@@ -1310,7 +1313,7 @@ containing a value of this type.
         public static final int title2=0x7f070018;
         public static final int useLogo=0x7f070004;
         public static final int wallpaper=0x7f070043;
-        public static final int wallpaper_image=0x7f07006b;
+        public static final int wallpaper_image=0x7f07006c;
         public static final int wrap_content=0x7f070000;
     }
     public static final class integer {
@@ -1361,10 +1364,11 @@ containing a value of this type.
         public static final int launcher_main=0x7f040020;
         public static final int sherlock_spinner_dropdown_item=0x7f040021;
         public static final int sherlock_spinner_item=0x7f040022;
-        public static final int theme_fragment=0x7f040023;
-        public static final int theme_main=0x7f040024;
-        public static final int wallpaper_chooser=0x7f040025;
-        public static final int wallpaper_item=0x7f040026;
+        public static final int tablet_main=0x7f040023;
+        public static final int theme_fragment=0x7f040024;
+        public static final int theme_main=0x7f040025;
+        public static final int wallpaper_chooser=0x7f040026;
+        public static final int wallpaper_item=0x7f040027;
     }
     public static final class mipmap {
         public static final int about_pic=0x7f030000;

@@ -39,4 +39,5 @@
     <dimen name="banner_title">24sp</dimen>
     <dimen name="banner_desc">18sp</dimen>
     
+    <dimen name="ab_height">48dp</dimen>
 </resources>

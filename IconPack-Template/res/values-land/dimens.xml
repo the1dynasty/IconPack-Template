@@ -30,4 +30,6 @@
     <dimen name="column_width">147dp</dimen>
     <dimen name="row_height">240dp</dimen>
     
+    <dimen name="ab_height">38dp</dimen>
+    
 </resources>
