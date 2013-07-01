@@ -166,10 +166,28 @@ public class LauncherDialog extends SherlockFragment {
 					}
 					break;
 				case 5:
-					Toast failedGo = Toast.makeText(getSherlockActivity().getBaseContext(),
-							getResources().getString (R.string.not_supported),
-							Toast.LENGTH_LONG);
-					failedGo.show();
+					Intent goApply = getSherlockActivity().getPackageManager().getLaunchIntentForPackage(
+							"com.gau.go.launcherex");
+					if (goApply != null) {
+						Intent go = new Intent("com.gau.go.launcherex.MyThemes.mythemeaction");
+		                go.putExtra("type",1);
+		                go.putExtra("pkgname", getSherlockActivity().getPackageName());
+		                getSherlockActivity().sendBroadcast(go);
+						Toast appliedGo = Toast
+		                .makeText(getSherlockActivity().getBaseContext(), getResources().getString
+		                		(R.string.go_applied), Toast.LENGTH_LONG);
+						appliedGo.show();
+						startActivity(goApply); 
+				   } else {
+						Intent goMarket = new Intent(Intent.ACTION_VIEW);
+						goMarket.setData(Uri.parse("market://details?id=com.anddoes.launcher"));
+						startActivity(goMarket);
+						
+						Toast failedGo = Toast
+						.makeText(getSherlockActivity().getBaseContext(), getResources().getString 
+								(R.string.go_market), Toast.LENGTH_SHORT);
+						failedGo.show();
+					}
 					break;
 				case 6:
 					Toast failedNext = Toast.makeText(getSherlockActivity().getBaseContext(),

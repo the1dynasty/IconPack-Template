@@ -33,7 +33,8 @@
 	<string name="holo_market">Holo Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="adw_market">ADW Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="al_market">Action Launcher is not installed on your device. Redirecting to the Play Store!</string>
-	<string name="go_market">Go Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="go_market">AWESOME! Go Launcher is not installed on your device. Redirecting to Apex Launcher!</string>
+	<string name="go_applied">Thanks for using YOUR ICONS NAME HERE. Your theme is being set!</string>
 	<string name="next_market">Next Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="not_supported">Currently Not Supported. Please Apply through your launcher settings.</string>
 	
