@@ -1327,6 +1327,8 @@
 	<item component="ComponentInfo{com.mint/com.mint.core.overview.RouterActivity}" drawable="mint"/>
 	<!-- Minus -->
 	<item component="ComponentInfo{com.minus.android/com.minus.android.Intro}" drawable="minus"/>
+	<!-- Minuum Settings -->
+	<item component="ComponentInfo{com.whirlscape.minuum/com.whirlscape.minuum.MinuumPreferenceActivity}" drawable="minuum" />
 	<!-- Mirror -->
 	<item component="ComponentInfo{mmapps.mirror.free/mmapps.mirror.free.MirrorActivity}" drawable="mirror"/>
 	<item component="ComponentInfo{com.yuvalluzon.yourmirror/com.yuvalluzon.yourmirror.YourMirror}" drawable="mirror"/>
@@ -1355,7 +1357,7 @@
 	<item component="ComponentInfo{com.stoik.mdscan/com.stoik.mdscan.MDScanActivity}" drawable="mobiledocscanner"/>
 	<!-- Mobile Odin -->
 	<item component="ComponentInfo{eu.chainfire.mobileodin.pro/eu.chainfire.mobileodin.core.MainActivity}" drawable="odin"/>
-	<!--Mobisle-->
+	<!-- Mobisle -->
 	<item component="ComponentInfo{mobisle.mobisleNotesADC/mobisle.mobisleNotesADC.FolderActivity}" drawable="mobisle"/>
 	<item component="ComponentInfo{mobisle.mobisleNotesADC/mobisle.mobisleNotesADC.NotesListActivity}" drawable="mobisle"/>
 	<item component="ComponentInfo{mobisle.mobisleNotesADC/mobisle.mobisleNotesADC.note.NoteActivity}" drawable="mobisle"/>
@@ -1472,6 +1474,8 @@
 	<!-- Notification Weather -->
 	<item component="ComponentInfo{com.orbar.NotificationWeather/com.orbar.NotificationWeater.MainActivity}" drawable="notificationweather"/>
 	<item component="ComponentInfo{com.orbar.NotificationWeather/com.orbar.NotificationWeather.MainActivity}" drawable="notificationweather"/>
+	<!-- Now SMS -->
+	<item component="ComponentInfo{crometh.android.nowsms/crometh.android.nowsms.gui.activity.ConversationListActivity}" drawable="now_sms" />
 	<!-- Nova Three -->
 	<item component="ComponentInfo{com.gameloft.android.ANMP.GloftN3HM/com.gameloft.android.ANMP.GloftN3HM.GL2JNIActivity}" drawable="nova3"/>
 	<!-- Nova Launcher -->
@@ -1489,6 +1493,7 @@
 	<!-- Office Suite -->
 	<item component="ComponentInfo{com.mobisystems.office/com.mobisystems.office.FileBrowser}" drawable="officesuite"/>
 	<item component="ComponentInfo{com.mobisystems.editor.office_registered/com.mobisystems.office.FileBrowser}" drawable="officesuite"/>
+	<item component="ComponentInfo{com.mobisystems.editor.office_registered/com.mobisystems.office.splashScreen.SplashScreenActivity}" drawable="officesuite" />
 	<!-- Office Calculator -->
 	<item component="ComponentInfo{net.taobits.officecalculator.android/net.taobits.officecalculator.android.CalculatorActivity}" drawable="officecalculator"/>
 	<!-- One More Clock -->
@@ -1557,6 +1562,8 @@
 	<item component="ComponentInfo{com.softwareforme.PhoneMyPC/com.softwareforme.PhoneMyPC.Act_PCList}" drawable="phonemypc"/>
 	<!-- Photobucket -->
 	<item component="ComponentInfo{com.photobucket.android/com.photobucket.android.PbSplash}" drawable="photobucket"/>
+	<!-- Photosphere LWP-->
+	<item component="ComponentInfo{fishnoodle.photospherewp_free/fishnoodle.photospherewp_free.WallpaperSettings}" drawable="photosphere_lwp" />
 	<!-- Photo Editor -->
 	<item component="ComponentInfo{com.iudesk.android.photo.editor/app.activity.MainActivity}" drawable="photoeditor2"/>
 	<!-- Photo Editor by Aviary -->
@@ -1629,6 +1636,8 @@
 	<item component="ComponentInfo{com.painless.pc/com.painless.pc.settings.LaunchActivity}" drawable="powertoggles"/>
 	<item component="ComponentInfo{com.painless.pc/com.painless.pc.cfg.WidgetConfigActivity}" drawable="powertoggles"/>
 	<item component="ComponentInfo{com.painless.pc/com.painless.pc.HelpMainActivity}" drawable="powertoggles"/>
+	<!-- PowerLine -->
+	<item component="ComponentInfo{com.urbandroid.inline/com.urbandroid.inline.MainActivity}" drawable="powerline" />
 	<!-- Poynt -->
 	<item component="ComponentInfo{com.poynt.android/com.poynt.android.activities.DashboardActivity}" drawable="poynt"/>
 	<!-- Prince of Persia -->
@@ -1917,6 +1926,8 @@
 	<item component="ComponentInfo{com.wordsmobile.speedracing/com.wordsmobile.speedracing.SpeedRacingActivity}" drawable="speedracing"/>
 	<!-- Speed Test -->
 	<item component="ComponentInfo{org.zwanoo.android.speedtest/org.zwanoo.android.speedtest.MainTabActivity}" drawable="speedtest"/>
+	<!-- SphereShare -->
+	<item component="ComponentInfo{cz.kinst.jakub.sphereshare/cz.kinst.jakub.sphereshare.MainActivity_}" drawable="sphereshare" />
 	<!-- Spiegel Online -->
 	<!-- Spotify -->
 	<item component="ComponentInfo{com.spotify.mobile.android.ui/com.spotify.mobile.android.ui.activity.MainActivity}" drawable="spotify"/>
@@ -1994,10 +2005,13 @@
 	<!-- Tapatalk -->
 	<item component="ComponentInfo{com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.EntryActivity}" drawable="tapatalk"/>
 	<item component="ComponentInfo{com.quoord.tapatalkpropad.activity/com.quoord.tapatalkpropad.activity.directory.EntryActivity}" drawable="tapatalkhd"/>
+	<item component="ComponentInfo{com.tapatalk.tapatalk4/com.quoord.tapatalkpro.activity.directory.ics.IcsEntryActivity}" drawable="tapatalk4" />
 	<!-- Tapatalk Cyan -->
 	<item component="ComponentInfo{com.quoord.tapatalkcyan.activity/com.quoord.tapatalkcyan.activity.directory.EntryActivity}" drawable="tapatalkcyan"/>
 	<!-- Tap Play -->
 	<item component="ComponentInfo{com.gipnetix.tasks/com.gipnetix.tasks.MainActivity}" drawable="tapplay"/>
+	<!-- Tape-a-Talk -->
+	<item component="ComponentInfo{name.markus.droesser.tapeatalk/name.markus.droesser.tapeatalk.Launcher}" drawable="tape_a_talk" />
 	<!-- Taptu -->
 	<item component="ComponentInfo{com.taptu.streams/com.taptu.streams.activities.MainActivity}" drawable="taptu"/>
 	<!-- Tasker -->
