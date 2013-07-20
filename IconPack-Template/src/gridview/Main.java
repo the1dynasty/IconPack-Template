@@ -64,55 +64,6 @@ public class Main extends SherlockFragmentActivity {
 		.replace(R.id.container, new MainFragment())
 		.commit();
 	}
-	
-	@Override
-    public boolean onCreateOptionsMenu(Menu menu) 
-	{
-        MenuInflater inflater = getSupportMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-	
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item)
-	{ 
-		return super.onOptionsItemSelected(item);
- 
-        switch(item.getItemId())
-        {
-            case R.id.shareButton:
-        		Intent shareIntent = new Intent(Intent.ACTION_SEND);
-        	    shareIntent.setType("text/plain");
-        	    shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.app_link));
-                return true;
-            case R.id.rateButton:
-            	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-            			("market://details?id=your.icons.name.here"));
-            	startActivity(rate);
-                return true;
-            case R.id.emailButton:
-				Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);  
-        		String aEmailList[] = { "the1dynasty.android@gmail.com",
-        				"the1dynasty.android@gmail.com" };    
-        		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);  
-        		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, 
-        				getResources().getText(R.string.email_subject));  
-        		emailIntent.setType("plain/text");  
-        		startActivity(emailIntent);
-                return true;
-            case R.id.aboutButton:
-				Intent about = new Intent(null, AboutDev.class);
-				startActivity(about);
-                return true;
-            case R.id.donateButton:
-				Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://bit.ly/YWwhWu"));
-        		startActivity(donate);
-                return true;
-        }
-        return true;
-	}
-}
 
 	/************************************************************************
 	 ******************** This is your Changelog Stuff **********************
@@ -218,21 +169,12 @@ public class Main extends SherlockFragmentActivity {
 			builder.show();
 	    }
 	}
-/**	
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
 		MenuInflater inflater = getSupportMenuInflater();
 		inflater.inflate(R.menu.menu, menu);
-		
-		MenuItem shareItem = menu.findItem(R.id.shareButton);
-		ShareActionProvider mShareActionProvider = (ShareActionProvider) shareItem.getActionProvider();
-				
-		Intent shareIntent = new Intent(Intent.ACTION_SEND);
-	    shareIntent.setType("text/plain");
-	    shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.app_link));
-	    
-	    mShareActionProvider.setShareIntent(shareIntent);
 		
 		return true;
 	}
@@ -242,8 +184,57 @@ public class Main extends SherlockFragmentActivity {
 	{
 		return super.onOptionsItemSelected(item);
 	}
-*/	
 	
+/*	
+	@Override
+    public boolean onCreateOptionsMenu(Menu menu) 
+	{
+        MenuInflater inflater = getSupportMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{ 
+		return super.onOptionsItemSelected(item);
+ 
+        switch(item.getItemId())
+        {
+            case R.id.shareButton:
+        		Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        	    shareIntent.setType("text/plain");
+        	    shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.app_link));
+                return true;
+            case R.id.rateButton:
+            	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+            			("market://details?id=your.icons.name.here"));
+            	startActivity(rate);
+                return true;
+            case R.id.emailButton:
+				Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);  
+        		String aEmailList[] = { "the1dynasty.android@gmail.com",
+        				"the1dynasty.android@gmail.com" };    
+        		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);  
+        		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, 
+        				getResources().getText(R.string.email_subject));  
+        		emailIntent.setType("plain/text");  
+        		startActivity(emailIntent);
+                return true;
+            case R.id.aboutButton:
+				Intent about = new Intent(null, AboutDev.class);
+				startActivity(about);
+                return true;
+            case R.id.donateButton:
+				Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+						("http://bit.ly/YWwhWu"));
+        		startActivity(donate);
+                return true;
+        }
+        return true;
+	}
+}
+*/	
 	private boolean isAppInstalled(String packageName){
 		// Tool we need to parse other packages
 		PackageManager pm = getPackageManager();

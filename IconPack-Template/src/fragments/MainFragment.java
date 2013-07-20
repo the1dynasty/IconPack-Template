@@ -7,7 +7,6 @@ import gridview.ScrollGridView;
 import java.util.ArrayList;
 import java.util.List;
 
-import your.icons.name.here.AboutDev;
 import your.icons.name.here.AboutThemeActivity;
 import your.icons.name.here.R;
 import your.icons.name.here.Wallpaper;
@@ -79,18 +78,10 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_apply), 3));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_walls), 
 					getResources().getString (R.string.desc_walls), 4));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_rate), 
-					getResources().getString (R.string.desc_rate), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_community), 
-					getResources().getString (R.string.desc_community), 6));
+					getResources().getString (R.string.desc_community), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_gplus), 
-					getResources().getString (R.string.desc_gplus), 7));;
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_email), 
-					getResources().getString (R.string.desc_email), 8));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_about), 
-					getResources().getString (R.string.desc_about), 9));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
-					getResources().getString (R.string.desc_donate), 10));
+					getResources().getString (R.string.desc_gplus), 6));
 			
 		} else {
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
@@ -104,18 +95,10 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_apply), 3));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_walls), 
 					getResources().getString (R.string.desc_walls), 4));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_rate), 
-					getResources().getString (R.string.desc_rate), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_community), 
-					getResources().getString (R.string.desc_community), 6));
+					getResources().getString (R.string.desc_community), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_gplus), 
-					getResources().getString (R.string.desc_gplus), 7));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_email), 
-					getResources().getString (R.string.desc_email), 8));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_about), 
-					getResources().getString (R.string.desc_about), 9));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
-					getResources().getString (R.string.desc_donate), 10));
+					getResources().getString (R.string.desc_gplus), 6));
 		}
 
 		/**
@@ -173,11 +156,6 @@ public class MainFragment extends SherlockFragment{
 							startActivity(wall);
 			        		break;
 						case 4:
-			            	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-			            			("market://details?id=your.icons.name.here"));
-			            	startActivity(rate);
-			        		break;
-						case 5:
 							/** 
 							 ** This launches my community on G+
 							 ** Please leave this link in here for others to join. Thank You!
@@ -186,40 +164,11 @@ public class MainFragment extends SherlockFragment{
 									("http://bit.ly/14F6Eez"));
 			          		startActivity(gpCommunity);
 			        		break;
-						case 6:
+						case 5:
 							// Change line 184 with the link for YOUR own G+ Account
 							Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 									("https://plus.google.com/110748421773388678236/posts"));
 			        		startActivity(gplus);
-			        		break;
-						case 7:
-						     /* 
-						      * Add your email on lines 206 & 207
-						      * Do not forget to check the res/values/strings.xml to add the subject you
-						      * want people to email you from this app with
-						      * This is the name shown as the subject of the email they send you
-						      */
-							Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);  
-			        		String aEmailList[] = { "the1dynasty.android@gmail.com",
-			        				"the1dynasty.android@gmail.com" };    
-			        		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);  
-			        		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, 
-			        				getResources().getText(R.string.email_subject));  
-			        		emailIntent.setType("plain/text");  
-			        		startActivity(emailIntent);
-			        		break;
-						case 8:
-							Intent about = new Intent(getSherlockActivity(), AboutDev.class);
-							startActivity(about);
-			        		break;
-						case 9:
-						    /* 
-						     * Change line 224 to match your own Donate URL. 
-						     * Unless you want me to get your donations :)
-						     */
-							Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-									("http://bit.ly/YWwhWu"));
-			        		startActivity(donate);
 			        		break;
 		}	
 				} else {	// for phones
@@ -264,11 +213,6 @@ public class MainFragment extends SherlockFragment{
 						startActivity(wall);
 		        		break;
 					case 5:
-		            	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-		            			("market://details?id=your.icons.name.here"));
-		            	startActivity(rate);
-		        		break;
-					case 6:
 						/** 
 						 ** This launches my community on G+
 						 ** Please leave this link in here for others to join. Thank You!
@@ -277,40 +221,11 @@ public class MainFragment extends SherlockFragment{
 								("http://bit.ly/14F6Eez"));
 		          		startActivity(gpCommunity);
 		        		break;
-					case 7:
+					case 6:
 						// Change line 282 with the link for YOUR own G+ Account
 						Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 								("https://plus.google.com/110748421773388678236/posts"));
 		        		startActivity(gplus);
-		        		break;
-					case 8:
-					     /* 
-					      * Add your email on lines 302 & 303
-					      * Do not forget to check the res/values/strings.xml to add the subject you
-					      * want people to email you from this app with
-					      * This is the name shown as the subject of the email they send you
-					      */
-						Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);  
-		        		String aEmailList[] = { "the1dynasty.android@gmail.com",
-		        				"the1dynasty.android@gmail.com" };    
-		        		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);  
-		        		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, 
-		        				getResources().getText(R.string.email_subject));  
-		        		emailIntent.setType("plain/text");  
-		        		startActivity(emailIntent);
-		        		break;
-					case 9:
-						Intent about = new Intent(getSherlockActivity(), AboutDev.class);
-						startActivity(about);
-		        		break;
-					case 10:
-					    /* 
-					     * Change line 320 to match your own Donate URL. 
-					     * Unless you want me to get your donations :)
-					     */
-						Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-								("http://bit.ly/YWwhWu"));
-		        		startActivity(donate);
 		        		break;
 		        		
 					}

@@ -88,37 +88,12 @@ public class MainAdapter extends BaseAdapter{
 			case 4:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_rate);
+				holder.icon_Image.setImageResource(R.drawable.icon_community);
 				break;
 			case 5:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_community);
-				break;
-			case 6:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_gplus);
-				break;
-			case 7:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_share);
-				break;
-			case 8:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_email);
-				break;
-			case 9:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_dev_logo);
-				break;
-			case 10:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_wallet);
 				break;
 			}
 			holder.text.setText(entry.getDescription());
