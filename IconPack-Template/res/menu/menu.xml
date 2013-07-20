@@ -4,8 +4,31 @@
     <item
         android:id="@+id/shareButton"
         android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
-        android:icon="@drawable/share"
-        android:showAsAction="ifRoom|withText"
+        android:showAsAction="never"
         android:title="@string/share"/>
+
+    <item
+        android:id="@+id/rateButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/rateme"/>
+
+    <item
+        android:id="@+id/emailButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/email_dev"/>
+
+    <item
+        android:id="@+id/aboutButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/about_dev"/>
+
+    <item
+        android:id="@+id/donateButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/donate"/>
 
 </menu>

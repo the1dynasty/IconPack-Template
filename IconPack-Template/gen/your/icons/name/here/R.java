@@ -1219,6 +1219,7 @@ containing a value of this type.
         public static final int TextView02=0x7f070057;
         public static final int ab_null=0x7f070071;
         public static final int aboutBar=0x7f070012;
+        public static final int aboutButton=0x7f070082;
         public static final int aboutdev=0x7f07006b;
         public static final int abs__action_bar=0x7f07002b;
         public static final int abs__action_bar_container=0x7f07002a;
@@ -1288,9 +1289,11 @@ containing a value of this type.
         public static final int divider1=0x7f070016;
         public static final int divider2=0x7f070019;
         public static final int donate=0x7f070068;
+        public static final int donateButton=0x7f070083;
         public static final int edit_query=0x7f070031;
         public static final int email=0x7f070064;
         public static final int email2=0x7f070065;
+        public static final int emailButton=0x7f070081;
         public static final int expanded_image=0x7f070076;
         public static final int fragment1=0x7f070073;
         public static final int gallery=0x7f07007c;
@@ -1314,6 +1317,7 @@ containing a value of this type.
         public static final int normal=0x7f070001;
         public static final int nowanim=0x7f070078;
         public static final int previous=0x7f07007b;
+        public static final int rateButton=0x7f070080;
         public static final int row1=0x7f070051;
         public static final int row2=0x7f070058;
         public static final int row3=0x7f07005f;

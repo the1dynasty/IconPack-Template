@@ -90,11 +90,11 @@
 	<string name="about_dev">About Developer</string>
 	<string name="about_theme">About Theme</string>
 	<string name="donate">Donate</string>
-	<string name="email_dev">Email Developer</string>
+	<string name="email_dev">Contact</string>
 	<string name="googleme">Circle On Google+</string>
-	<string name="icon_share">Share Theme</string>
+	<string name="icon_share">Share</string>
 	<string name="more_dev">More From Developer</string>
-	<string name="rateme">Rate Theme</string>
+	<string name="rateme">Rate</string>
 	<string name="twitterme">Follow On Twitter</string>
 	<string name="wall_picker">Wallpaper Picker</string>
 	<string name="dynasty_app">the1dynasty OSS App</string>
@@ -129,6 +129,7 @@
 	<bool name="enableIconPack">true</bool>
 	<bool name="enableDockPack">false</bool>
 	<string name="theme_title">THEME_NAME_HERE</string>
+	
 	
 	
 		<!-- Changelog Info -->
