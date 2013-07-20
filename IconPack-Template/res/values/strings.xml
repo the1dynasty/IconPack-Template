@@ -5,6 +5,9 @@
 	<string name="app_name">YOUR ICONS NAME HERE</string>
 	<string name="theme_name">Theme Name - YOUR ICONS NAME HERE</string>
 
+		<!-- This link will appear at the end of the theme description -->
+	<string name="app_link">https://play.google.com/store/apps/details?id=icons.the1dynasty.play.colors</string>
+	
 		<!-- This (optional) link will appear at the end of the theme description -->
 	<string name="developer_link">https://play.google.com/store/apps/developer?id=the1dynasty</string>
 

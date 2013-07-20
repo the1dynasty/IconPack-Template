@@ -28,7 +28,6 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
-import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -40,6 +39,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+import com.actionbarsherlock.widget.ShareActionProvider;
 
 public class Main extends SherlockFragmentActivity {
 	
@@ -165,6 +168,30 @@ public class Main extends SherlockFragmentActivity {
 			});
 			builder.show();
 	    }
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		MenuInflater inflater = getSupportMenuInflater();
+		inflater.inflate(R.menu.menu, menu);
+		
+		MenuItem shareItem = menu.findItem(R.id.shareButton);
+		ShareActionProvider mShareActionProvider =  (ShareActionProvider) shareItem.getActionProvider();
+		
+		Intent shareIntent = new Intent(Intent.ACTION_SEND);
+	    shareIntent.setType("text/plain");
+	    shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.app_link));
+
+	    mShareActionProvider.setShareIntent(shareIntent);
+		
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		return super.onOptionsItemSelected(item);
 	}
 	
 	private boolean isAppInstalled(String packageName){
