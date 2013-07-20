@@ -22,14 +22,14 @@
     android:layout_height="match_parent" >
 
     <!-- This is your GridView -->
-	<GridView 
+	<gridview.ScrollGridView 
 	    android:id="@+id/grid"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
 	    android:numColumns="auto_fit"
 	    android:columnWidth="70dp"
 	    android:stretchMode="columnWidth"
-	    android:divider="@color/black"
+	    android:divider="@color/transparent"
 	    android:dividerHeight="0dp"
 	    android:listSelector="@color/transparent"
 	    android:cacheColorHint="@color/transparent" 

@@ -127,7 +127,7 @@ public class MainFragment extends SherlockFragment{
 							 ** it and let it check for MY app :D
 							 ** If it is installed, the app will open when you press the list item
 							 ** If it is NOT installed, it will open up the play store to download it
-							 ** Change line 157 with the play store link for your own app if you're 
+							 ** Change line 136 with the play store link for your own app if you're 
 							 ** using this feature!
 							 **/
 							if(isPackageExists("app.the1dynasty.oss")){
@@ -165,7 +165,7 @@ public class MainFragment extends SherlockFragment{
 			          		startActivity(gpCommunity);
 			        		break;
 						case 5:
-							// Change line 184 with the link for YOUR own G+ Account
+							// Change line 170 with the link for YOUR own G+ Account
 							Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 									("https://plus.google.com/110748421773388678236/posts"));
 			        		startActivity(gplus);
@@ -180,7 +180,7 @@ public class MainFragment extends SherlockFragment{
 						 ** it and let it check for MY app :D
 						 ** If it is installed, the app will open when you press the list item
 						 ** If it is NOT installed, it will open up the play store to download it
-						 ** Change line 249 with the play store link for your own app if you're 
+						 ** Change line 195 with the play store link for your own app if you're 
 						 ** using this feature!
 						 **/
 						if(isPackageExists("app.the1dynasty.oss")){
@@ -222,7 +222,7 @@ public class MainFragment extends SherlockFragment{
 		          		startActivity(gpCommunity);
 		        		break;
 					case 6:
-						// Change line 282 with the link for YOUR own G+ Account
+						// Change line 227 with the link for YOUR own G+ Account
 						Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 								("https://plus.google.com/110748421773388678236/posts"));
 		        		startActivity(gplus);

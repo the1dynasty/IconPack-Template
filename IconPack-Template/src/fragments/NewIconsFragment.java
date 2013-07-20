@@ -16,6 +16,8 @@
 
 package fragments;
 
+import gridview.ScrollGridView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +39,6 @@ import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.actionbarsherlock.app.SherlockFragment;
@@ -49,7 +50,7 @@ public class NewIconsFragment extends SherlockFragment {
 	private static int mShortAnimationDuration;
 	
 	static ImageView expandedImageView;
-	GridView gridView;
+	ScrollGridView gridView;
 	final List<LauncherItem> launcherStuff = new ArrayList<LauncherItem>();
 
 	// This is the background layout that gets inflated behind the list view
@@ -58,7 +59,7 @@ public class NewIconsFragment extends SherlockFragment {
 		
 		View view = inflater.inflate(R.layout.new_icons_behind, null);
 		expandedImageView = (ImageView) view.findViewById(R.id.expanded_image);
-		gridView = (GridView) view.findViewById(R.id.grid);
+		gridView = (ScrollGridView) view.findViewById(R.id.grid);
 		
 		return view;
 	}
