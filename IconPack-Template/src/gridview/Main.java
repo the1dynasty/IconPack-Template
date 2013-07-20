@@ -182,59 +182,41 @@ public class Main extends SherlockFragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
-		return super.onOptionsItemSelected(item);
-	}
-	
-/*	
-	@Override
-    public boolean onCreateOptionsMenu(Menu menu) 
-	{
-        MenuInflater inflater = getSupportMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-	
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item)
-	{ 
-		return super.onOptionsItemSelected(item);
- 
         switch(item.getItemId())
         {
             case R.id.shareButton:
         		Intent shareIntent = new Intent(Intent.ACTION_SEND);
         	    shareIntent.setType("text/plain");
         	    shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.app_link));
-                return true;
+        	    startActivity(Intent.createChooser(shareIntent, "Share Via"));
+                break;
             case R.id.rateButton:
             	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
             			("market://details?id=your.icons.name.here"));
             	startActivity(rate);
-                return true;
+                break;
             case R.id.emailButton:
-				Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);  
-        		String aEmailList[] = { "the1dynasty.android@gmail.com",
-        				"the1dynasty.android@gmail.com" };    
-        		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);  
-        		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, 
-        				getResources().getText(R.string.email_subject));  
-        		emailIntent.setType("plain/text");  
-        		startActivity(emailIntent);
-                return true;
+            	Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+				emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[] { "the1dynasty.android@gmail.com" });
+				emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getResources().getText(R.string.email_subject));
+				emailIntent.setType("plain/text");
+				startActivity(Intent.createChooser(emailIntent, "Contact Developer"));
+				
+                break;
             case R.id.aboutButton:
-				Intent about = new Intent(null, AboutDev.class);
+				Intent about = new Intent(Main.this, AboutDev.class);
 				startActivity(about);
-                return true;
+                break;
             case R.id.donateButton:
 				Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 						("http://bit.ly/YWwhWu"));
         		startActivity(donate);
-                return true;
+                break;
         }
+        
         return true;
 	}
-}
-*/	
+	
 	private boolean isAppInstalled(String packageName){
 		// Tool we need to parse other packages
 		PackageManager pm = getPackageManager();
