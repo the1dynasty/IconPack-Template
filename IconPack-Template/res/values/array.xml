@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?> 
 
 <resources>
+    
 	<string-array name="wallpaperlist">
 		<item>wall_1</item>  
 		<item>wall_2</item>  
 		<item>wall_3</item>  
 		<item>wall_4</item>  
 	</string-array>
+    
 </resources>

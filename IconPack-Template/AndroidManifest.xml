@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-** Copyright 2013, The Android Open Source Project
+** Copyright 2013, the1dynasty
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@
 <manifest 
 		xmlns:android="http://schemas.android.com/apk/res/android"
       	package="your.icons.name.here"
-      	android:versionCode="212"
-      	android:versionName="2.1.2"
+      	android:versionCode="220"
+      	android:versionName="2.2.0"
       	android:installLocation="auto">
     <!-- android:installLocation is set to "auto" 
     change to "internalOnly" if you want it installed to the internal memory -->

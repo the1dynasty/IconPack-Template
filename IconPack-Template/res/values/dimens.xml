@@ -26,6 +26,12 @@
     <dimen name="dialog_width">300dp</dimen>
     <dimen name="header_height">68dp</dimen>
     <dimen name="launcher_title">48sp</dimen>
+    <dimen name="button_text">16sp</dimen>
+    
+    <dimen name="dialog_button_height">48dp</dimen>
+    
+    <!-- New Icon Preview Section -->
+    <dimen name="padding_new_icons_name">4dp</dimen>
     
     <!-- Dialog title height -->
     <dimen name="abs__alert_dialog_title_height">64dp</dimen>

@@ -20,13 +20,7 @@
 	<string name="dev_bio_title">MORE ABOUT the1dynasty</string>
 	<string name="dev_bio">Born Roberto Mezquia Jr. Currently resides in Miami, FL. Sort of a jack-of-all traits. Automotive collision repair, trained. 
 	    Business entrepreneur at heart. Started theming to get his phone exactly how he wanted it. Now spends more time doing it because he loves the creativity and challenges it brings.</string>
-	
-		<!-- Misc strings-->
-	<string name="content_description">Fish</string>
-	<string name="back_button">Back</string>
-	<string name="about_image_main">Main About Image</string>
-	<string name="divider">Text Divider</string>
-	
+		
 	<string name="finish_apply">Select your options and press Apply to finalize!</string>
 	<string name="apex_market">Apex Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="nova_market">Nova Launcher is not installed on your device. Redirecting to the Play Store!</string>
@@ -39,6 +33,7 @@
 	<string name="not_supported">Currently Not Supported. Please Apply through your launcher settings.</string>
 	
 	<string name="title_oss">One-Stop-Shop</string>
+	<string name="title_new_icons">Newly Added</string>
 	<string name="title_info">Theme Info</string>
 	<string name="title_apply">Apply Theme</string>
 	<string name="title_walls">Wallpapers</string>
@@ -52,6 +47,7 @@
 	
 	<!-- Note: Try not to pass the length of the description or you will have text layout issues on the Cards -->
 	<string name="desc_oss">All of my stuff in one place!</string>
+	<string name="desc_new_icons">List of added icons over each update!</string>
 	<string name="desc_info">Details and a preview of this theme</string>
 	<string name="desc_apply">Choose from the launchers to apply the theme!</string>
 	<string name="desc_walls">Choose from the included wallpapers</string>
@@ -75,10 +71,16 @@
 	<string name="error_start_desc">We have detected that you do not have my One-Stop-Shop App installed.
 	    n\n\ Would you like to download it for FREE now?</string>
 	    
+		<!-- Misc strings-->
+	<string name="content_description">Fish</string>
+	<string name="back_button">Back</string>
+	<string name="about_image_main">Main About Image</string>
+	<string name="divider">Text Divider</string>
 	<string name="later">Later</string>
 	<string name="get">Get App</string>
-	    
+	<string name="share">Share</string>
 	<string name="ok">OK</string>
+	<string name="close">Close</string>
 	
 	
 		<!-- Labels for app icons -->
@@ -124,5 +126,50 @@
 	<bool name="enableIconPack">true</bool>
 	<bool name="enableDockPack">false</bool>
 	<string name="theme_title">THEME_NAME_HERE</string>
+	
+	
+		<!-- Changelog Info -->
+	<string name="changelog_title">Changelog</string>
+	
+	<string name="changelog_1">Version 1.0.0</string>
+	<string name="changelog_2">Version 1.0.1</string>
+	<string name="changelog_3">Version 1.1.0</string>
+	<string name="changelog_4">Version 2.0.0</string>
+	<string name="changelog_5">Version 2.1.1</string>
+	<string name="changelog_6">Version 2.1.2</string>
+	<string name="changelog_7">Version 2.2.0</string>
+	
+		<!-- NOTES 
+			 \n = new line
+		 	 &#8226; = bullets -->
+	<string name="cl_list_1">&#8226; Initial Release</string>
+	<string name="cl_list_2">&#8226; Fixed ADW and Nova intents
+							\n&#8226; Fixed a lot of references for various layouts and colors
+							\n&#8226; Other Misc things</string>
+	<string name="cl_list_3">&#8226; File restructuring
+							\n&#8226; Added Tablet Support
+							\n&#8226; Changed code from ListView to GridView
+							\n&#8226; Holo Light/Light ActionBar is the default instead of Holo Light/Dark ActionBar
+							\n&#8226; Misc new images
+							\n&#8226; Added Action Launcher to the Apply dialog</string>
+	<string name="cl_list_4">&#8226; Removed hardcoded strings. Now better for translations.
+							\n&#8226; Custom fonts can now be used throughout the app
+							\n&#8226; Cleaned up folders/files/code
+							\n&#8226; Changed "Apply" dialog to GridView
+							\n&#8226; Added more "Apply" buttons (for future implementation)
+							\n&#8226; Fixed Wallpaper section of app
+							\n&#8226; Roboto-Thin is now the default font
+							\n&#8226; Fixed scaling on top banner across all screen sizes</string>
+	<string name="cl_list_5">&#8226; Added GlassActionBar to the template
+							\n&#8226; Removed NOA dependency
+							\n&#8226; Slightly tweaked layouts</string>
+	<string name="cl_list_6">&#8226; Fixed Nova and Go Launcher
+							\n&#8226; Added working Go Launcher "Apply" button</string>
+	<string name="cl_list_7">&#8226; Added Changelog dialog on first run after install/update
+							\n&#8226; NEW Section for showing off new icons
+							\n&#8226; Overflow Menu added and some grid items moved to it</string>
+		
+		<!-- Dummy Content -->
+	<string name="dummy_desc"></string>
 	
 </resources>

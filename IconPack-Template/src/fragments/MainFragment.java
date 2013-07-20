@@ -1,5 +1,18 @@
 package fragments;
 
+import gridview.LauncherMain;
+import gridview.NewIconsMain;
+import gridview.ScrollGridView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import your.icons.name.here.AboutDev;
+import your.icons.name.here.AboutThemeActivity;
+import your.icons.name.here.R;
+import your.icons.name.here.Wallpaper;
+import adapters.MainAdapter;
+import adapters.MainAdapter.AdapterItem;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -11,21 +24,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
 
 import com.actionbarsherlock.app.SherlockFragment;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import adapters.MainAdapter;
-import adapters.MainAdapter.AdapterItem;
-import gridview.LauncherMain;
-import gridview.ScrollGridView;
-import your.icons.name.here.AboutDev;
-import your.icons.name.here.AboutThemeActivity;
-import your.icons.name.here.R;
-import your.icons.name.here.Wallpaper;
 
 
 /** 
@@ -71,20 +71,20 @@ public class MainFragment extends SherlockFragment{
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_oss), 
 					getResources().getString (R.string.desc_oss), 0));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_new_icons), 
+					getResources().getString (R.string.desc_new_icons), 1));
 			listOfStuff.remove(new AdapterItem(getResources().getString (R.string.title_info), 
-					getResources().getString (R.string.desc_info), 1));
+					getResources().getString (R.string.desc_info), 2));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_apply), 
-					getResources().getString (R.string.desc_apply), 2));
+					getResources().getString (R.string.desc_apply), 3));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_walls), 
-					getResources().getString (R.string.desc_walls), 3));
+					getResources().getString (R.string.desc_walls), 4));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_rate), 
-					getResources().getString (R.string.desc_rate), 4));
+					getResources().getString (R.string.desc_rate), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_community), 
-					getResources().getString (R.string.desc_community), 5));
+					getResources().getString (R.string.desc_community), 6));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_gplus), 
-					getResources().getString (R.string.desc_gplus), 6));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_share), 
-					getResources().getString (R.string.desc_share), 7));
+					getResources().getString (R.string.desc_gplus), 7));;
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_email), 
 					getResources().getString (R.string.desc_email), 8));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_about), 
@@ -96,20 +96,20 @@ public class MainFragment extends SherlockFragment{
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_oss), 
 					getResources().getString (R.string.desc_oss), 0));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_new_icons), 
+					getResources().getString (R.string.desc_new_icons), 1));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_info), 
-					getResources().getString (R.string.desc_info), 1));
+					getResources().getString (R.string.desc_info), 2));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_apply), 
-					getResources().getString (R.string.desc_apply), 2));
+					getResources().getString (R.string.desc_apply), 3));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_walls), 
-					getResources().getString (R.string.desc_walls), 3));
+					getResources().getString (R.string.desc_walls), 4));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_rate), 
-					getResources().getString (R.string.desc_rate), 4));
+					getResources().getString (R.string.desc_rate), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_community), 
-					getResources().getString (R.string.desc_community), 5));
+					getResources().getString (R.string.desc_community), 6));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_gplus), 
-					getResources().getString (R.string.desc_gplus), 6));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_share), 
-					getResources().getString (R.string.desc_share), 7));
+					getResources().getString (R.string.desc_gplus), 7));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_email), 
 					getResources().getString (R.string.desc_email), 8));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_about), 
@@ -161,19 +161,23 @@ public class MainFragment extends SherlockFragment{
 						}
 			    			break;
 						case 1:
+							Intent newIcons = new Intent(getSherlockActivity(), NewIconsMain.class);
+							startActivity(newIcons);
+			        		break;
+						case 2:
 							Intent launcher = new Intent(getSherlockActivity(), LauncherMain.class);
 							startActivity(launcher);
 			        		break;
-						case 2:
+						case 3:
 							Intent wall = new Intent(getSherlockActivity(), Wallpaper.class);
 							startActivity(wall);
 			        		break;
-						case 3:
+						case 4:
 			            	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 			            			("market://details?id=your.icons.name.here"));
 			            	startActivity(rate);
 			        		break;
-						case 4:
+						case 5:
 							/** 
 							 ** This launches my community on G+
 							 ** Please leave this link in here for others to join. Thank You!
@@ -182,20 +186,11 @@ public class MainFragment extends SherlockFragment{
 									("http://bit.ly/14F6Eez"));
 			          		startActivity(gpCommunity);
 			        		break;
-						case 5:
+						case 6:
 							// Change line 184 with the link for YOUR own G+ Account
 							Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 									("https://plus.google.com/110748421773388678236/posts"));
 			        		startActivity(gplus);
-			        		break;
-						case 6:
-							Intent shareIntent = new Intent();
-			            	shareIntent.setAction(Intent.ACTION_SEND);
-			            	shareIntent.putExtra(Intent.EXTRA_TEXT, 
-			            			getResources().getString (R.string.share_text));
-			            	shareIntent.setType("text/plain");
-			            	startActivity(Intent.createChooser(shareIntent, 
-			            			getResources().getText(R.string.app_name)));
 			        		break;
 						case 7:
 						     /* 
@@ -253,23 +248,27 @@ public class MainFragment extends SherlockFragment{
 					}
 		    			break;
 					case 1:
+						Intent newIcons = new Intent(getSherlockActivity(), NewIconsMain.class);
+						startActivity(newIcons);
+		        		break;
+					case 2:
 						Intent aboutTheme = new Intent(getSherlockActivity(), AboutThemeActivity.class);
 						startActivity(aboutTheme);
 		        		break;
-					case 2:
+					case 3:
 						Intent launcher = new Intent(getSherlockActivity(), LauncherMain.class);
 						startActivity(launcher);
 		        		break;
-					case 3:
+					case 4:
 						Intent wall = new Intent(getSherlockActivity(), Wallpaper.class);
 						startActivity(wall);
 		        		break;
-					case 4:
+					case 5:
 		            	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 		            			("market://details?id=your.icons.name.here"));
 		            	startActivity(rate);
 		        		break;
-					case 5:
+					case 6:
 						/** 
 						 ** This launches my community on G+
 						 ** Please leave this link in here for others to join. Thank You!
@@ -278,20 +277,11 @@ public class MainFragment extends SherlockFragment{
 								("http://bit.ly/14F6Eez"));
 		          		startActivity(gpCommunity);
 		        		break;
-					case 6:
+					case 7:
 						// Change line 282 with the link for YOUR own G+ Account
 						Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 								("https://plus.google.com/110748421773388678236/posts"));
 		        		startActivity(gplus);
-		        		break;
-					case 7:
-						Intent shareIntent = new Intent();
-		            	shareIntent.setAction(Intent.ACTION_SEND);
-		            	shareIntent.putExtra(Intent.EXTRA_TEXT, 
-		            			getResources().getString (R.string.share_text));
-		            	shareIntent.setType("text/plain");
-		            	startActivity(Intent.createChooser(shareIntent, 
-		            			getResources().getText(R.string.app_name)));
 		        		break;
 					case 8:
 					     /* 
@@ -325,8 +315,18 @@ public class MainFragment extends SherlockFragment{
 		        		
 					}
 				}
-				}				
-	
+				}	
+/*
+			case 8:
+				Intent shareIntent = new Intent();
+            	shareIntent.setAction(Intent.ACTION_SEND);
+            	shareIntent.putExtra(Intent.EXTRA_TEXT, 
+            			getResources().getString (R.string.share_text));
+            	shareIntent.setType("text/plain");
+            	startActivity(Intent.createChooser(shareIntent, 
+            			getResources().getText(R.string.app_name)));
+        		break;
+*/	
 	/** 
 	 ** This is the code needed to check the package in case 0
 	 ** If you remove that check, you can remove this code too
