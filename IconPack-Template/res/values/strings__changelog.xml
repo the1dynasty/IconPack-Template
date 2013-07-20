@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+** Copyright 2013, the1dynasty
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+-->
+
+<resources>
+    
+		<!-- Changelog Info -->
+	<string name="changelog_title">Changelog</string>
+	
+		<!-- Version Number: Add more or remove some -->
+	<string name="changelog_1">Version 1.0.0</string>
+	<string name="changelog_2">Version 1.0.1</string>
+	<string name="changelog_3">Version 1.1.0</string>
+	<string name="changelog_4">Version 2.0.0</string>
+	<string name="changelog_5">Version 2.1.1</string>
+	<string name="changelog_6">Version 2.1.2</string>
+	<string name="changelog_7">Version 2.2.0</string>
+	
+		<!-- ***************************** NOTES *****************************
+			 \n = new line
+		 	 &#8226; = bullets -->
+		 	 
+	<!-- Changelog 1 -->
+		<string name="cl_list_1">&#8226; Initial Release</string>
+	
+	<!-- Changelog 2 -->
+		<string name="cl_list_2">
+		    &#8226; Fixed ADW and Nova intents
+			\n&#8226; Fixed a lot of references for various layouts and colors
+			\n&#8226; Other Misc things
+		</string>
+	
+	<!-- Changelog 3 -->						
+		<string name="cl_list_3">
+		    &#8226; File restructuring
+			\n&#8226; Added Tablet Support
+			\n&#8226; Changed code from ListView to GridView
+			\n&#8226; Holo Light/Light ActionBar is the default instead of Holo Light/Dark ActionBar
+			\n&#8226; Misc new images
+			\n&#8226; Added Action Launcher to the Apply dialog
+		</string>
+	
+	<!-- Changelog 4 -->						
+		<string name="cl_list_4">
+		    &#8226; Removed hardcoded strings. Now better for translations.
+			\n&#8226; Custom fonts can now be used throughout the app
+			\n&#8226; Cleaned up folders/files/code
+			\n&#8226; Changed "Apply" dialog to GridView
+			\n&#8226; Added more "Apply" buttons (for future implementation)
+			\n&#8226; Fixed Wallpaper section of app
+			\n&#8226; Roboto-Thin is now the default font
+			\n&#8226; Fixed scaling on top banner across all screen sizes
+		</string>
+	
+	<!-- Changelog 5 -->						
+		<string name="cl_list_5">
+		    &#8226; Added GlassActionBar to the template
+			\n&#8226; Removed NOA dependency
+			\n&#8226; Slightly tweaked layouts
+		</string>
+	
+	<!-- Changelog 6 -->						
+		<string name="cl_list_6">
+		    &#8226; Fixed Nova and Go Launcher
+			\n&#8226; Added working Go Launcher "Apply" button
+		</string>
+	
+	<!-- Changelog 7 -->						
+		<string name="cl_list_7">
+		    &#8226; Added Changelog dialog on first run after install/update
+			\n&#8226; NEW Section for showing off new icons
+			\n&#8226; Overflow Menu added and some grid items moved to it
+			\n&#8226; New Theme Info Animation
+		</string>
+							
+</resources>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="dock_pack" translatable="false">
-        <item>dock_0002</item>
-        <item>dock_0003</item>
-        <item>dock_0004</item>
-    </string-array>
-</resources>

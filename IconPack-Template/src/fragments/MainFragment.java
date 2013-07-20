@@ -68,7 +68,7 @@ public class MainFragment extends SherlockFragment{
 		boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
 		if (tabletSize) {
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_oss), 
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_app), 
 					getResources().getString (R.string.desc_oss), 0));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_new_icons), 
 					getResources().getString (R.string.desc_new_icons), 1));
@@ -85,7 +85,7 @@ public class MainFragment extends SherlockFragment{
 			
 		} else {
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_oss), 
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_app), 
 					getResources().getString (R.string.desc_oss), 0));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_new_icons), 
 					getResources().getString (R.string.desc_new_icons), 1));
