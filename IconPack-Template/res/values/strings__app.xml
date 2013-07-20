@@ -101,7 +101,7 @@
 	    n\n\ Be sure to visit that app for more themes and other downloads!</string>
 	<string name="error_start_title">Ohnoes!!!</string>
 	<string name="error_start_desc">We have detected that you do not have my One-Stop-Shop App installed.
-	    n\n\ Would you like to download it for FREE now?</string>
+	     Would you like to download it for FREE now?</string>
 
 		<!-- Wallpaper window -->
 	<string name="wall_apply">Apply Wallpaper</string>
