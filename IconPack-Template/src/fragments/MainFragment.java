@@ -231,17 +231,7 @@ public class MainFragment extends SherlockFragment{
 					}
 				}
 				}	
-/*
-			case 8:
-				Intent shareIntent = new Intent();
-            	shareIntent.setAction(Intent.ACTION_SEND);
-            	shareIntent.putExtra(Intent.EXTRA_TEXT, 
-            			getResources().getString (R.string.share_text));
-            	shareIntent.setType("text/plain");
-            	startActivity(Intent.createChooser(shareIntent, 
-            			getResources().getText(R.string.app_name)));
-        		break;
-*/	
+				
 	/** 
 	 ** This is the code needed to check the package in case 0
 	 ** If you remove that check, you can remove this code too

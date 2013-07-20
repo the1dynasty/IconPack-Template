@@ -48,23 +48,23 @@ public class AboutThemeFrag extends AboutThemeMain {
       previous = (ImageButton) getView().findViewById(R.id.previous);
       previous.setOnClickListener(new OnClickListener() {
               public void onClick(View v) {
-            	  SwipeLeft();
+            	  SwipeRight();
               }	
       });
       
       next = (ImageButton) getView().findViewById(R.id.next);
       next.setOnClickListener(new OnClickListener() {
               public void onClick(View v) {
-            	  SwipeRight();
+            	  SwipeLeft();
               }	
       });
       
       page = (ViewFlipper)getView().findViewById(R.id.nowanim);
 
-      animUpLeft = AnimationUtils.loadAnimation(getActivity(), R.anim.up_left);
-      animUpRight = AnimationUtils.loadAnimation(getActivity(), R.anim.up_right);
-      animDownLeft = AnimationUtils.loadAnimation(getActivity(), R.anim.out_left);
-      animDownRight = AnimationUtils.loadAnimation(getActivity(), R.anim.out_right);
+      animUpLeft = AnimationUtils.loadAnimation(getActivity(), R.anim.plus_page_in_right);
+      animUpRight = AnimationUtils.loadAnimation(getActivity(), R.anim.plus_page_in_left);
+      animDownLeft = AnimationUtils.loadAnimation(getActivity(), R.anim.plus_page_out_right);
+      animDownRight = AnimationUtils.loadAnimation(getActivity(), R.anim.plus_page_out_left);
      
   }
 		

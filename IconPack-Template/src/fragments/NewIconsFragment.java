@@ -68,7 +68,8 @@ public class NewIconsFragment extends SherlockFragment {
 		super.onActivityCreated(savedInstanceState);
 		
 		/************************************************************************
-		 ******************** Add More GridView Items here **********************
+		 *********************** Add New Icon Names here ************************
+		 ******************** This also adds each new item **********************
 		 ************************************************************************/
 		launcherStuff.add(new LauncherItem("Apex", 0));
 		launcherStuff.add(new LauncherItem("Nova", 1));
@@ -89,10 +90,10 @@ public class NewIconsFragment extends SherlockFragment {
 	}
 
 	
-	/************************************************************************
-	 ******************** This is your animation stuff **********************
-	 ******************* DO NOT TOUCH BEYOND THIS POINT *********************
-	 ************************************************************************/
+		/************************************************************************
+		 ******************** This is your animation stuff **********************
+		 ******************* DO NOT TOUCH BEYOND THIS POINT *********************
+		 ************************************************************************/
 	public static void zoomImageFromThumb(final View thumbView, int imageResId, View container) {
         // If there's an animation in progress, cancel it immediately and proceed with this one.
         if (mCurrentAnimator != null) {

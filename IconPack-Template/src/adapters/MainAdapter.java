@@ -73,24 +73,29 @@ public class MainAdapter extends BaseAdapter{
 			case 1:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_info);
+				holder.icon_Image.setImageResource(R.drawable.icon_new);
 				break;
 			case 2:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_launcher);
+				holder.icon_Image.setImageResource(R.drawable.icon_info);
 				break;
 			case 3:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_wall);
+				holder.icon_Image.setImageResource(R.drawable.icon_launcher);
 				break;
 			case 4:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_community);
+				holder.icon_Image.setImageResource(R.drawable.icon_wall);
 				break;
 			case 5:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
+				holder.icon_Image.setImageResource(R.drawable.icon_community);
+				break;
+			case 6:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_gplus);

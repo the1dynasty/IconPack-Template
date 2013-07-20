@@ -26,7 +26,7 @@
     	android:gravity="center" 
     	tools:context="gridview.Main" >
 
-			<com.example.grid.zoomanimation.TouchHighlightImageButton
+			<your.icons.name.here.TouchHighlightImageButton
 			    android:id="@+id/thumb_button"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
 			    android:layout_gravity="center"
 			    android:padding="@dimen/padding_new_icons_name"
 			    android:text="Community"
-			    android:textColor="@color/list_title_color"
+			    android:textColor="@color/folder_title_color"
 			    android:textSize="@dimen/grid_title_text"
 			    tools:ignore="HardcodedText" />
 	

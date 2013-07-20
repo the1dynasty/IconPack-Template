@@ -65,7 +65,7 @@ public class NewIconsAdapter extends BaseAdapter{
 			switch(entry.getID()){
 			case 0:
 				holder.title.setTextColor(context.getResources()
-						.getColor(R.color.black)); // Change text color here
+						.getColor(R.color.folder_title_color)); // Change text color here
 				holder.launcher_image.setImageResource(R.mipmap.icon_apex); // Replace with your Icon
 				holder.launcher_image.setOnClickListener(new View.OnClickListener() {
 		            @Override
@@ -78,7 +78,7 @@ public class NewIconsAdapter extends BaseAdapter{
 				break;
 			case 1:
 				holder.title.setTextColor(context.getResources()
-						.getColor(R.color.black)); // Change text color here
+						.getColor(R.color.folder_title_color)); // Change text color here
 				holder.launcher_image.setImageResource(R.mipmap.icon_nova); // Replace with your Icon
 				holder.launcher_image.setOnClickListener(new View.OnClickListener() {
 		            @Override
@@ -91,7 +91,7 @@ public class NewIconsAdapter extends BaseAdapter{
 				break;
 			case 2:
 				holder.title.setTextColor(context.getResources()
-						.getColor(R.color.black)); // Change text color here
+						.getColor(R.color.folder_title_color)); // Change text color here
 				holder.launcher_image.setImageResource(R.mipmap.icon_holo); // Replace with your Icon
 				holder.launcher_image.setOnClickListener(new View.OnClickListener() {
 		            @Override
@@ -104,7 +104,7 @@ public class NewIconsAdapter extends BaseAdapter{
 				break;
 			case 3:
 				holder.title.setTextColor(context.getResources()
-						.getColor(R.color.black)); // Change text color here
+						.getColor(R.color.folder_title_color)); // Change text color here
 				holder.launcher_image.setImageResource(R.mipmap.icon_adw); // Replace with your Icon
 				holder.launcher_image.setOnClickListener(new View.OnClickListener() {
 		            @Override
@@ -117,7 +117,7 @@ public class NewIconsAdapter extends BaseAdapter{
 				break;
 			case 4:
 				holder.title.setTextColor(context.getResources()
-						.getColor(R.color.black)); // Change text color here
+						.getColor(R.color.folder_title_color)); // Change text color here
 				holder.launcher_image.setImageResource(R.mipmap.icon_al); // Replace with your Icon
 				holder.launcher_image.setOnClickListener(new View.OnClickListener() {
 		            @Override
