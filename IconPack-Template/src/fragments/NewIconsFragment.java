@@ -23,7 +23,7 @@ import java.util.List;
 
 import your.icons.name.here.R;
 import adapters.NewIconsAdapter;
-import adapters.NewIconsAdapter.LauncherItem;
+import adapters.NewIconsAdapter.NewIconName;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
@@ -51,7 +51,7 @@ public class NewIconsFragment extends SherlockFragment {
 	
 	static ImageView expandedImageView;
 	ScrollGridView gridView;
-	final List<LauncherItem> launcherStuff = new ArrayList<LauncherItem>();
+	final List<NewIconName> newIconStuff = new ArrayList<NewIconName>();
 
 	// This is the background layout that gets inflated behind the list view
 	public View onCreateView(LayoutInflater inflater, ViewGroup container_launcher,
@@ -72,15 +72,15 @@ public class NewIconsFragment extends SherlockFragment {
 		 *********************** Add New Icon Names here ************************
 		 ******************** This also adds each new item **********************
 		 ************************************************************************/
-		launcherStuff.add(new LauncherItem("Apex", 0));
-		launcherStuff.add(new LauncherItem("Nova", 1));
-		launcherStuff.add(new LauncherItem("Holo", 2));
-		launcherStuff.add(new LauncherItem("ADW", 3));
-		launcherStuff.add(new LauncherItem("Action", 4));
+		newIconStuff.add(new NewIconName("Apex", 0));
+		newIconStuff.add(new NewIconName("Nova", 1));
+		newIconStuff.add(new NewIconName("Holo", 2));
+		newIconStuff.add(new NewIconName("ADW", 3));
+		newIconStuff.add(new NewIconName("Action", 4));
 
 		
 		NewIconsAdapter adapter = new NewIconsAdapter(getActivity(),
-				launcherStuff);
+				newIconStuff);
 
 		gridView.setAdapter(adapter);
 		gridView.setOnItemClickListener(new OnItemClickListener() {

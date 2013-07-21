@@ -31,16 +31,16 @@ import fragments.NewIconsFragment;
 
 public class NewIconsAdapter extends BaseAdapter{
 	private Context context;
-	private List<LauncherItem> gridItem;
+	private List<NewIconName> gridItem;
 
-	public NewIconsAdapter(Context context, List<LauncherItem> gridItem) {
+	public NewIconsAdapter(Context context, List<NewIconName> gridItem) {
 		this.gridItem = gridItem;
 		this.context = context;
 	}
 
 	public View getView(int position, View v, ViewGroup parent) {
 		final ViewHolder holder;
-		LauncherItem entry = gridItem.get(position);
+		NewIconName entry = gridItem.get(position);
 		
 		if (v == null) {
 			LayoutInflater inflater = (LayoutInflater) context
@@ -163,11 +163,11 @@ public class NewIconsAdapter extends BaseAdapter{
 		public LinearLayout container;
 	}
 	
-	public static class LauncherItem{
+	public static class NewIconName{
 		String Title;
 		int ID;
 		
-		public LauncherItem(String Title, int ID) {
+		public NewIconName(String Title, int ID) {
 			this.Title = Title;
 			this.ID = ID;
 		}
