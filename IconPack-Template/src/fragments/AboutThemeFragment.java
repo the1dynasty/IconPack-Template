@@ -18,7 +18,7 @@ import android.widget.ViewFlipper;
 import your.icons.name.here.AboutThemeMain;
 import your.icons.name.here.R;
 
-public class AboutThemeFrag extends AboutThemeMain {
+public class AboutThemeFragment extends AboutThemeMain {
 	
 	
 	private ImageButton previous, next;

@@ -41,7 +41,7 @@
     <!-- minSDK set to run on Android 2.2 and newer
     	targetSDK set to run on latest version. This ensures 
     	the latest graphics are used on newer devices -->
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="18"/>
     
     <!-- Change the style to something else if you want a different look
     	Please refer to ABS Styles for choosing a style you want -->

@@ -15,13 +15,10 @@
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
 -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical" >
-<RelativeLayout 
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="match_parent" >
 
     <ImageView
         android:contentDescription="@string/content_description"
@@ -38,7 +35,7 @@
 		<View
 		    android:layout_width="match_parent"
 		    android:layout_height="@dimen/ab_height"
-		    android:background="@color/transparent"/>
+		    android:background="@color/transparent" />
 		
 		<FrameLayout
 		    android:layout_width="match_parent"
@@ -48,4 +45,3 @@
 		
 </LinearLayout>
 </RelativeLayout>
-</ScrollView>
