@@ -22,7 +22,6 @@
     android:layout_height="fill_parent"
     >
     <GridView android:id="@+id/icon_grid"
-        android:background="@color/app_bg"
         android:listSelector="@drawable/grid_selector"
     	android:layout_width="fill_parent"
     	android:layout_height="fill_parent"

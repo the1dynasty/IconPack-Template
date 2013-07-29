@@ -16,10 +16,11 @@
 
 package adapters;
 
+import helper.TouchHighlightImageButton;
+
 import java.util.List;
 
 import your.icons.name.here.R;
-import your.icons.name.here.TouchHighlightImageButton;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

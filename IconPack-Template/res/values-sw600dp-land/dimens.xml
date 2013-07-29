@@ -27,10 +27,11 @@
     <dimen name="abs__alert_dialog_title_height">64dp</dimen>
     
     <!-- Tablet dimensions -->
-    <dimen name="banner_height">150dp</dimen>
-    <dimen name="banner_title_margin">60dp</dimen>
+    <dimen name="banner_height">206dp</dimen>
+    <dimen name="banner_title_margin">45dp</dimen>
     <dimen name="banner_title">26sp</dimen>
     <dimen name="banner_desc">20sp</dimen>
+    
     <dimen name="column_width">152dp</dimen>
     <dimen name="row_height">236dp</dimen>
     

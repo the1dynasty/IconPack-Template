@@ -26,7 +26,7 @@
     	android:gravity="center" 
     	tools:context="gridview.Main" >
 
-			<your.icons.name.here.TouchHighlightImageButton
+			<helper.TouchHighlightImageButton
 			    android:id="@+id/thumb_button"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"

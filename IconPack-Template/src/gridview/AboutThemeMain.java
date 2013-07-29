@@ -1,5 +1,6 @@
-package your.icons.name.here;
+package gridview;
 
+import your.icons.name.here.R;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

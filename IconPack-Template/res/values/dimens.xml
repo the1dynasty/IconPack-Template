@@ -40,10 +40,10 @@
     <dimen name="column_width">147dp</dimen>
     <dimen name="row_height">192dp</dimen>
     
-    <dimen name="banner_height">110dp</dimen>
-    <dimen name="banner_title_margin">25dp</dimen>
-    <dimen name="banner_title">24sp</dimen>
-    <dimen name="banner_desc">18sp</dimen>
+    <dimen name="banner_height">158dp</dimen>
+    <dimen name="banner_title_margin">28dp</dimen>
+    <dimen name="banner_title">22sp</dimen>
+    <dimen name="banner_desc">16sp</dimen>
     
     <dimen name="ab_height">48dp</dimen>
 </resources>

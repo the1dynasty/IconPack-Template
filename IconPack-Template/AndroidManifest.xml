@@ -19,8 +19,8 @@
 <manifest 
 		xmlns:android="http://schemas.android.com/apk/res/android"
       	package="your.icons.name.here"
-      	android:versionCode="220"
-      	android:versionName="2.2.0"
+      	android:versionCode="222"
+      	android:versionName="2.2.2"
       	android:installLocation="auto">
     <!-- android:installLocation is set to "auto" 
     change to "internalOnly" if you want it installed to the internal memory -->
@@ -38,10 +38,10 @@
         android:xlargeScreens="true"  
         android:resizeable="true" />
     
-    <!-- minSDK set to run on Android 2.2 and newer
+    <!-- minSDK set to run on Android 2.3 and newer
     	targetSDK set to run on latest version. This ensures 
     	the latest graphics are used on newer devices -->
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="18"/>
     
     <!-- Change the style to something else if you want a different look
     	Please refer to ABS Styles for choosing a style you want -->
@@ -52,9 +52,7 @@
         android:theme="@style/AppTheme"
         android:largeHeap="true" >
         
-    <!-- Main Activity that launches when you open the app from the drawer 
-    	If you want the Flat Layout, replace android:name line with this
-    	android:name="your.icons.name.here.AppActivity" -->
+    <!-- Main Activity that launches when you open the app from the drawer -->
         <activity
             android:name="gridview.Main"
             android:label="@string/app_name" >
@@ -118,9 +116,8 @@
         <!-- This is where the magic happens for the Icon Picker and allowing the packs to show up -->
         <activity
 				android:name="your.icons.name.here.Icons"
-                android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                android:label="@string/app_name">		
+        	<intent-filter>
                 <action android:name="org.adw.launcher.THEMES" />
                 <category android:name="android.intent.category.DEFAULT" />                
             </intent-filter>
@@ -128,35 +125,16 @@
                 <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>   
-   	<!-- ADW / Nova / Holo -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />       
-            </intent-filter>
 	<!-- LauncherPro / Holo -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.fede.launcher.THEME_ICONPACK"/>
-            </intent-filter>
-	<!-- Apex -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.anddoes.launcher.THEME" />
-            </intent-filter>
-	<!-- Nova -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.teslacoilsw.launcher.THEME" />
             </intent-filter>
 	<!-- GoLauncher -->
             <intent-filter>
                 <action android:name="com.gau.go.launcherex.theme" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-          	<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-     			<category android:name="android.intent.category.INFO" />	
-			</intent-filter>
 		</activity>
 		  
     <!-- android:authorities NEEDS to be changed manually for each new pack

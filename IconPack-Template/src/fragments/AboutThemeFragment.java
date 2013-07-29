@@ -1,5 +1,6 @@
 package fragments;
 
+import gridview.AboutThemeMain;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -15,7 +16,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-import your.icons.name.here.AboutThemeMain;
 import your.icons.name.here.R;
 
 public class AboutThemeFragment extends AboutThemeMain {

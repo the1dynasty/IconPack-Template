@@ -2,7 +2,7 @@ package fragments;
 
 import gridview.LauncherMain;
 import gridview.NewIconsMain;
-import gridview.ScrollGridView;
+import helper.ScrollGridView;
 
 import java.util.ArrayList;
 import java.util.List;

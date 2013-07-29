@@ -29,6 +29,7 @@
 	<string name="changelog_5">Version 2.1.1</string>
 	<string name="changelog_6">Version 2.1.2</string>
 	<string name="changelog_7">Version 2.2.0</string>
+	<string name="changelog_8">Version 2.2.2</string>
 	
 		<!-- ***************************** NOTES *****************************
 			 \n = new line
@@ -86,6 +87,14 @@
 			\n&#8226; Overflow Menu added and some grid items moved to it
 			\n&#8226; New Theme Info Animation
 			\n&#8226; Organized and cleaned up some misc files including strings.xml
+		</string>
+	
+	<!-- Changelog 8 -->						
+		<string name="cl_list_8">
+		    &#8226; Fixed FC on Android 4.3 Devices
+			\n&#8226; Removed unused parts of GlassActionBar Library
+			\n&#8226; Resized feature banner layout
+			\n&#8226; Fixed bg issues with main layout
 		</string>
 							
 </resources>

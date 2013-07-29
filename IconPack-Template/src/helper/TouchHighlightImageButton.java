@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package your.icons.name.here;
+package helper;
 
 import android.content.Context;
 import android.content.res.TypedArray;

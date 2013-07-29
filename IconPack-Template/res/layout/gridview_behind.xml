@@ -16,7 +16,7 @@
 ** limitations under the License.
 -->
 
-<gridview.ScrollGridView 
+<helper.ScrollGridView 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" 
     android:id="@+id/grid"
@@ -25,7 +25,6 @@
     android:numColumns="3"
     android:divider="@color/transparent"
     android:dividerHeight="0dp"
-    android:background="@color/app_bg"
     android:listSelector="@color/transparent"
     android:cacheColorHint="@color/transparent" 
-    tools:context="gridview.Main"/>
+    tools:context="gridview.Main" />
