@@ -19,8 +19,8 @@
 <manifest 
 		xmlns:android="http://schemas.android.com/apk/res/android"
       	package="your.icons.name.here"
-      	android:versionCode="222"
-      	android:versionName="2.2.2"
+      	android:versionCode="224"
+      	android:versionName="2.2.4"
       	android:installLocation="auto">
     <!-- android:installLocation is set to "auto" 
     change to "internalOnly" if you want it installed to the internal memory -->
@@ -124,7 +124,17 @@
             <intent-filter>
                 <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>   
+            </intent-filter>  
+    <!-- Apex -->
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="com.anddoes.launcher.THEME" />
+             </intent-filter>
+	<!-- Nova -->
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="com.teslacoilsw.launcher.THEME" />
+             </intent-filter>
 	<!-- LauncherPro / Holo -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
