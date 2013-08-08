@@ -25,7 +25,7 @@ import com.actionbarsherlock.app.SherlockFragment;
  ** Some lines may be off a few numbers Just be sure you're in the general area
  **/
 
-public class LauncherDialog extends SherlockFragment {
+public class LauncherFragment extends SherlockFragment {
 
 	GridView gridView;
 	final List<LauncherItem> launcherStuff = new ArrayList<LauncherItem>();

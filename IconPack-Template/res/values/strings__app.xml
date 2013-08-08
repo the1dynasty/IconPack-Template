@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+** Copyright 2013, the1dynasty
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+-->
+
+<!-- Lines 35, 57, 98 need to be changed. Everything else can stay the same -->
+
+<resources>
+    
+    	<!-- Applied Toast Messages -->
+	<string name="finish_apply">Select your options and press Apply to finalize!</string>
+	<string name="apex_market">Apex Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="nova_market">Nova Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="holo_market">Holo Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="adw_market">ADW Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="al_market">Action Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="go_market">AWESOME! Go Launcher is not installed on your device. Redirecting to Apex Launcher!</string>
+	<string name="next_market">Next Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="not_supported">Currently Not Supported. Please Apply through your launcher settings.</string>
+	
+		<!-- GridView Titles -->
+	<string name="title_app">One-Stop-Shop</string>
+	<string name="title_new_icons">Newly Added</string>
+	<string name="title_info">Theme Info</string>
+	<string name="title_apply">Apply Theme</string>
+	<string name="title_walls">Wallpapers</string>
+	<string name="title_community">G+ Community</string>
+	<string name="title_gplus">My Google+</string>
+	
+		<!-- OverFlow Menu -->
+	<string name="title_rate">Rate Theme</string>
+	<string name="title_share">Share Theme</string>
+	<string name="title_email">Email Developer</string>
+	<string name="title_about">About Developer</string>
+	<string name="title_donate">Donate</string>
+	
+		<!-- Labels for app icons -->
+	<string name="about_theme">About Theme</string>
+	<string name="googleme">Circle On Google+</string>
+	
+		<!-- Misc Labels -->
+	<string name="twitterme">Follow On Twitter</string>
+	<string name="wall_picker">Wallpaper Picker</string>
+	<string name="dynasty_app">the1dynasty OSS App</string>
+	
+		<!-- More OverFlow Stuff -->
+	<string name="icon_share">Share</string>
+	<string name="about_dev">About Developer</string>
+	<string name="email_dev">Contact</string>
+	<string name="donate">Donate</string>
+	<string name="rateme">Rate</string>
+	
+		<!-- Misc Stuff -->
+	<string name="more_dev">More From Developer</string>
+	<string name="content_description">Fish</string>
+	<string name="back_button">Back</string>
+	<string name="about_image_main">Main About Image</string>
+	<string name="divider">Text Divider</string>
+	<string name="later">Later</string>
+	<string name="get">Get App</string>
+	<string name="share">Share</string>
+	<string name="ok">OK</string>
+	<string name="close">Close</string>
+	<string name="new_icons_title">Newly Added Icons</string>
+  	<string name="cancel">Cancel</string>
+	
+		<!-- GridView Description -->
+		<!-- Note: Try not to pass the length of the description or you will have text layout issues on the Cards -->
+	<string name="desc_oss">All of my stuff in one place!</string>
+	<string name="desc_new_icons">List of added icons over each update!</string>
+	<string name="desc_info">Details and a preview of this theme</string>
+	<string name="desc_apply">Choose from the launchers to apply the theme!</string>
+	<string name="desc_walls">Choose from the included wallpapers</string>
+	<string name="desc_community">Join our Google+ Community to find and share your themes!</string>
+	<string name="desc_gplus">Circle me on Google+</string>
+  	
+  		<!-- Launcher Dialog -->
+  	<string name="launcher_apex">Apex</string>
+  	<string name="launcher_nova">Nova</string>
+  	<string name="launcher_holo">Holo</string>
+  	<string name="launcher_adw">ADW</string>
+  	<string name="launcher_al">Action</string>
+  	<string name="launcher_title">Choose Your Launcher</string>
+	
+  		<!-- App Check Stuff -->
+	<string name="alert_start_title">You Are AWESOME!!!</string>
+	<string name="alert_start_desc">You also have my One-Stop-Shop App installed. 
+	    n\n\ Be sure to visit that app for more themes and other downloads!</string>
+	<string name="error_start_title">Ohnoes!!!</string>
+	<string name="error_start_desc">We have detected that you do not have my One-Stop-Shop App installed.
+	     Would you like to download it for FREE now?</string>
+
+		<!-- Wallpaper window -->
+	<string name="wall_apply">Apply Wallpaper</string>
+	
+		<!-- Dummy Content -->
+	<string name="dummy_desc"></string>
+	
+	
+		<!-- Unused Strings: You CAN Delete these if you use the default setup -->
+	<string name="desc_share">Share this theme with others</string>
+	<string name="desc_rate">Rate this theme on the Play Store</string>
+	<string name="desc_email">Send your requests or just give feedback</string>
+	<string name="desc_about">Learn more about the developer</string>
+	<string name="desc_donate">Consider donating to help contribute to future releases!</string>
+	
+</resources>

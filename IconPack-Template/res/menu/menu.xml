@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/shareButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/share"/>
+
+    <item
+        android:id="@+id/rateButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/rateme"/>
+
+    <item
+        android:id="@+id/emailButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/email_dev"/>
+
+    <item
+        android:id="@+id/aboutButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/about_dev"/>
+
+    <item
+        android:id="@+id/donateButton"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:showAsAction="never"
+        android:title="@string/donate"/>
+
+</menu>

@@ -1,5 +1,5 @@
 <!--
-  Copyright 2012 The Android Open Source Project
+  Copyright 2012 The the1dynasty
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -17,4 +17,11 @@
 <resources>
     <integer name="card_flip_time_full">300</integer>
     <integer name="card_flip_time_half">150</integer>
+	
+		<!-- config_ab_scalefactor is a float value between 0.1 and 0.8. Set here the default .X (-1, 6 will become 7) -->
+	<integer name="config_ab_scale_factor">6</integer>
+	<integer name="bubble_radius">8</integer>
+	<integer name="config_highlights_color">0x00ff0099cc</integer>
+	<integer name="config_highlights_color_focus">0x00ff0099cc</integer>
+	<integer name="config_drawer_color">0xFF000000</integer>
 </resources>

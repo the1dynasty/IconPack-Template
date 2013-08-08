@@ -53,10 +53,10 @@ public class AboutThemeActivity extends SherlockActivity {
       
       page = (ViewFlipper)findViewById(R.id.nowanim);
 
-      animUpLeft = AnimationUtils.loadAnimation(this, R.anim.up_left);
-      animUpRight = AnimationUtils.loadAnimation(this, R.anim.up_right);
-      animDownLeft = AnimationUtils.loadAnimation(this, R.anim.out_left);
-      animDownRight = AnimationUtils.loadAnimation(this, R.anim.out_right);
+      animUpLeft = AnimationUtils.loadAnimation(this, R.anim.plus_page_in_right);
+      animUpRight = AnimationUtils.loadAnimation(this, R.anim.plus_page_in_left);
+      animDownLeft = AnimationUtils.loadAnimation(this, R.anim.plus_page_out_right);
+      animDownRight = AnimationUtils.loadAnimation(this, R.anim.plus_page_out_left);
      
   }
 		

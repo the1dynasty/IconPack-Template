@@ -1,3 +1,27 @@
+v2.2.2
+Fixed FC on Android 4.3 Devices
+Removed unused parts of GlassActionBar Library
+Resized feature banner layout
+Fixed bg issues with main layout
+Removed AppActivity and its layouts
+Lots of cleanup
+
+v2.2.0
+Added Changelog dialog on first run after install/update
+NEW Section for showing off new icons
+Overflow Menu added and some grid items moved to it
+New Theme Info Animation
+Organized and cleaned up some misc files including strings.xml
+
+v2.1.2
+Fixed Nova & Go Launcher
+Added working Go Launcher "Apply" button
+
+v2.1.1
+Added GlassActionBar to the template
+Removed NOA dependency
+Slightly tweaked layouts
+
 v2.0.0
 Removed hardcoded strings. Now better for translations.
 Custom fonts can now be used throughout the app

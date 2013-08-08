@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="isTablet">false</bool>
+	
+	<bool name="use_drawer_icons_bg">false</bool>
+	<bool name="config_uiABBg">false</bool>
+	<bool name="config_new_selectors">true</bool>
+	<bool name="config_drawerLabels">true</bool>
+	<bool name="config_fadeDrawerLabels">false</bool>
+	<bool name="config_desktop_indicator">true</bool>
 </resources>

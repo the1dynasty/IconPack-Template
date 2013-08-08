@@ -6,7 +6,7 @@ import android.view.WindowManager;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Window;
 
-import fragments.LauncherDialog;
+import fragments.LauncherFragment;
 import your.icons.name.here.R;
 
 public class LauncherMain extends SherlockFragmentActivity {
@@ -18,7 +18,7 @@ public class LauncherMain extends SherlockFragmentActivity {
 		setContentView(R.layout.launcher_main);
 		
 		getSupportFragmentManager().beginTransaction()
-		.replace(R.id.container_launcher, new LauncherDialog())
+		.replace(R.id.container_launcher, new LauncherFragment())
 		.commit();
 	}
 

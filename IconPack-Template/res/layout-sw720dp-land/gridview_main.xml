@@ -25,7 +25,7 @@
 		
 	    <fragment
 	        android:id="@+id/fragment1"
-	        android:name="fragments.AboutThemeFrag"
+	        android:name="fragments.AboutThemeFragment"
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent"
 			android:layout_weight=".65" />
