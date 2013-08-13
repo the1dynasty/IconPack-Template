@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/left_right_margin"
         android:layout_marginRight="@dimen/left_right_margin"
-        android:layout_centerHorizontal="true"
         android:scrollbars="none"
         android:layout_weight="30" >
         
@@ -20,6 +19,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
+	        
+	        <!-- Changelog 9 -->
+        <TextView
+            android:id="@+id/change9"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+        	android:layout_marginTop="@dimen/left_right_margin"
+            android:text="@string/changelog_9"
+            android:textColor="@color/list_title_color"
+            android:textSize="@dimen/list_title_text" />
+	        <TextView
+	            android:id="@+id/change9_list"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/cl_list_9"
+	            android:textColor="@color/list_desc_color"
+	            android:textSize="@dimen/list_desc_text" />
+	        
 	        
 	        <!-- Changelog 8 -->
         <TextView

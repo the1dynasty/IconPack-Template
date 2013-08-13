@@ -24,12 +24,11 @@
     android:layout_height="match_parent"
 	android:padding="@dimen/list_icon"
     android:columnWidth="@dimen/column_width"
-    android:numColumns="auto_fit"
+    android:numColumns="2"
     android:stretchMode="columnWidth"
     android:gravity="center"
     android:divider="@color/transparent"
     android:dividerHeight="0dp"
-    android:background="@color/app_bg"
     android:listSelector="@color/transparent"
     android:cacheColorHint="@color/transparent" 
     tools:context="gridview.Main"/>

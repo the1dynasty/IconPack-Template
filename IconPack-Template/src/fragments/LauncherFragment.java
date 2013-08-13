@@ -130,7 +130,7 @@ public class LauncherFragment extends SherlockFragment {
 					try {
 						startActivity(Intent.createChooser(adw,
 								"activating theme..."));
-					} finally {						
+					} catch (ActivityNotFoundException e) {						
 						Intent adwMarket = new Intent(Intent.ACTION_VIEW);
 						adwMarket.setData(Uri
 								.parse("market://details?id=org.adw.launcher"));

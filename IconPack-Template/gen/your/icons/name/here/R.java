@@ -1214,10 +1214,10 @@ containing a value of this type.
         public static final int wallpaper_picker_preview=0x7f020105;
     }
     public static final class id {
-        public static final int abNull=0x7f08004f;
-        public static final int ab_null=0x7f080058;
+        public static final int abNull=0x7f080051;
+        public static final int ab_null=0x7f08005a;
         public static final int aboutBar=0x7f080012;
-        public static final int aboutButton=0x7f080069;
+        public static final int aboutButton=0x7f08006b;
         public static final int abs__action_bar=0x7f08002b;
         public static final int abs__action_bar_container=0x7f08002a;
         public static final int abs__action_bar_subtitle=0x7f08001c;
@@ -1257,69 +1257,71 @@ containing a value of this type.
         public static final int abs__textButton=0x7f08001e;
         public static final int abs__title=0x7f080026;
         public static final int abs__up=0x7f08000b;
-        public static final int blurredOverlay=0x7f080052;
-        public static final int change1=0x7f08004c;
-        public static final int change1_list=0x7f08004d;
-        public static final int change2=0x7f08004a;
-        public static final int change2_list=0x7f08004b;
-        public static final int change3=0x7f080048;
-        public static final int change3_list=0x7f080049;
-        public static final int change4=0x7f080046;
-        public static final int change4_list=0x7f080047;
-        public static final int change5=0x7f080044;
-        public static final int change5_list=0x7f080045;
-        public static final int change6=0x7f080042;
-        public static final int change6_list=0x7f080043;
-        public static final int change7=0x7f080040;
-        public static final int change7_list=0x7f080041;
-        public static final int change8=0x7f08003e;
-        public static final int change8_list=0x7f08003f;
-        public static final int close=0x7f08004e;
-        public static final int container=0x7f080057;
-        public static final int container_launcher=0x7f08005b;
-        public static final int desc=0x7f080051;
-        public static final int description=0x7f080056;
+        public static final int blurredOverlay=0x7f080054;
+        public static final int change1=0x7f08004e;
+        public static final int change1_list=0x7f08004f;
+        public static final int change2=0x7f08004c;
+        public static final int change2_list=0x7f08004d;
+        public static final int change3=0x7f08004a;
+        public static final int change3_list=0x7f08004b;
+        public static final int change4=0x7f080048;
+        public static final int change4_list=0x7f080049;
+        public static final int change5=0x7f080046;
+        public static final int change5_list=0x7f080047;
+        public static final int change6=0x7f080044;
+        public static final int change6_list=0x7f080045;
+        public static final int change7=0x7f080042;
+        public static final int change7_list=0x7f080043;
+        public static final int change8=0x7f080040;
+        public static final int change8_list=0x7f080041;
+        public static final int change9=0x7f08003e;
+        public static final int change9_list=0x7f08003f;
+        public static final int close=0x7f080050;
+        public static final int container=0x7f080059;
+        public static final int container_launcher=0x7f08005d;
+        public static final int desc=0x7f080053;
+        public static final int description=0x7f080058;
         public static final int description1=0x7f080017;
         public static final int description2=0x7f08001a;
         public static final int devFont=0x7f080013;
         public static final int disableHome=0x7f080009;
-        public static final int divider=0x7f08005f;
+        public static final int divider=0x7f080061;
         public static final int divider1=0x7f080016;
         public static final int divider2=0x7f080019;
-        public static final int donateButton=0x7f08006a;
+        public static final int donateButton=0x7f08006c;
         public static final int edit_query=0x7f080031;
-        public static final int emailButton=0x7f080068;
-        public static final int expanded_image=0x7f08005c;
-        public static final int fragment1=0x7f080059;
-        public static final int gallery=0x7f080063;
-        public static final int grid=0x7f080053;
+        public static final int emailButton=0x7f08006a;
+        public static final int expanded_image=0x7f08005e;
+        public static final int fragment1=0x7f08005b;
+        public static final int gallery=0x7f080065;
+        public static final int grid=0x7f080055;
         public static final int homeAsUp=0x7f080006;
-        public static final int icon_grid=0x7f08005a;
+        public static final int icon_grid=0x7f08005c;
         public static final int imageView1=0x7f080011;
         public static final int layout1=0x7f080010;
-        public static final int linearLayout1=0x7f080054;
+        public static final int linearLayout1=0x7f080056;
         public static final int listMode=0x7f080002;
-        public static final int list_image=0x7f080055;
-        public static final int next=0x7f080060;
+        public static final int list_image=0x7f080057;
+        public static final int next=0x7f080062;
         public static final int normal=0x7f080001;
-        public static final int nowanim=0x7f08005e;
-        public static final int previous=0x7f080061;
-        public static final int rateButton=0x7f080067;
+        public static final int nowanim=0x7f080060;
+        public static final int previous=0x7f080063;
+        public static final int rateButton=0x7f080069;
         public static final int scrollView1=0x7f080014;
         public static final int scrollview=0x7f08003d;
-        public static final int set=0x7f080064;
-        public static final int shareButton=0x7f080066;
+        public static final int set=0x7f080066;
+        public static final int shareButton=0x7f080068;
         public static final int showCustom=0x7f080008;
         public static final int showHome=0x7f080005;
         public static final int showTitle=0x7f080007;
         public static final int tabMode=0x7f080003;
-        public static final int thumb_button=0x7f08005d;
-        public static final int title=0x7f080050;
+        public static final int thumb_button=0x7f08005f;
+        public static final int title=0x7f080052;
         public static final int title1=0x7f080015;
         public static final int title2=0x7f080018;
         public static final int useLogo=0x7f080004;
-        public static final int wallpaper=0x7f080062;
-        public static final int wallpaper_image=0x7f080065;
+        public static final int wallpaper=0x7f080064;
+        public static final int wallpaper_image=0x7f080067;
         public static final int wrap_content=0x7f080000;
     }
     public static final class integer {
@@ -1458,7 +1460,7 @@ containing a value of this type.
         public static final int apex_market=0x7f0d001d;
         /**  This link will appear at the end of the theme description 
          */
-        public static final int app_link=0x7f0d0070;
+        public static final int app_link=0x7f0d0072;
         /**  Label for app name in launcher 
  Edit these two strings to match your theme name 
          */
@@ -1475,6 +1477,7 @@ containing a value of this type.
         public static final int changelog_6=0x7f0d0065;
         public static final int changelog_7=0x7f0d0066;
         public static final int changelog_8=0x7f0d0067;
+        public static final int changelog_9=0x7f0d0068;
         /**  Changelog Info 
          */
         public static final int changelog_title=0x7f0d005f;
@@ -1483,28 +1486,31 @@ containing a value of this type.
 		 	 &#8226; = bullets 
  Changelog 1 
          */
-        public static final int cl_list_1=0x7f0d0068;
+        public static final int cl_list_1=0x7f0d0069;
         /**  Changelog 2 
          */
-        public static final int cl_list_2=0x7f0d0069;
+        public static final int cl_list_2=0x7f0d006a;
         /**  Changelog 3 
          */
-        public static final int cl_list_3=0x7f0d006a;
+        public static final int cl_list_3=0x7f0d006b;
         /**  Changelog 4 
          */
-        public static final int cl_list_4=0x7f0d006b;
+        public static final int cl_list_4=0x7f0d006c;
         /**  Changelog 5 
          */
-        public static final int cl_list_5=0x7f0d006c;
+        public static final int cl_list_5=0x7f0d006d;
         /**  Changelog 6 
          */
-        public static final int cl_list_6=0x7f0d006d;
+        public static final int cl_list_6=0x7f0d006e;
         /**  Changelog 7 
          */
-        public static final int cl_list_7=0x7f0d006e;
+        public static final int cl_list_7=0x7f0d006f;
         /**  Changelog 8 
          */
-        public static final int cl_list_8=0x7f0d006f;
+        public static final int cl_list_8=0x7f0d0070;
+        /**  Changelog 9 
+         */
+        public static final int cl_list_9=0x7f0d0071;
         public static final int close=0x7f0d0044;
         /**  ADW Stuff 
  1=top dots, 2=top slider, 3=bottom slider, 4=ics slider 
@@ -1531,12 +1537,12 @@ containing a value of this type.
          */
         public static final int desc_share=0x7f0d005a;
         public static final int desc_walls=0x7f0d004b;
-        public static final int dev_bio=0x7f0d0077;
-        public static final int dev_bio_title=0x7f0d0074;
-        public static final int dev_description=0x7f0d0076;
-        public static final int dev_name=0x7f0d0073;
-        public static final int developer_link=0x7f0d0071;
-        public static final int developer_name=0x7f0d0072;
+        public static final int dev_bio=0x7f0d0079;
+        public static final int dev_bio_title=0x7f0d0076;
+        public static final int dev_description=0x7f0d0078;
+        public static final int dev_name=0x7f0d0075;
+        public static final int developer_link=0x7f0d0073;
+        public static final int developer_name=0x7f0d0074;
         public static final int divider=0x7f0d003f;
         public static final int donate=0x7f0d0039;
         /**  Dummy Content 
@@ -1544,7 +1550,7 @@ containing a value of this type.
         public static final int dummy_desc=0x7f0d0059;
         public static final int dynasty_app=0x7f0d0035;
         public static final int email_dev=0x7f0d0038;
-        public static final int email_subject=0x7f0d0079;
+        public static final int email_subject=0x7f0d007b;
         public static final int error_start_desc=0x7f0d0057;
         public static final int error_start_title=0x7f0d0056;
         /**  Applied Toast Messages 
@@ -1581,11 +1587,11 @@ containing a value of this type.
         public static final int ok=0x7f0d0043;
         public static final int rateme=0x7f0d003a;
         public static final int share=0x7f0d0042;
-        public static final int share_text=0x7f0d0078;
+        public static final int share_text=0x7f0d007a;
         /**  This string shows up inside the setting to Apply the theme on Apex Launcher. I don't recommend changing it 
          */
         public static final int theme_description=0x7f0d0016;
-        public static final int theme_description_app=0x7f0d0075;
+        public static final int theme_description_app=0x7f0d0077;
         /**  Apex Previews 
          */
         public static final int theme_feature=0x7f0d0010;

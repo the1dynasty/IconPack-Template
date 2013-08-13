@@ -44,17 +44,6 @@
     <!-- Title for each view - DO NOT EDIT -
      	 Change the lines in the MainAdapter.java file if you want to edit these lines -->
 
-
-	<ImageView
-	    android:id="@+id/list_image"
-	    android:layout_width="@dimen/listview_icon"
-	    android:layout_height="@dimen/listview_icon"
-	    android:paddingTop="@dimen/icon_padding"
-	    android:layout_alignParentTop="true"
-	    android:layout_centerHorizontal="true"
-	    android:contentDescription="@string/content_description"
-	    android:src="@drawable/icon_email" />
-
 	<TextView
 	    android:id="@+id/description"
 	    android:layout_width="wrap_content"
@@ -68,13 +57,24 @@
 	    android:textSize="@dimen/list_desc_text"
 	    tools:ignore="HardcodedText" />
 
+
+	<ImageView
+	    android:id="@+id/list_image"
+	    android:layout_width="@dimen/listview_icon"
+	    android:layout_height="@dimen/listview_icon"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:contentDescription="@string/content_description"
+	    android:padding="@dimen/icon_padding"
+	    android:src="@drawable/icon_email" />
+
 	<TextView
 	    android:id="@+id/title"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/list_image"
+	    android:layout_toRightOf="@+id/list_image"
 	    android:paddingTop="@dimen/icon_padding_bottom"
-	    android:layout_alignLeft="@+id/list_image"
-	    android:layout_below="@+id/list_image"
 	    android:text="Community"
 	    android:textColor="@color/list_title_color"
 	    android:textSize="@dimen/list_title_text"
