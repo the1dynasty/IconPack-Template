@@ -725,11 +725,11 @@ containing a value of this type.
         public static final int abs__bright_foreground_holo_light=0x7f0a0003;
         /**  ABS Imports 
          */
-        public static final int abs__holo_blue_light=0x7f0a003b;
-        public static final int abs__primary_text_disable_only_holo_dark=0x7f0a003c;
-        public static final int abs__primary_text_disable_only_holo_light=0x7f0a003d;
-        public static final int abs__primary_text_holo_dark=0x7f0a003e;
-        public static final int abs__primary_text_holo_light=0x7f0a003f;
+        public static final int abs__holo_blue_light=0x7f0a003d;
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f0a003e;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f0a003f;
+        public static final int abs__primary_text_holo_dark=0x7f0a0040;
+        public static final int abs__primary_text_holo_light=0x7f0a0041;
         /**  NOTE: Stock app_bg color for the 'light' look is #FFE5E5E5 
  These colors are changed no matter which view you choose 
          */
@@ -740,7 +740,8 @@ containing a value of this type.
         /**  Misc colors 
          */
         public static final int black=0x7f0a0025;
-        public static final int blue_dark=0x7f0a0038;
+        public static final int black_50=0x7f0a0028;
+        public static final int blue_dark=0x7f0a0039;
         public static final int bubble_background_color=0x7f0a0013;
         public static final int bubble_color=0x7f0a0015;
         public static final int bubble_ring_color=0x7f0a0011;
@@ -757,22 +758,22 @@ containing a value of this type.
         public static final int drawer_widget_size_color=0x7f0a000f;
         public static final int folder_item_text_color=0x7f0a0009;
         public static final int folder_title_color=0x7f0a0008;
-        public static final int gray=0x7f0a0028;
-        public static final int gray_dark=0x7f0a0029;
-        public static final int gray_light=0x7f0a002b;
-        public static final int gray_light2=0x7f0a002c;
-        public static final int gray_medium=0x7f0a002a;
-        public static final int holo_blue=0x7f0a002d;
-        public static final int holo_blue_dark=0x7f0a0033;
-        public static final int holo_green=0x7f0a002e;
-        public static final int holo_green_dark=0x7f0a0034;
-        public static final int holo_orange=0x7f0a0030;
-        public static final int holo_orange_dark=0x7f0a0036;
-        public static final int holo_purple=0x7f0a002f;
-        public static final int holo_purple_dark=0x7f0a0035;
-        public static final int holo_red=0x7f0a0031;
-        public static final int holo_red_80=0x7f0a0032;
-        public static final int holo_red_dark=0x7f0a0037;
+        public static final int gray=0x7f0a0029;
+        public static final int gray_dark=0x7f0a002a;
+        public static final int gray_light=0x7f0a002c;
+        public static final int gray_light2=0x7f0a002d;
+        public static final int gray_medium=0x7f0a002b;
+        public static final int holo_blue=0x7f0a002e;
+        public static final int holo_blue_dark=0x7f0a0034;
+        public static final int holo_green=0x7f0a002f;
+        public static final int holo_green_dark=0x7f0a0035;
+        public static final int holo_orange=0x7f0a0031;
+        public static final int holo_orange_dark=0x7f0a0037;
+        public static final int holo_purple=0x7f0a0030;
+        public static final int holo_purple_dark=0x7f0a0036;
+        public static final int holo_red=0x7f0a0032;
+        public static final int holo_red_80=0x7f0a0033;
+        public static final int holo_red_dark=0x7f0a0038;
         /**  Skin colors 
          */
         public static final int homescreen_icon_text_color=0x7f0a0006;
@@ -790,9 +791,10 @@ containing a value of this type.
         public static final int tab_title=0x7f0a0023;
         public static final int text_description=0x7f0a001c;
         public static final int text_title=0x7f0a001d;
-        public static final int transparent=0x7f0a0039;
-        public static final int transparent_black=0x7f0a003a;
+        public static final int transparent=0x7f0a003a;
+        public static final int transparent_black=0x7f0a003b;
         public static final int wall_bg=0x7f0a0022;
+        public static final int wall_title_color=0x7f0a003c;
         public static final int white=0x7f0a0026;
         public static final int white_50=0x7f0a0027;
     }
@@ -1217,7 +1219,7 @@ containing a value of this type.
         public static final int abNull=0x7f080051;
         public static final int ab_null=0x7f08005a;
         public static final int aboutBar=0x7f080012;
-        public static final int aboutButton=0x7f08006b;
+        public static final int aboutButton=0x7f08006c;
         public static final int abs__action_bar=0x7f08002b;
         public static final int abs__action_bar_container=0x7f08002a;
         public static final int abs__action_bar_subtitle=0x7f08001c;
@@ -1288,9 +1290,9 @@ containing a value of this type.
         public static final int divider=0x7f080061;
         public static final int divider1=0x7f080016;
         public static final int divider2=0x7f080019;
-        public static final int donateButton=0x7f08006c;
+        public static final int donateButton=0x7f08006d;
         public static final int edit_query=0x7f080031;
-        public static final int emailButton=0x7f08006a;
+        public static final int emailButton=0x7f08006b;
         public static final int expanded_image=0x7f08005e;
         public static final int fragment1=0x7f08005b;
         public static final int gallery=0x7f080065;
@@ -1306,11 +1308,12 @@ containing a value of this type.
         public static final int normal=0x7f080001;
         public static final int nowanim=0x7f080060;
         public static final int previous=0x7f080063;
-        public static final int rateButton=0x7f080069;
+        public static final int rateButton=0x7f08006a;
+        public static final int relativeLayout2=0x7f080067;
         public static final int scrollView1=0x7f080014;
         public static final int scrollview=0x7f08003d;
         public static final int set=0x7f080066;
-        public static final int shareButton=0x7f080068;
+        public static final int shareButton=0x7f080069;
         public static final int showCustom=0x7f080008;
         public static final int showHome=0x7f080005;
         public static final int showTitle=0x7f080007;
@@ -1321,7 +1324,7 @@ containing a value of this type.
         public static final int title2=0x7f080018;
         public static final int useLogo=0x7f080004;
         public static final int wallpaper=0x7f080064;
-        public static final int wallpaper_image=0x7f080067;
+        public static final int wallpaper_image=0x7f080068;
         public static final int wrap_content=0x7f080000;
     }
     public static final class integer {

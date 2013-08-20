@@ -43,7 +43,8 @@
 	<!-- Misc colors -->
 	<color name="black">#ff000000</color>
 	<color name="white">#ffffffff</color>
-	<color name="white_50">#aaffffff</color>
+	<color name="white_50">#AAFFFFFF</color>
+	<color name="black_50">#AA000000</color>
 	<color name="gray">#ffefefef</color>
 	<color name="gray_dark">#ff333333</color>
 	<color name="gray_medium">#ff999999</color>
@@ -63,6 +64,8 @@
 	<color name="blue_dark">#ff000033</color>
 	<color name="transparent">#00000000</color>
 	<color name="transparent_black">#55000000</color>
+	
+	<color name="wall_title_color">#FF4d3e91</color>
 	
 	<!-- ABS Imports -->
     <color name="abs__holo_blue_light">#ff33b5e5</color>
