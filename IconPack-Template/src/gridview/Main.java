@@ -60,6 +60,9 @@ public class Main extends SherlockFragmentActivity {
 		helper = new GlassActionBarHelper().contentLayout(R.layout.gridview_main);
 		setContentView(helper.createView(this));
 		
+		getSupportActionBar().setDisplayShowHomeEnabled(true); // Set this to false to hide AB Icon
+		getSupportActionBar().setDisplayShowTitleEnabled(true); // Set this to false to hide AB Title
+		
 		getSupportFragmentManager().beginTransaction()
 		.replace(R.id.container, new MainFragment())
 		.commit();
