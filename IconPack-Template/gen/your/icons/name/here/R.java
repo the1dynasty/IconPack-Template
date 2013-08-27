@@ -1651,10 +1651,12 @@ containing a value of this type.
         /**  Application theme. 
          */
         public static final int AppTheme=0x7f0e005d;
+        public static final int AppTheme_Dark=0x7f0e005f;
         /**  Jake Wharton's ABS dialog styles 
          */
-        public static final int DialogWindowTitle_Sherlock=0x7f0e005f;
-        public static final int DialogWindowTitle_Sherlock_Light=0x7f0e0060;
+        public static final int DialogWindowTitle_Sherlock=0x7f0e0061;
+        public static final int DialogWindowTitle_Sherlock_Light=0x7f0e0062;
+        public static final int Overflow_White=0x7f0e005e;
         public static final int Sherlock___TextAppearance_Small=0x7f0e0046;
         public static final int Sherlock___Theme=0x7f0e0051;
         public static final int Sherlock___Theme_DarkActionBar=0x7f0e0053;
@@ -1668,8 +1670,8 @@ containing a value of this type.
         public static final int Sherlock___Widget_Holo_Spinner=0x7f0e0023;
         public static final int Sherlock___Widget_SearchAutoCompleteTextView=0x7f0e0033;
         public static final int TextAppearance_Sherlock=0x7f0e004a;
-        public static final int TextAppearance_Sherlock_DialogWindowTitle=0x7f0e0061;
-        public static final int TextAppearance_Sherlock_Light_DialogWindowTitle=0x7f0e0062;
+        public static final int TextAppearance_Sherlock_DialogWindowTitle=0x7f0e0063;
+        public static final int TextAppearance_Sherlock_Light_DialogWindowTitle=0x7f0e0064;
         public static final int TextAppearance_Sherlock_Light_SearchResult=0x7f0e004e;
         public static final int TextAppearance_Sherlock_Light_SearchResult_Subtitle=0x7f0e0050;
         public static final int TextAppearance_Sherlock_Light_SearchResult_Title=0x7f0e004f;
@@ -1702,7 +1704,7 @@ containing a value of this type.
         public static final int Theme_Sherlock_Light_Dialog=0x7f0e005b;
         public static final int Theme_Sherlock_Light_NoActionBar=0x7f0e0058;
         public static final int Theme_Sherlock_NoActionBar=0x7f0e0057;
-        public static final int TranslucentActionBar=0x7f0e005e;
+        public static final int TranslucentActionBar=0x7f0e0060;
         public static final int Widget=0x7f0e0000;
         public static final int Widget_Sherlock_ActionBar=0x7f0e0002;
         public static final int Widget_Sherlock_ActionBar_Solid=0x7f0e0003;

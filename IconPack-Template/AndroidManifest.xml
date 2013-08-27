@@ -41,7 +41,7 @@
     <!-- minSDK set to run on Android 2.3 and newer
     	targetSDK set to run on latest version. This ensures 
     	the latest graphics are used on newer devices -->
-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="18"/>
     
     <!-- Change the style to something else if you want a different look
     	Please refer to ABS Styles for choosing a style you want -->
@@ -49,8 +49,9 @@
         android:allowBackup="true"
         android:label="@string/app_name" 
         android:icon="@drawable/icon"
-        android:theme="@style/AppTheme"
+        android:theme="@style/AppTheme" 
         android:largeHeap="true" >
+    <!-- Use AppTheme_Dark for the dark version of some windows -->
         
     <!-- Main Activity that launches when you open the app from the drawer -->
         <activity

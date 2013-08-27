@@ -2,13 +2,17 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
     -->
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
+
+
         -->
     </style>
 
@@ -20,6 +24,21 @@
         <item name="windowActionBarOverlay">true</item>
         <item name="android:actionBarStyle">@style/TranslucentActionBar</item>
         <item name="actionBarStyle">@style/TranslucentActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/Overflow_White</item>
+    </style>
+    
+	<style name="Overflow_White" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+       	<item name="android:src">@drawable/menu_more_overflow</item>
+    </style>
+    
+    <style name="AppTheme_Dark" parent="Theme.Sherlock">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/TranslucentActionBar</item>
+        <item name="actionBarStyle">@style/TranslucentActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/Overflow_White</item>
     </style>
 
     <style name="Sherlock.__Widget.Holo.ListView" parent="android:Widget.ListView">
