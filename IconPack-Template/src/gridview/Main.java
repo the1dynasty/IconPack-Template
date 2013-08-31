@@ -172,7 +172,10 @@ public class Main extends SherlockFragmentActivity {
 			builder.show();
 	    }
 	}
-	
+
+	/************************************************************************
+	 *********************** This is your Menu Stuff ************************
+	 ************************************************************************/
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
@@ -220,6 +223,10 @@ public class Main extends SherlockFragmentActivity {
         return true;
 	}
 	
+
+	/************************************************************************
+	 ************ This is the end of checking for installed app *************
+	 ************************************************************************/
 	private boolean isAppInstalled(String packageName){
 		// Tool we need to parse other packages
 		PackageManager pm = getPackageManager();
