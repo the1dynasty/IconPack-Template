@@ -24,12 +24,24 @@
 		android:baselineAligned="false"
 		android:background="@color/app_bg" >
 		
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight=".65"
+			android:orientation="vertical" >
+			
+				<View
+				    android:layout_width="match_parent"
+				    android:layout_height="@dimen/ab_height"
+				    android:background="@color/transparent"/>
 	    <fragment
 	        android:id="@+id/fragment1"
 	        android:name="fragments.AboutThemeFragment"
 	        android:layout_width="match_parent"
-	        android:layout_height="match_parent"
-			android:layout_weight=".65" />
+	        android:layout_height="match_parent" />
+	    
+	    </LinearLayout>
+	    
 		<LinearLayout 
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
