@@ -43,6 +43,7 @@ public class Request extends SherlockActivity {
 	
 	private void initViews()
 	{
+		// Initialize views
 		grid = (GridView) findViewById(R.id.grid);
 		btnSubmit = (Button) findViewById(R.id.btnSubmit);
 	}
@@ -90,18 +91,25 @@ public class Request extends SherlockActivity {
 	
 	private void initGrid()
 	{
+		// Create & set adapter
 		appAdapter = new RequestAdapter(Request.this, appList);
 		grid.setAdapter(appAdapter);
+		
 		grid.setOnItemClickListener(new OnItemClickListener()
 		{
 			@Override
 			public void onItemClick(AdapterView<?> adapterView, View view, int position, long index) {
+				// Grab and switch selection value
 				AdapterItem app = appList.get(position);
 				app.setSelected(!app.isSelected());
+				
+				// Increase/Decrease numSelected
 				if(app.isSelected())
 					numSelected++;
 				else
 					numSelected--;
+				
+				// Replace app info in list
 				appList.remove(position);
 				appList.add(position, app);
 				appAdapter.notifyDataSetChanged();
@@ -114,6 +122,7 @@ public class Request extends SherlockActivity {
 		btnSubmit.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				// Only send data if at least one icon is selected
 				if(numSelected > 0)
 					sendData();
 				else
@@ -124,10 +133,14 @@ public class Request extends SherlockActivity {
 	
 	private void sendData()
 	{
+		// Create StringBuilder
 		StringBuilder builder = new StringBuilder();
+		
+		// Add greeting
 		builder.append("Hello " + getResources().getString(R.string.dev_name) + ",\n");
 		builder.append("these icons are missing from your icon pack:\n\n");
 		
+		// Loop through all apps and add only selected apps
 		for(AdapterItem app : appList)
 		{
 			if(app.isSelected())
@@ -140,12 +153,14 @@ public class Request extends SherlockActivity {
 			}
 		}
 		
+		// Create email intent
 		Intent emailIntent = new Intent(Intent.ACTION_SEND);
 		emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] { "the1dynasty.android@gmail.com" });
 		emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Icon request for " + getResources().getString(R.string.app_name));
 		emailIntent.putExtra(Intent.EXTRA_TEXT, builder.toString());
 		emailIntent.setType("plain/text");
 		
+		// Launch if possible
 		try
 		{
 			startActivity(Intent.createChooser(emailIntent, "Contact Developer"));
