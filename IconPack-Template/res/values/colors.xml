@@ -66,8 +66,6 @@
 	<color name="transparent_black">#55000000</color>
 	
 	<color name="wall_title_color">#FF4d3e91</color>
-    <color name="pk_gray_lightest">#FFEFEFEF</color>
-    <color name="pk_blue_dark">#FF30AAD3</color>
 	
 	<!-- ABS Imports -->
     <color name="abs__holo_blue_light">#ff33b5e5</color>

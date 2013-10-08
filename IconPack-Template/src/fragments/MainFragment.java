@@ -9,7 +9,6 @@ import java.util.List;
 
 import your.icons.name.here.AboutThemeActivity;
 import your.icons.name.here.R;
-import your.icons.name.here.Request;
 import your.icons.name.here.Wallpaper;
 import adapters.MainAdapter;
 import adapters.MainAdapter.AdapterItem;
@@ -83,8 +82,6 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_community), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_gplus), 
 					getResources().getString (R.string.desc_gplus), 6));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_request), 
-					getResources().getString (R.string.desc_request), 7));
 			
 		} else {
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
@@ -102,8 +99,6 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_community), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_gplus), 
 					getResources().getString (R.string.desc_gplus), 6));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_request), 
-					getResources().getString (R.string.desc_request), 7));
 		}
 
 		/**
@@ -231,11 +226,6 @@ public class MainFragment extends SherlockFragment{
 						Intent gplus = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 								("https://plus.google.com/110748421773388678236/posts"));
 		        		startActivity(gplus);
-		        		break;
-					case 7:
-						// Change line 227 with the link for YOUR own G+ Account
-						Intent request = new Intent(getSherlockActivity(), Request.class);
-		        		startActivity(request);
 		        		break;
 		        		
 					}

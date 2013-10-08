@@ -39,7 +39,6 @@
 	<string name="title_walls">Wallpapers</string>
 	<string name="title_community">G+ Community</string>
 	<string name="title_gplus">My Google+</string>
-	<string name="title_request">Request Icons</string>
 	
 		<!-- OverFlow Menu -->
 	<string name="title_rate">Rate Theme</string>
@@ -87,7 +86,6 @@
 	<string name="desc_walls">Choose from the included wallpapers</string>
 	<string name="desc_community">Join our Google+ Community to find and share your themes!</string>
 	<string name="desc_gplus">Circle me on Google+</string>
-	<string name="desc_request">Request icons missing from the icon pack to be added.</string>
   	
   		<!-- Launcher Dialog -->
   	<string name="launcher_apex">Apex</string>

@@ -103,12 +103,6 @@
             </intent-filter>
         </activity>
         
-        <activity  
-            android:name="your.icons.name.here.Request" 
-            android:label="@string/app_name" 
-            android:icon="@drawable/icon_wall" >
-        </activity>
-        
         <activity
             android:name="your.icons.name.here.Docks"
             android:label="@string/app_name"
