@@ -4,13 +4,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.xmlpull.v1.XmlPullParser;
+
 import adapters.RequestAdapter;
 import adapters.RequestAdapter.AdapterItem;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -27,6 +31,7 @@ public class Request extends SherlockActivity {
 	
 	// List of installed apps
 	private int numSelected;
+	private List<String> installedAppList;
 	private List<AdapterItem> appList;
 	private RequestAdapter appAdapter;
 
@@ -53,6 +58,42 @@ public class Request extends SherlockActivity {
 		appList = new ArrayList<AdapterItem>();
 		numSelected = 0;
 		
+		// Get list of already supported apps from the appfilter
+		installedAppList = new ArrayList<String>();
+		
+		try
+		{
+			XmlResourceParser xrp = getResources().getXml(R.xml.appfilter);
+			xrp.next();
+			int eventType = xrp.getEventType();
+			
+			while (eventType != XmlPullParser.END_DOCUMENT)
+			{
+				if (eventType == XmlPullParser.START_TAG)
+				{
+					String elemName = xrp.getName();
+					if (elemName.equals("item"))
+					{
+						String component = xrp.getAttributeValue(null, "component");
+						try
+						{
+							component = component.substring((component.indexOf("{") + 1), (component.length() - 1));
+						}
+						catch (Exception e)
+						{
+							// Random error. Ignore it.
+						}
+						installedAppList.add(component);
+					}
+				}
+				eventType = xrp.next();
+			}
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		
 		// Create package manager and sort it
 		final PackageManager pm = getPackageManager();
 		List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
@@ -78,8 +119,9 @@ public class Request extends SherlockActivity {
 				if (appCode.split("/")[1].startsWith("."))
 					appCode = appCode.split("/")[0] + "/" + appCode.split("/")[0] + appCode.split("/")[1];
 				
-				// Add App to List
-				appList.add(new AdapterItem(appCode, appName, appIcon, false));
+				// Add App to List, if not supported already
+				if(!installedAppList.contains(appCode))
+					appList.add(new AdapterItem(appCode, appName, appIcon, false));
 				
 				// Nullify objects for memory
 				appCode = null;
