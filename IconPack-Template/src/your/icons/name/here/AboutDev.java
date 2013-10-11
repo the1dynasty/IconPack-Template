@@ -1,8 +1,13 @@
 package your.icons.name.here;
 
+import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockActivity;
@@ -10,6 +15,11 @@ import com.actionbarsherlock.view.Window;
 
 public class AboutDev extends SherlockActivity {
 
+	private ImageButton
+    twitter,
+    facebook,
+    gplus;
+	
 	// This creates your About Dev Activity
 	@Override
 	  public void onCreate(Bundle savedInstanceState) {
@@ -28,6 +38,45 @@ public class AboutDev extends SherlockActivity {
       title2.setTypeface(font1); 
       TextView desc2 = (TextView) findViewById(R.id.description2);
       desc2.setTypeface(font1); 
+
+      gplus = (ImageButton) findViewById(R.id.gplus_button);
+      gplus.setOnClickListener(new OnClickListener() {
+              public void onClick(View v) {
+              	try {
+              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://plus.google.com/110748421773388678236/posts"));
+              		startActivity(intent);
+              	} 
+              	catch (RuntimeException gp) {
+              		gp.printStackTrace();
+              	}	
+              }
+      });
+      
+      twitter = (ImageButton) findViewById(R.id.twitter_button);
+      twitter.setOnClickListener(new OnClickListener() {
+              public void onClick(View v) {
+              	try {
+              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://twitter.com/the1dynasty"));
+              		startActivity(intent);
+              	} 
+              	catch (RuntimeException tw) {
+              		tw.printStackTrace();
+              	}	
+              }
+      });
+      
+      facebook = (ImageButton) findViewById(R.id.facebook_button);
+      facebook.setOnClickListener(new OnClickListener() {
+              public void onClick(View v) {
+              	try {
+              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://www.facebook.com/pages/The1dynasty/428692913887012"));
+              		startActivity(intent);
+              	} 
+              	catch (RuntimeException tw) {
+              		tw.printStackTrace();
+              	}	
+              }
+      });
 }
 
 	// Hides the title bar

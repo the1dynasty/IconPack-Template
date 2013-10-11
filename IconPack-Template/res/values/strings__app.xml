@@ -33,19 +33,22 @@
 	
 		<!-- GridView Titles -->
 	<string name="title_app">One-Stop-Shop</string>
-	<string name="title_new_icons">Newly Added</string>
 	<string name="title_info">Theme Info</string>
 	<string name="title_apply">Apply Theme</string>
 	<string name="title_walls">Wallpapers</string>
 	<string name="title_community">G+ Community</string>
 	<string name="title_gplus">My Google+</string>
+	<string name="title_request">Request Icons</string>
 	
 		<!-- OverFlow Menu -->
+	<string name="title_new_icons">Newly Added</string>
 	<string name="title_rate">Rate Theme</string>
 	<string name="title_share">Share Theme</string>
 	<string name="title_email">Email Developer</string>
 	<string name="title_about">About Developer</string>
 	<string name="title_donate">Donate</string>
+	<string name="more_overflow">More</string>
+	<string name="submit">Submit</string>
 	
 		<!-- Labels for app icons -->
 	<string name="about_theme">About Theme</string>
@@ -86,7 +89,8 @@
 	<string name="desc_walls">Choose from the included wallpapers</string>
 	<string name="desc_community">Join our Google+ Community to find and share your themes!</string>
 	<string name="desc_gplus">Circle me on Google+</string>
-  	
+  	<string name="desc_request">Missing icons? Send your request to the developer.</string>
+	
   		<!-- Launcher Dialog -->
   	<string name="launcher_apex">Apex</string>
   	<string name="launcher_nova">Nova</string>

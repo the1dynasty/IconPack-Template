@@ -95,11 +95,6 @@ public class MainAdapter extends BaseAdapter{
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_community);
 				break;
-			case 6:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_gplus);
-				break;
 			}
 			holder.text.setText(entry.getDescription());
 			holder.title.setText(entry.getTitle());
