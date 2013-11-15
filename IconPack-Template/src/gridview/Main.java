@@ -21,8 +21,8 @@ package gridview;
  ** Just be sure you're in the general area
  **/
 
-import helper.GlassActionBarHelper;
 import fragments.MainFragment;
+import helper.GlassActionBarHelper;
 import your.icons.name.here.AboutDev;
 import your.icons.name.here.R;
 import android.app.AlertDialog;
@@ -36,8 +36,10 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
@@ -48,6 +50,8 @@ public class Main extends SherlockFragmentActivity {
 	
 	private SharedPreferences prefs;
 	private GlassActionBarHelper helper;
+
+	boolean doubleBackToExitPressedOnce = false;
 	
 	// Starts the Activity for the gridview
 	@Override
@@ -190,6 +194,12 @@ public class Main extends SherlockFragmentActivity {
 	{
         switch(item.getItemId())
         {
+        	case R.id.more:
+        		return true;
+	        case R.id.newIconsButton:
+				Intent newIcons = new Intent(Main.this, NewIconsMain.class);
+				startActivity(newIcons);
+	            break;
             case R.id.shareButton:
         		Intent shareIntent = new Intent(Intent.ACTION_SEND);
         	    shareIntent.setType("text/plain");
@@ -222,6 +232,24 @@ public class Main extends SherlockFragmentActivity {
         
         return true;
 	}
+
+	@Override
+    public void onBackPressed() {
+		if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+             doubleBackToExitPressedOnce=false;   
+
+            }
+        }, 2000);
+    }
 	
 
 	/************************************************************************

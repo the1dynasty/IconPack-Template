@@ -48,18 +48,48 @@
         android:orientation="horizontal"
         android:background="@color/transparent_black" >
 
-    <TextView
-        android:id="@+id/devFont"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginLeft="@dimen/left_right_margin"
-		android:layout_marginRight="@dimen/left_right_margin"
-		android:layout_marginTop="@dimen/about_title_margin"
-		android:layout_marginBottom="@dimen/about_title_margin"
-        android:text="@string/about_dev"
-        android:textColor="@color/white"
-        android:textSize="@dimen/list_title_text" />
+        <TextView
+            android:id="@+id/devFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:layout_marginRight="@dimen/left_right_margin"
+            android:layout_gravity="center"
+            android:layout_weight="0.62"
+            android:text="@string/about_dev"
+            android:textColor="@color/white"
+            android:textSize="@dimen/list_title_text" />
+    
+	    <LinearLayout
+	        android:id="@+id/about_icons"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+		    <ImageButton 
+		        android:id="@+id/gplus_button"
+		        android:layout_width="@dimen/about_icons"
+		        android:layout_height="@dimen/about_icons"
+		        android:layout_marginRight="@dimen/icon_margin"
+		        android:background="@drawable/about_googleplus" />
+		    
+		    <ImageButton 
+		        android:id="@+id/twitter_button"
+		        android:layout_width="@dimen/about_icons"
+		        android:layout_height="@dimen/about_icons"
+		        android:layout_marginRight="@dimen/icon_margin"
+		        android:background="@drawable/about_twitter" />
+		    
+		    <ImageButton 
+		        android:id="@+id/facebook_button"
+		        android:layout_width="@dimen/about_icons"
+		        android:layout_height="@dimen/about_icons"
+		        android:layout_marginRight="@dimen/icon_margin"
+		        android:background="@drawable/about_facebook" />
+	    
+	    </LinearLayout>
 	</LinearLayout>
+	
     </RelativeLayout>
     	<ScrollView
         	android:id="@+id/scrollView1"

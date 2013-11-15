@@ -31,6 +31,9 @@ public class AboutThemeActivity extends SherlockActivity {
 	  public void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
 	  setContentView(R.layout.theme_fragment);
+		
+	  getSupportActionBar().setDisplayShowHomeEnabled(true); // Set this to false to hide AB Icon
+	  getSupportActionBar().setDisplayShowTitleEnabled(true); // Set this to false to hide AB Title
 	  
       Typeface font1 = Typeface.createFromAsset(getAssets(), "RobotoSlab-Regular.ttf");
       TextView desc1 = (TextView) findViewById(R.id.description1);
