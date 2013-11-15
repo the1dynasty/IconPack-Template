@@ -2,7 +2,6 @@ package fragments;
 
 import gridview.LauncherMain;
 import gridview.NewIconsMain;
-import gridview.RequestIconsMain;
 import helper.ScrollGridView;
 
 import java.util.ArrayList;
@@ -71,8 +70,8 @@ public class MainFragment extends SherlockFragment{
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_app), 
 					getResources().getString (R.string.desc_oss), 0));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_request), 
-					getResources().getString (R.string.desc_request), 1));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_new_icons), 
+					getResources().getString (R.string.desc_new_icons), 1));
 			listOfStuff.remove(new AdapterItem(getResources().getString (R.string.title_info), 
 					getResources().getString (R.string.desc_info), 2));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_apply), 
@@ -87,8 +86,8 @@ public class MainFragment extends SherlockFragment{
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_app), 
 					getResources().getString (R.string.desc_oss), 0));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_request), 
-					getResources().getString (R.string.desc_request), 1));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_new_icons), 
+					getResources().getString (R.string.desc_new_icons), 1));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_info), 
 					getResources().getString (R.string.desc_info), 2));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_apply), 
@@ -142,7 +141,7 @@ public class MainFragment extends SherlockFragment{
 						}
 			    			break;
 			    		case 1:
-			    			Intent requestIcons = new Intent(getSherlockActivity(), RequestIconsMain.class);
+			    			Intent requestIcons = new Intent(getSherlockActivity(), NewIconsMain.class);
 			    			startActivity(requestIcons);
 			    			break;
 						case 2:
@@ -189,7 +188,7 @@ public class MainFragment extends SherlockFragment{
 					}
 		    			break;
 		    		case 1:
-		    			Intent requestIcons = new Intent(getSherlockActivity(), RequestIconsMain.class);
+		    			Intent requestIcons = new Intent(getSherlockActivity(), NewIconsMain.class);
 		    			startActivity(requestIcons);
 		    			break;
 					case 2:

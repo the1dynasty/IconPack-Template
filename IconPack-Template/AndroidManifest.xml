@@ -41,7 +41,7 @@
     <!-- minSDK set to run on Android 2.3 and newer
     	targetSDK set to run on latest version. This ensures 
     	the latest graphics are used on newer devices -->
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19"/>
     
     <!-- Change the style to something else if you want a different look
     	Please refer to ABS Styles for choosing a style you want -->
@@ -101,12 +101,6 @@
                 <!-- <action android:name="android.intent.action.SET_WALLPAPER" /> -->
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
-        
-        <activity  
-            android:name="gridview.RequestIconsMain" 
-            android:label="@string/title_request" 
-            android:icon="@drawable/icon_new" >
         </activity>
         
         <activity
