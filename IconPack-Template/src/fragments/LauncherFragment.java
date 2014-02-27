@@ -146,7 +146,7 @@ public class LauncherFragment extends SherlockFragment {
 					break;
 				case 4:
 					Intent al = getSherlockActivity().getPackageManager().getLaunchIntentForPackage(
-							"com.chrislacy.actionlauncher.pro");
+							"com.actionlauncher.playstore");
 					if (al != null) {
 
 						String packageName = "your.icons.name.here";
