@@ -146,7 +146,7 @@ public class ApplyLauncherFragment extends SherlockFragment {
 					break;
 				case 4:
 					Intent al = getSherlockActivity().getPackageManager().getLaunchIntentForPackage(
-							"com.chrislacy.actionlauncher.pro");
+							"com.actionlauncher.playstore");
 					if (al != null) {
 
 						String packageName = "your.icons.name.here";
@@ -155,7 +155,7 @@ public class ApplyLauncherFragment extends SherlockFragment {
 					} else {
 						Intent alMarket = new Intent(Intent.ACTION_VIEW);
 						alMarket.setData(Uri
-								.parse("market://details?id=com.chrislacy.actionlauncher.pro"));
+								.parse("market://details?id=com.actionlauncher.playstore"));
 						startActivity(alMarket);
 						Toast failedAL = Toast
 								.makeText(
