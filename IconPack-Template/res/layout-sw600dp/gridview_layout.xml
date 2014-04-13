@@ -23,7 +23,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center" 
-    tools:context="gridview.Main">
+    tools:context="your.icons.name.here.activity.MainActivity">
     
     <!-- Change line 31 "@drawable/card_bg_pressed_inverted" -->
 	<RelativeLayout

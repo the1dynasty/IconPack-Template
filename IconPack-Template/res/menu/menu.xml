@@ -9,10 +9,10 @@
     
     <menu>
 	    <item
-	        android:id="@+id/newIconsButton"
+	        android:id="@+id/allIconsButton"
 	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
 	        android:showAsAction="never"
-	        android:title="@string/title_new_icons"/>
+	        android:title="@string/title_all_icons"/>
 	
 	    <item
 	        android:id="@+id/shareButton"
@@ -39,10 +39,10 @@
 	        android:title="@string/about_dev"/>
 	
 	    <item
-	        android:id="@+id/donateButton"
+	        android:id="@+id/gplusButton"
 	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
 	        android:showAsAction="never"
-	        android:title="@string/donate"/>
+	        android:title="@string/title_community"/>
 	</menu>
 </item>
 </menu>

@@ -27,6 +27,7 @@
 	<string name="developer_name">the1dynasty</string>
 	<string name="dev_name">DEV NAME - the1dynasty</string>
 	<string name="dev_bio_title">MORE ABOUT the1dynasty</string>
+	<string name="dev_email">example@template.com</string>
 	
 	<string name="theme_description_app">"This is the description of your theme that shows up under the About Theme section of the app!"</string>
 	
@@ -34,8 +35,7 @@
 	
 	<string name="dev_description">Specializes in - Icon Packs, Theme Chooser, and UCCW Skins</string>
 	
-	<string name="dev_bio">Born Roberto Mezquia Jr. Currently resides in Miami, FL. Sort of a jack-of-all traits. Automotive collision repair, trained. 
-	    Business entrepreneur at heart. Started theming to get his phone exactly how he wanted it. Now spends more time doing it because he loves the creativity and challenges it brings.</string>
+	<string name="dev_bio">Blah. This is some text describing you.</string>
 	
 	<string name="share_text">"ENTER_YOUR_TEXT_HERE. https://play.google.com/store/apps/details?id=your.icons.name.here 
 	    \n\n I PROMOTE MY APP HERE http://bit.ly/ZI34gC"</string>

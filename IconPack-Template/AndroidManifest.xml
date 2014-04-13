@@ -19,8 +19,8 @@
 <manifest 
 		xmlns:android="http://schemas.android.com/apk/res/android"
       	package="your.icons.name.here"
-      	android:versionCode="228"
-      	android:versionName="2.2.8"
+      	android:versionCode="300"
+      	android:versionName="3.0.0"
       	android:installLocation="auto">
     <!-- android:installLocation is set to "auto" 
     change to "internalOnly" if you want it installed to the internal memory -->
@@ -55,7 +55,7 @@
         
     <!-- Main Activity that launches when you open the app from the drawer -->
         <activity
-            android:name="gridview.Main"
+            android:name="your.icons.name.here.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -65,29 +65,34 @@
         
     <!-- Various Activities inside the app -->
 		<activity 
-            android:name="your.icons.name.here.AboutThemeActivity"
+            android:name="your.icons.name.here.activity.AboutThemeActivity"
             android:label="@string/about_theme"
             android:screenOrientation="portrait" >
         </activity>
         <activity 
-            android:name="your.icons.name.here.AboutDev"
+            android:name="your.icons.name.here.activity.AboutDev"
             android:theme="@style/Theme.Sherlock.Light.Dialog" >
         </activity>  
-		<activity 
-            android:name="gridview.NewIconsMain"
-            android:label="@string/new_icons_title" >
+        <activity
+            android:name="your.icons.name.here.activity.RequestActivity"
+            android:icon="@drawable/icon_new"
+            android:label="@string/app_name" >
         </activity> 
+        <activity
+            android:name="your.icons.name.here.activity.AllIcons"
+            android:label="@string/title_all_icons" >
+        </activity>
          
     <!-- This is the Activity Dialog that pops up when selecting to apply your Icon Pack
     	Remove android:theme line if you want it to open as its own Activity and NOT a popup -->
 		<activity 
-            android:name="gridview.LauncherMain"
+     		android:name="your.icons.name.here.activity.ApplyLauncherMain"
             android:label="@string/launcher_title"
             android:theme="@style/Theme.Sherlock.Light.Dialog" >
         </activity>
         
         <activity  
-            android:name="your.icons.name.here.Wallpaper" 
+            android:name="your.icons.name.here.activity.Wallpaper" 
             android:label="@string/app_name" 
             android:icon="@drawable/icon_wall" 
             android:finishOnCloseSystemDialogs="true">
@@ -104,7 +109,7 @@
         </activity>
         
         <activity
-            android:name="your.icons.name.here.Docks"
+            android:name="your.icons.name.here.activity.Docks"
             android:label="@string/app_name"
             android:icon="@drawable/icon">
             <intent-filter>
@@ -116,7 +121,7 @@
         
         <!-- This is where the magic happens for the Icon Picker and allowing the packs to show up -->
         <activity
-				android:name="your.icons.name.here.Icons"
+				android:name="your.icons.name.here.activity.Icons"
                 android:label="@string/app_name">		
         	<intent-filter>
                 <action android:name="org.adw.launcher.THEMES" />
@@ -151,7 +156,7 @@
     <!-- android:authorities NEEDS to be changed manually for each new pack
     	Failure to change name, will result in installation errors -->    
         <provider 
-            android:name="your.icons.name.here.DocksProvider"
+            android:name="your.icons.name.here.activity.DocksProvider"
             android:authorities="your.icons.name.here.DocksProvider" />
     </application>
 </manifest>

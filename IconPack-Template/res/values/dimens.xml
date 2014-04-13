@@ -31,6 +31,20 @@
     
     <dimen name="dialog_button_height">48dp</dimen>
     
+    
+    <!-- Constants -->
+    <dimen name="divider_thickness">1dp</dimen>
+	<dimen name="margin_small_sm">3dp</dimen>
+	<dimen name="margin_small">4dp</dimen>
+	<dimen name="margin_small_lg">5dp</dimen>
+	<dimen name="margin_medium_sm">8dp</dimen>
+	<dimen name="margin_medium">10dp</dimen>
+	<dimen name="margin_medium_lg">12dp</dimen>
+	<dimen name="margin_large_sm">14dp</dimen>
+	<dimen name="margin_large">16dp</dimen>
+    
+    <dimen name="app_icon_size">48dp</dimen>
+    
     <!-- New Icon Preview Section -->
     <dimen name="padding_new_icons_name">4dp</dimen>
     

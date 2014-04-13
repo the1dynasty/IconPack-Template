@@ -41,7 +41,6 @@
 	<string name="title_request">Request Icons</string>
 	
 		<!-- OverFlow Menu -->
-	<string name="title_new_icons">Newly Added</string>
 	<string name="title_rate">Rate Theme</string>
 	<string name="title_share">Share Theme</string>
 	<string name="title_email">Email Developer</string>
@@ -109,6 +108,19 @@
 
 		<!-- Wallpaper window -->
 	<string name="wall_apply">Apply Wallpaper</string>
+	
+    <string name="building_request">Building Request&#8230;</string>
+    
+	
+	<!-- ICON CATEGORIES TABS -->
+	<string name="icons_latest">Latest</string>
+    <string name="icons_all">All</string> 
+    <string name="icons_system">System</string>
+    <string name="icons_play">Google Play</string>
+    <string name="icons_games">Games</string>
+    <string name="icons_misc">Misc</string>
+	<string name="title_all_icons">Themed Icons</string>
+	<string name="desc_all_icons">All of the included icons at a glance.</string>
 	
 		<!-- Dummy Content -->
 	<string name="dummy_desc"></string>

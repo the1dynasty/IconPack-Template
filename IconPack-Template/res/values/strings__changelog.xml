@@ -31,6 +31,7 @@
 	<string name="changelog_7">Version 2.2.0</string>
 	<string name="changelog_8">Version 2.2.2</string>
 	<string name="changelog_9">Version 2.2.5</string>
+	<string name="changelog_10">Version 3.0.0</string>
 	
 		<!-- ***************************** NOTES *****************************
 			 \n = new line
@@ -104,6 +105,13 @@
 		<string name="cl_list_9">
 		    &#8226; Fixed ADW Apply intent (Thanks XDA Member lancelinksp)
 			\n&#8226; Updated Tablet landscape layout to match better with the newer gridview
+		</string>
+	
+	<!-- Changelog 10 -->						
+		<string name="cl_list_10">
+		    &#8226; Added Basic Request
+			\n&#8226; Added All icons section to replace New Icons section
+			\n&#8226; Lots of refractoring and some code cleanup
 		</string>
 							
 </resources>

@@ -22,7 +22,7 @@
     android:layout_height="match_parent" >
 
     <!-- This is your GridView -->
-	<helper.ScrollGridView 
+	<your.icons.name.here.util.PKScrollGridView 
 	    android:id="@+id/grid"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"

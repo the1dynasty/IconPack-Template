@@ -43,4 +43,4 @@
     android:background="@color/app_bg"
     android:listSelector="@color/transparent"
     android:cacheColorHint="@color/transparent" 
-    tools:context="gridview.LauncherMain"/>
+    tools:context="your.icons.name.here.activity.LauncherMain"/>

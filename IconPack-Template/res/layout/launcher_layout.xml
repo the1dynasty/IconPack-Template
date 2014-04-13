@@ -57,7 +57,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center" 
-    tools:context="gridview.LauncherMain" >
+    tools:context="your.icons.name.here.activity.LauncherMain" >
     
 	<RelativeLayout
 	    android:layout_width="match_parent"

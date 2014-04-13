@@ -21,6 +21,9 @@
 	<color name="desktop_indicator_color">#FFFFFFFF</color>
     
     <!-- App colors -->
+    <color name="background_tab_pressed">#66AAAAAA</color>
+    <color name="background_window">#FFDEDEDE</color>
+    <color name="background_tabs">#FFE5E5E5</color>
 	<color name="about_title_color">#ff33b5e5</color>
 	<color name="divider">#FF33b5e5</color>
 	<color name="divider_page">#ff33b5e5</color>
