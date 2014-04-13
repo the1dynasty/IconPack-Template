@@ -18,10 +18,9 @@ public class MainAdapter extends BaseAdapter{
 	
 	public static final int OSS = 0;
 	public static final int THEMEINFO = 1;
-	public static final int ALLICONS = 2;
-	public static final int APPLY = 3;
-	public static final int WALLPAPER = 4;
-	public static final int REQUEST = 5;
+	public static final int APPLY = 2;
+	public static final int WALLPAPER = 3;
+	public static final int REQUEST = 4;
 	
 	private Context context;
 	private List<AdapterItem> gridItem;
@@ -77,11 +76,6 @@ public class MainAdapter extends BaseAdapter{
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_oss);
-				break;
-			case ALLICONS:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_new);
 				break;
 			case THEMEINFO:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
