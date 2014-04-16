@@ -122,10 +122,10 @@ public final class R {
 		public static final int abs__bright_foreground_disabled_holo_light = 0x7f0a0005;
 		public static final int abs__bright_foreground_holo_dark = 0x7f0a0002;
 		public static final int abs__bright_foreground_holo_light = 0x7f0a0003;
-		public static final int abs__primary_text_disable_only_holo_dark = 0x7f0a0044;
-		public static final int abs__primary_text_disable_only_holo_light = 0x7f0a0045;
-		public static final int abs__primary_text_holo_dark = 0x7f0a0046;
-		public static final int abs__primary_text_holo_light = 0x7f0a0047;
+		public static final int abs__primary_text_disable_only_holo_dark = 0x7f0a0048;
+		public static final int abs__primary_text_disable_only_holo_light = 0x7f0a0049;
+		public static final int abs__primary_text_holo_dark = 0x7f0a004a;
+		public static final int abs__primary_text_holo_light = 0x7f0a004b;
 	}
 	public static final class dimen {
 		public static final int abs__action_bar_default_height = 0x7f0b0001;
@@ -517,7 +517,7 @@ public final class R {
 		public static final int SherlockSearchView_android_maxWidth = 0;
 		public static final int SherlockSearchView_iconifiedByDefault = 3;
 		public static final int SherlockSearchView_queryHint = 4;
-		public static final int[] SherlockSpinner = { 0x010100af, 0x01010175, 0x01010176, 0x0101017b, 0x01010262, 0x010102ac, 0x010102ad, 0x0101041f };
+		public static final int[] SherlockSpinner = { 0x010100af, 0x01010175, 0x01010176, 0x0101017b, 0x01010262, 0x010102ac, 0x010102ad, 0x0101043a };
 		public static final int SherlockSpinner_android_dropDownHorizontalOffset = 5;
 		public static final int SherlockSpinner_android_dropDownSelector = 1;
 		public static final int SherlockSpinner_android_dropDownVerticalOffset = 6;

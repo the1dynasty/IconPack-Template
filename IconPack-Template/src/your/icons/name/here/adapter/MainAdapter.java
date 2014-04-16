@@ -16,11 +16,10 @@ import your.icons.name.here.R;
 
 public class MainAdapter extends BaseAdapter{
 	
-	public static final int OSS = 0;
-	public static final int THEMEINFO = 1;
-	public static final int APPLY = 2;
-	public static final int WALLPAPER = 3;
-	public static final int REQUEST = 4;
+	public static final int APPLY = 0;
+	public static final int WALLPAPER = 1;
+	public static final int REQUEST = 2;
+	public static final int THEMEINFO = 3;
 	
 	private Context context;
 	private List<AdapterItem> gridItem;
@@ -72,16 +71,6 @@ public class MainAdapter extends BaseAdapter{
 			 * You can reference any drawable
 			 */
 			switch(entry.getID()){
-			case OSS:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_oss);
-				break;
-			case THEMEINFO:
-				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
-				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_info);
-				break;
 			case APPLY:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
@@ -95,7 +84,12 @@ public class MainAdapter extends BaseAdapter{
 			case REQUEST:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_community);
+				holder.icon_Image.setImageResource(R.drawable.icon_request);
+				break;
+			case THEMEINFO:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
+				holder.icon_Image.setImageResource(R.drawable.icon_info);
 				break;
 			}
 			holder.text.setText(entry.getDescription());

@@ -9,6 +9,12 @@
     
     <menu>
 	    <item
+	        android:id="@+id/app"
+	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+	        android:showAsAction="never"
+	        android:title="@string/title_app"/>
+	    
+	    <item
 	        android:id="@+id/allIconsButton"
 	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
 	        android:showAsAction="never"

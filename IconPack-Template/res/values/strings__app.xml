@@ -20,15 +20,60 @@
 
 <resources>
     
-    	<!-- Applied Toast Messages -->
+	<string name="package_name">your.icons.name.here</string>
+	<string name="email_address">template@email.com</string>
+	<string name="market_rate">market://details?id=your.icons.name.here</string>
+	<string name="app_market">market://details?id=app.the1dynasty.oss</string>
+	
+	<string name="back_exit">Please click BACK again to exit</string>
+    
+    
+  	<!-- APPLY THEME -->
+  	<string name="launcher_title">Choose Your Launcher</string>
+	<string name="installed">Installed</string>
+	<string name="not_installed">Not Installed</string>
+  	<!-- LAUNCHER NAMES -->
+  	<string name="launcher_apex">Apex</string>
+  	<string name="launcher_nova">Nova</string>
+  	<string name="launcher_aviate">Aviate</string>
+  	<string name="launcher_adw">ADW</string>
+  	<string name="launcher_al">Action</string>
+  	<string name="launcher_smart">Smart</string>
+  	<string name="launcher_next">Next</string>
+  	<string name="launcher_go">Go</string>
+  	<string name="launcher_holo">Holo</string>
+  	<!-- LAUNCHER PACKAGE NAMES -->
+  	<string name="launcher_apex_package">com.anddoes.launcher</string>
+  	<string name="launcher_nova_package">com.teslacoilsw.launcher</string>
+  	<string name="launcher_aviate_package">com.tul.aviate</string>
+  	<string name="launcher_adw_package">org.adw.launcher</string>
+  	<string name="launcher_al_package">com.actionlauncher.playstore</string>
+  	<string name="launcher_smart_package">ginlemon.flowerfree</string>
+  	<string name="launcher_next_package">com.gtp.nextlauncher</string>
+  	<string name="launcher_go_package">com.gau.go.launcherex</string>
+  	<string name="launcher_holo_package">com.mobint.hololauncher</string>
+  	<!-- LAUNCHER MARKET URL -->
+  	<string name="launcher_apex_market">market://details?id=com.anddoes.launcher</string>
+  	<string name="launcher_nova_market">market://details?id=com.teslacoilsw.launcher</string>
+  	<string name="launcher_aviate_market">market://details?id=com.tul.aviate</string>
+  	<string name="launcher_adw_market">market://details?id=org.adw.launcher</string>
+  	<string name="launcher_al_market">market://details?id=com.actionlauncher.playstore</string>
+  	<string name="launcher_smart_market">market://details?id=ginlemon.flowerfree</string>
+  	<string name="launcher_next_market">market://details?id=com.gtp.nextlauncher</string>
+  	<string name="launcher_go_market">market://details?id=com.gau.go.launcherex</string>
+  	<string name="launcher_holo_market">market://details?id=com.mobint.hololauncher</string>
+    <!-- APPLIED TOAST MESSAGES -->
+	<string name="finish_holo_apply">Go To Appearance settings -> Icon Packs and select this theme from the list.</string>
 	<string name="finish_apply">Select your options and press Apply to finalize!</string>
 	<string name="apex_market">Apex Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="nova_market">Nova Launcher is not installed on your device. Redirecting to the Play Store!</string>
-	<string name="holo_market">Holo Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="aviate_market">Aviate Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="adw_market">ADW Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="al_market">Action Launcher is not installed on your device. Redirecting to the Play Store!</string>
-	<string name="go_market">AWESOME! Go Launcher is not installed on your device. Redirecting to Apex Launcher!</string>
+	<string name="smart_market">Smart Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="next_market">Next Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="go_market">Go Launcher is not installed on your device. Redirecting to the Play Store!</string>
+	<string name="holo_market">Holo Launcher is not installed on your device. Redirecting to the Play Store!</string>
 	<string name="not_supported">Currently Not Supported. Please Apply through your launcher settings.</string>
 	
 		<!-- GridView Titles -->
@@ -89,14 +134,6 @@
 	<string name="desc_community">Join our Google+ Community to find and share your themes!</string>
 	<string name="desc_gplus">Circle me on Google+</string>
   	<string name="desc_request">Missing icons? Send your request to the developer.</string>
-	
-  		<!-- Launcher Dialog -->
-  	<string name="launcher_apex">Apex</string>
-  	<string name="launcher_nova">Nova</string>
-  	<string name="launcher_holo">Holo</string>
-  	<string name="launcher_adw">ADW</string>
-  	<string name="launcher_al">Action</string>
-  	<string name="launcher_title">Choose Your Launcher</string>
 	
   		<!-- App Check Stuff -->
 	<string name="alert_start_title">You Are AWESOME!!!</string>

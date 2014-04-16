@@ -1,6 +1,13 @@
 package your.icons.name.here.adapter;
 
+import java.util.List;
+
+import your.icons.name.here.R;
+import your.icons.name.here.util.Utils;
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,118 +16,139 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
-
-import your.icons.name.here.R;
-
-public class ApplyLauncherAdapter extends BaseAdapter{
+public class ApplyLauncherAdapter extends BaseAdapter
+{
+	private ColorMatrixColorFilter grayscaleFilter;
 	private Context context;
-	private List<LauncherItem> gridItem;
+	private List<Integer> gridItem;
+	private Resources res;
+	private Typeface tfTitle;
 
-	public ApplyLauncherAdapter(Context context, List<LauncherItem> gridItem) {
+	// Flag Constants
+	public static final int APEX = 0;
+	public static final int NOVA = 1;
+	public static final int AVIATE = 2;
+	public static final int ADW = 3;
+	public static final int ACTION = 4;
+	public static final int SMART = 5;
+	public static final int NEXT = 6;
+	public static final int GO = 7;
+	public static final int HOLO = 8;
+
+	public ApplyLauncherAdapter(Context context, List<Integer> gridItem) {
 		this.gridItem = gridItem;
 		this.context = context;
+		this.res = context.getResources();
+		
+		// Set up color filter
+		ColorMatrix matrix = new ColorMatrix();
+	    matrix.setSaturation(0); //0 means grayscale
+	    this.grayscaleFilter = new ColorMatrixColorFilter(matrix);
+		
+		/* 
+		 * Sets the font type for the title
+		 * Make sure the font file is in the projects Asset folder
+		 * Default for this template is Roboto-Thin
+		 * themefont.ttf is the font the theme grabs also
+		 */
+		this.tfTitle = Typeface.createFromAsset(context.getAssets(),"themefont.ttf");
 	}
 
 	public View getView(int position, View v, ViewGroup parent) {
 		ViewHolder holder;
-		LauncherItem entry = gridItem.get(position);
+		int entry = gridItem.get(position);
 		
 		if (v == null) {
-			LayoutInflater inflater = (LayoutInflater) context
-					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-			v = inflater.inflate(R.layout.launcher_layout, null);
+			LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			v = inflater.inflate(R.layout.apply_launcher_layout, null);
 			
 			holder = new ViewHolder();
 			holder.title = (TextView) v.findViewById(R.id.title);
 			holder.launcher_Image = (ImageView) v.findViewById(R.id.list_image);
+			holder.txtInstalled = (TextView) v.findViewById(R.id.txtInstalled);
 			
 			v.setTag(holder);
 		}
-		else {
+		else
 			holder = (ViewHolder) v.getTag();
-		}
-			holder.title.setText(entry.getTitle());
-
-			/* 
-			 * Sets the font type for the title
-			 * Make sure the font file is in the projects Asset folder
-			 * Default for this template is Roboto-Thin
-			 * themefont.ttf is the font the theme grabs also
-			 */
-			Typeface tfTitle = Typeface.createFromAsset(context.getAssets(),"themefont.ttf");
-			holder.title.setTypeface(tfTitle);
-			
-			switch(entry.getID()){
-			case 0:
-				/** Use this first option for the newer single column look **/
-				holder.title.setTextColor(context.getResources().getColor(R.color.gray_light2));
+		
+		holder.title.setTypeface(tfTitle);
+		switch(entry)
+		{
+			case APEX:
+				holder.title.setText(res.getString(R.string.launcher_apex));
+				setInstalledStatus(holder, res.getString(R.string.launcher_apex_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
 				holder.launcher_Image.setImageResource(R.mipmap.banner_apex);
-				/** Use this second option for the traditional Dialog popup **/
-				//holder.title.setTextColor(context.getResources().getColor(R.color.black));
-				//holder.launcher_Image.setImageResource(R.mipmap.icon_apex);
 				break;
-			case 1:
-				/** Use this first option for the newer single column look **/
-				holder.title.setTextColor(context.getResources().getColor(R.color.gray_light2));
+			case NOVA:
+				holder.title.setText(res.getString(R.string.launcher_nova));
+				setInstalledStatus(holder, res.getString(R.string.launcher_nova_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
 				holder.launcher_Image.setImageResource(R.mipmap.banner_nova);
-				/** Use this second option for the traditional Dialog popup **/
-				//holder.title.setTextColor(context.getResources().getColor(R.color.black));
-				//holder.launcher_Image.setImageResource(R.mipmap.icon_nova);
 				break;
-			case 2:
-				/** Use this first option for the newer single column look **/
-				holder.title.setTextColor(context.getResources().getColor(R.color.gray_light2));
-				holder.launcher_Image.setImageResource(R.mipmap.banner_holo);
-				/** Use this second option for the traditional Dialog popup **/
-				//holder.title.setTextColor(context.getResources().getColor(R.color.black));
-				//holder.launcher_Image.setImageResource(R.mipmap.icon_holo);
+			case AVIATE:
+				holder.title.setText(res.getString(R.string.launcher_aviate));
+				setInstalledStatus(holder, res.getString(R.string.launcher_aviate_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
+				holder.launcher_Image.setImageResource(R.mipmap.banner_aviate);
 				break;
-			case 3:
-				/** Use this first option for the newer single column look **/
-				holder.title.setTextColor(context.getResources().getColor(R.color.gray_light2));
+			case ADW:
+				holder.title.setText(res.getString(R.string.launcher_adw));
+				setInstalledStatus(holder, res.getString(R.string.launcher_adw_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
 				holder.launcher_Image.setImageResource(R.mipmap.banner_adw);
-				/** Use this second option for the traditional Dialog popup **/
-				//holder.title.setTextColor(context.getResources().getColor(R.color.black));
-				//holder.launcher_Image.setImageResource(R.mipmap.icon_adw);
 				break;
-			case 4:
-				/** Use this first option for the newer single column look **/
-				holder.title.setTextColor(context.getResources().getColor(R.color.gray_light2));
+			case ACTION:
+				holder.title.setText(res.getString(R.string.launcher_al));
+				setInstalledStatus(holder, res.getString(R.string.launcher_al_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
 				holder.launcher_Image.setImageResource(R.mipmap.banner_al);
-				/** Use this second option for the traditional Dialog popup **/
-				//holder.title.setTextColor(context.getResources().getColor(R.color.black));
-				//holder.launcher_Image.setImageResource(R.mipmap.icon_al);
 				break;
-			case 5:
-				/** Use this first option for the newer single column look **/
-				holder.title.setTextColor(context.getResources().getColor(R.color.gray_light2));
-				holder.launcher_Image.setImageResource(R.mipmap.banner_go);
-				/** Use this second option for the traditional Dialog popup **/
-				//holder.title.setTextColor(context.getResources().getColor(R.color.black));
-				//holder.launcher_Image.setImageResource(R.mipmap.icon_go);
+			case SMART:
+				holder.title.setText(res.getString(R.string.launcher_smart));
+				setInstalledStatus(holder, res.getString(R.string.launcher_smart_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
+				holder.launcher_Image.setImageResource(R.mipmap.banner_smart);
 				break;
-			case 6:
-				/** Use this first option for the newer single column look **/
-				holder.title.setTextColor(context.getResources().getColor(R.color.gray_light2));
+			case NEXT:
+				holder.title.setText(res.getString(R.string.launcher_next));
+				setInstalledStatus(holder, res.getString(R.string.launcher_next_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
 				holder.launcher_Image.setImageResource(R.mipmap.banner_next);
-				/** Use this second option for the traditional Dialog popup **/
-				//holder.title.setTextColor(context.getResources().getColor(R.color.black));
-				//holder.launcher_Image.setImageResource(R.mipmap.icon_next);
 				break;
-			case 7:
-				/** Use this first option for the newer single column look **/
-				holder.title.setTextColor(context.getResources().getColor(R.color.gray_light2));
-				holder.launcher_Image.setImageResource(R.mipmap.banner_cancel);
-				/** Use this second option for the traditional Dialog popup **/
-				//holder.title.setTextColor(context.getResources().getColor(R.color.black));
-				//holder.launcher_Image.setImageResource(R.mipmap.icon_cancel);
+			case GO:
+				holder.title.setText(res.getString(R.string.launcher_go));
+				setInstalledStatus(holder, res.getString(R.string.launcher_go_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
+				holder.launcher_Image.setImageResource(R.mipmap.banner_go);
 				break;
-			}
-			holder.title.setText(entry.getTitle());
+			case HOLO:
+				holder.title.setText(res.getString(R.string.launcher_holo));
+				setInstalledStatus(holder, res.getString(R.string.launcher_holo_package));
+				holder.title.setTextColor(res.getColor(R.color.apply_launcher_text));
+				holder.launcher_Image.setImageResource(R.mipmap.banner_holo);
+				break;
+		}
 			
 		return v;
+	}
+	
+	private void setInstalledStatus(ViewHolder holder, String packageName)
+	{
+		// Set installed status
+		if(Utils.isPackageInstalled(packageName, context))
+		{
+			holder.txtInstalled.setText(res.getString(R.string.installed));
+			holder.txtInstalled.setTextColor(res.getColor(R.color.holo_green_light));
+			holder.launcher_Image.clearColorFilter();
+		}
+		else
+		{
+			holder.txtInstalled.setText(res.getString(R.string.not_installed));
+			holder.txtInstalled.setTextColor(res.getColor(R.color.holo_red_light));
+			holder.launcher_Image.setColorFilter(grayscaleFilter);
+		}
 	}
 
 	@Override
@@ -129,7 +157,7 @@ public class ApplyLauncherAdapter extends BaseAdapter{
 	}
 
 	@Override
-	public Object getItem(int position) {
+	public Integer getItem(int position) {
 		return gridItem.get(position);
 	}
 
@@ -139,26 +167,9 @@ public class ApplyLauncherAdapter extends BaseAdapter{
 	}
 	
 	// Code added for better efficiency and less redraws
-	public static class ViewHolder {
+	private class ViewHolder {
 		public TextView title;
 		public ImageView launcher_Image;
-	}
-	
-	public static class LauncherItem{
-		String Title;
-		int ID;
-		
-		public LauncherItem(String Title, int ID) {
-			this.Title = Title;
-			this.ID = ID;
-		}
-		
-		public String getTitle() {
-			return Title;
-		}
-		
-		public int getID() {
-			return ID;
-		}
+		public TextView txtInstalled;
 	}
 }

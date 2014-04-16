@@ -42,6 +42,15 @@
 	<dimen name="margin_medium_lg">12dp</dimen>
 	<dimen name="margin_large_sm">14dp</dimen>
 	<dimen name="margin_large">16dp</dimen>
+	
+	<!-- FONT SIZES CONSTANTS -->
+	<dimen name="text_small">12sp</dimen>
+	<dimen name="text_small_lg">14sp</dimen>
+	<dimen name="text_medium">16sp</dimen>
+	<dimen name="text_large">22dp</dimen>
+	
+	<!-- ListView -->
+	<dimen name="listview_height">88dp</dimen>
     
     <dimen name="app_icon_size">48dp</dimen>
     
@@ -61,4 +70,6 @@
     <dimen name="banner_desc">16sp</dimen>
     
     <dimen name="ab_height">48dp</dimen>
+    
+    <dimen name="allapps_icon_preview">144dp</dimen>
 </resources>

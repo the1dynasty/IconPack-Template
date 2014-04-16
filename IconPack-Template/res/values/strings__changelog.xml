@@ -32,6 +32,7 @@
 	<string name="changelog_8">Version 2.2.2</string>
 	<string name="changelog_9">Version 2.2.5</string>
 	<string name="changelog_10">Version 3.0.0</string>
+	<string name="changelog_11">Version 3.0.1</string>
 	
 		<!-- ***************************** NOTES *****************************
 			 \n = new line
@@ -112,6 +113,12 @@
 		    &#8226; Added Basic Request
 			\n&#8226; Added All icons section to replace New Icons section
 			\n&#8226; Lots of refractoring and some code cleanup
+		</string>
+	
+	<!-- Changelog 11 -->						
+		<string name="cl_list_11">
+		    &#8226; 
+			\n&#8226; 
 		</string>
 							
 </resources>

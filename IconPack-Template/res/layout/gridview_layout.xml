@@ -15,7 +15,7 @@
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
 -->
-<!-- 
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout1"
@@ -82,12 +82,12 @@
 	</RelativeLayout>
 	
 </RelativeLayout>
--->
+
 
 
 <!-- ************************************************************************************************************ -->
 
-
+<!-- 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout1"
@@ -97,7 +97,6 @@
     android:gravity="center" 
     tools:context="your.icons.name.here.activity.MainActivity">
     
-    <!-- Change line 31 "@drawable/card_bg_pressed_inverted" -->
 	<RelativeLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="@dimen/row_height"
@@ -105,17 +104,6 @@
 	    android:orientation="vertical"
 	    android:padding="@dimen/list_icon"
 	    tools:ignore="UselessParent" >
-    
-    <!-- Icon image layout - DO NOT EDIT -
-    	 Change images in the MainAdapter.java file if you want to edit these lines -->
- 
-    <!-- Description for each view - DO NOT EDIT -
-     	 Change the lines in the Fragment.java file if you want to edit these lines -->
-
-	
-    <!-- Title for each view - DO NOT EDIT -
-     	 Change the lines in the MainAdapter.java file if you want to edit these lines -->
-
 
 	<ImageView
 	    android:id="@+id/list_image"
@@ -140,7 +128,6 @@
 	    android:textSize="@dimen/grid_title_text"
 	    tools:ignore="HardcodedText" />
 
-	<!-- This is the pressed animation/highlight you see when you press a list item -->
 	<ImageView
 	    android:id="@+id/imageView1"
         android:contentDescription="@string/content_description"
@@ -164,5 +151,6 @@
 	    tools:ignore="HardcodedText" />
 
 	</RelativeLayout>
-	
+
 </RelativeLayout>
+	-->

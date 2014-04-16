@@ -16,6 +16,8 @@
 
 package your.icons.name.here.activity;
 
+import java.util.List;
+
 import your.icons.name.here.R;
 import your.icons.name.here.fragment.MainFragment;
 import your.icons.name.here.util.GlassActionBarHelper;
@@ -24,9 +26,11 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
@@ -130,7 +134,7 @@ public class MainActivity extends SherlockFragmentActivity {
 		// Checking if installed and if its the first run
 	    if (installed) {
 	    	boolean firstrunOSS = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-	    			.getBoolean("firstrunOSS", true);
+	    			.getBoolean("firstrunAPP", true);
 		    if (firstrunOSS){
 		    	
 	    /* 
@@ -146,7 +150,7 @@ public class MainActivity extends SherlockFragmentActivity {
 		    // Save the state so this dialog doesn't run again
 		    getSharedPreferences("PREFERENCE", MODE_PRIVATE)
 		        .edit()
-		        .putBoolean("firstrunOSS", false) /* You can change this to another name */
+		        .putBoolean("firstrunAPP", false) /* You can change this to another name */
 		        .commit();
 	              }
 	    }
@@ -157,7 +161,7 @@ public class MainActivity extends SherlockFragmentActivity {
 	     */
 		else {
 			boolean nofirstrunOSS = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-	    			.getBoolean("nofirstrunOSS", true);
+	    			.getBoolean("nofirstrunAPP", true);
 		    if (nofirstrunOSS){
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setTitle(getResources().getString (R.string.error_start_title));
@@ -174,7 +178,7 @@ public class MainActivity extends SherlockFragmentActivity {
 				@Override
 				public void onClick(DialogInterface arg0, int arg1) {
 					Intent share = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-							("market://details?id=app.the1dynasty.oss"));
+							(getResources().getString(R.string.app_market)));
 		    		startActivity(share);
 			}
 			});
@@ -183,7 +187,7 @@ public class MainActivity extends SherlockFragmentActivity {
 			// Save the state so this dialog doesn't run again
 		    getSharedPreferences("PREFERENCE", MODE_PRIVATE)
 		        .edit()
-		        .putBoolean("nofirstrunOSS", false) /* You can change this to another name */
+		        .putBoolean("nofirstrunAPP", false) /* You can change this to another name */
 		        .commit();
 		    // TODO Make this random (1/8)
 		    }
@@ -206,6 +210,34 @@ public class MainActivity extends SherlockFragmentActivity {
         {
         	case R.id.more:
         		return true;
+			case R.id.app:
+				/** 
+				 ** This checks if MY OSS app is installed. You can remove this case
+				 ** statement completely or add your own app to check against or leave
+				 ** it and let it check for MY app :D
+				 ** If it is installed, the app will open when you press the list item
+				 ** If it is NOT installed, it will open up the play store to download it
+				 ** Change line 136 with the play store link for your own app if you're 
+				 ** using this feature!
+				 **/
+				boolean installed = Utils.isPackageInstalled("app.the1dynasty.oss", MainActivity.this);
+			    if (installed) {
+			    	boolean appInstalled = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+			    			.getBoolean("appInstalled", true);
+				    if (appInstalled){
+					Intent oss = new Intent("android.intent.action.MAIN");
+					oss.setComponent(ComponentName.unflattenFromString
+							("app.the1dynasty.oss/app.activities.MainActivity"));
+					oss.addCategory("android.intent.category.LAUNCHER");
+					startActivity(oss);
+				}
+				    }
+				else{
+					Intent oss = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+							(getResources().getString(R.string.app_market)));
+					startActivity(oss);
+			}
+    			break;
 	        case R.id.allIconsButton:
 				Intent allIcons = new Intent(MainActivity.this, AllIcons.class);
 				startActivity(allIcons);
@@ -218,13 +250,15 @@ public class MainActivity extends SherlockFragmentActivity {
                 break;
             case R.id.rateButton:
             	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-            			("market://details?id=your.icons.name.here"));
+            			(getResources().getString(R.string.email_address)));
             	startActivity(rate);
                 break;
             case R.id.emailButton:
             	Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-				emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[] { "the1dynasty.android@gmail.com" });
-				emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getResources().getText(R.string.email_subject));
+				emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[] 
+						{getResources().getString(R.string.email_address)});
+				emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, 
+						getResources().getText(R.string.email_subject));
 				emailIntent.setType("plain/text");
 				startActivity(Intent.createChooser(emailIntent, "Contact Developer"));
 				
@@ -250,7 +284,7 @@ public class MainActivity extends SherlockFragmentActivity {
             return;
         }
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getResources().getString(R.string.back_exit), Toast.LENGTH_SHORT).show();
         new Handler().postDelayed(new Runnable() {
 
             @Override
@@ -260,21 +294,4 @@ public class MainActivity extends SherlockFragmentActivity {
             }
         }, 2000);
     }
-	
-	private boolean isAppInstalled(String packageName){
-		// Tool we need to parse other packages
-		PackageManager pm = getPackageManager();
-		// True/False variable set to false by default, show "Not Installed"
-		boolean app_installed = false;
-		// If the app isn't installed, we would get a force close without a try/catch clause
-		// If installed, try returns true, if not, we catch the exception and set it to false
-		try {
-			pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
-			app_installed = true;
-		} catch (PackageManager.NameNotFoundException e){
-			app_installed = false;
-		}
-		// Must return a value (not overridden method)
-		return app_installed;
-	}
 }

@@ -32,7 +32,7 @@ import android.widget.ImageView;
 				Bundle savedInstanceState) {
 
 			View view = inflater.inflate(R.layout.all_icons_main, container, false);
-	        int iconSize=getResources().getDimensionPixelSize(android.R.dimen.app_icon_size);
+	        int iconSize=getResources().getDimensionPixelSize(R.dimen.allapps_icon_preview);
 	        GridView gridview = (GridView) view.findViewById(R.id.icon_grid);
 	        gridview.setAdapter(new IconAdapter(getActivity(), iconSize));
 	        CONTENT_URI=Uri.parse("content://"+IconsProvider.class.getCanonicalName());
