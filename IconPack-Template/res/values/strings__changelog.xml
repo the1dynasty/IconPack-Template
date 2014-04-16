@@ -117,8 +117,10 @@
 	
 	<!-- Changelog 11 -->						
 		<string name="cl_list_11">
-		    &#8226; 
-			\n&#8226; 
+		    &#8226; Reworked Apply section
+			\n&#8226; New home layout
+			\n&#8226; More launcher support
+			\n&#8226; Fixed sizing for "All Icons" section
 		</string>
 							
 </resources>
