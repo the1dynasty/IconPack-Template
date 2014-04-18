@@ -250,7 +250,7 @@ public class MainActivity extends SherlockFragmentActivity {
                 break;
             case R.id.rateButton:
             	Intent rate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-            			(getResources().getString(R.string.email_address)));
+            			(getResources().getString(R.string.market_rate)));
             	startActivity(rate);
                 break;
             case R.id.emailButton:
