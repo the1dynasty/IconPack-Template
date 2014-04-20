@@ -20,9 +20,10 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.pk.requestmanager.AppInfo;
-import com.pk.requestmanager.PkRequestManager;
-import com.pk.requestmanager.RequestSettings;
+
+import com.pkmmte.requestmanager.AppInfo;
+import com.pkmmte.requestmanager.PkRequestManager;
+import com.pkmmte.requestmanager.RequestSettings;
 
 public class RequestActivity extends SherlockActivity
 {
